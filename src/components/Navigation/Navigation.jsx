@@ -25,9 +25,9 @@ const Navigation = () => {
                 <PiSignInBold className='text-xl ml-1 text-red-700' />
               </div>
             </div>
-            <div className='flex items-center justify-center px-2'>
-              <span className='text-2xl text-red-500'>Digi</span>
-              <span className='text-slate-700 text-lg'>tize</span>
+            <div className='flex items-center justify-center px-2 '>
+              <span className='text-3xl text-red-500'>Digi</span>
+              <span className='text-slate-700 text-xl'>tize</span>
             </div>
             <div className='flex flex-row-reverse'>
               <div className='w-auto h-auto relative'>
@@ -43,11 +43,11 @@ const Navigation = () => {
           {/* --------------------- Filter - sort mobile div -------------------------------------------*/}
           <div className='w-full h-16 flex justify-evenly items-center'>
             <div className='bg-white flex justify-center items-center p-2 w-1/2 rounded-md  cursor-pointer'>
-              <span className='text-stone-600'>فیلتر : برند اپل</span>
+              <span className='text-stone-600 text-xs'>فیلتر : برند اپل</span>
               <HiOutlineFilter className='text-red-700 ml-2 text-xl' />
             </div>
             <div className='bg-white flex justify-center items-center p-2 w-1/2 rounded-md ml-2 cursor-pointer'>
-              <span className='text-stone-600'>محبوب ترین محصول</span>
+              <span className='text-stone-600 text-xs'>محبوب ترین محصول</span>
               <PiListMagnifyingGlassLight className='text-red-700 ml-2  text-2xl' />
             </div>
           </div>
