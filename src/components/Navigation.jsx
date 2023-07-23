@@ -4,7 +4,7 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import { HiOutlineFilter, HiShoppingCart } from "react-icons/hi";
 import { PiListMagnifyingGlassLight, PiSignInBold } from "react-icons/pi";
 import { FiSearch } from "react-icons/fi";
-import BurgerMenu from '../burgerMenu/BurgerMenu';
+import BurgerMenu from './BurgerMenu';
 import { useState } from 'react';
 
 const Navigation = () => {
@@ -14,22 +14,22 @@ const Navigation = () => {
   }
   return (
     <div>
-      <header className='flex flex-row-reverse w-full h-auto '>
+      <header className='flex  w-full h-auto '>
         {/* --------------------- Navigation in Mobile size -------------------------------------------*/}
         <nav className='w-full h-40 md:hidden p-4'>
-          <div className='w-full h-16 flex justify-between items-center  flex-row-reverse '>
-            <div className='flex flex-row-reverse'>
+          <div className='w-full h-16 flex justify-between items-center   '>
+            <div className='flex '>
               <RxHamburgerMenu onClick={handleBurger} className="bg-white w-9 h-9 lg:h-11 lg:w-11 text-stone-500 rounded-md p-1 cursor-pointer outline-none" />
               <div className='flex justify-center cursor-pointer bg-white items-center px-3 py-1 shadow-md rounded-md text-stone-500 mr-2'>
                 <NavLink to={'/login'}>ورود</NavLink>
                 <PiSignInBold className='text-xl ml-1 text-red-700' />
               </div>
             </div>
-            <div className='flex items-center justify-center px-2 '>
-              <span className='text-3xl text-red-500'>Digi</span>
+            <div className='flex items-center justify-center px-2'>
               <span className='text-slate-700 text-xl'>tize</span>
+              <span className='text-3xl text-red-500'>Digi</span>
             </div>
-            <div className='flex flex-row-reverse'>
+            <div className='flex '>
               <div className='w-auto h-auto relative'>
                 <NavLink to={'/cart'}>
                   <HiShoppingCart className='text-3xl text-red-600 mt-1 ml-4 cursor-pointer' />
@@ -39,53 +39,43 @@ const Navigation = () => {
               <BiSearchAlt className="bg-white w-9 h-9 lg:h-11 lg:w-11 text-stone-500 rounded-md p-1 cursor-pointer outline-none" />
             </div>
           </div>
-          <BurgerMenu burgerActive={burgerActive} handleBurger={handleBurger}/>
+          <BurgerMenu burgerActive={burgerActive} handleBurger={handleBurger} />
           {/* --------------------- Filter - sort mobile div -------------------------------------------*/}
           <div className='w-full h-16 flex justify-evenly items-center'>
-            <div className='bg-white flex justify-center items-center p-2 w-1/2 rounded-md  cursor-pointer'>
-              <span className='text-stone-600 text-xs'>فیلتر : برند اپل</span>
-              <HiOutlineFilter className='text-red-700 ml-2 text-xl' />
-            </div>
             <div className='bg-white flex justify-center items-center p-2 w-1/2 rounded-md ml-2 cursor-pointer'>
+              <PiListMagnifyingGlassLight className='text-red-700 ml-2  text-xl' />
               <span className='text-stone-600 text-xs'>محبوب ترین محصول</span>
-              <PiListMagnifyingGlassLight className='text-red-700 ml-2  text-2xl' />
+            </div>
+            <div className='bg-white flex justify-center items-center p-2 w-1/2 rounded-md  cursor-pointer'>
+              <HiOutlineFilter className='text-red-700 ml-2 text-xl' />
+              <span className='text-stone-600 text-xs'>فیلتر : برند اپل</span>
             </div>
           </div>
         </nav>
         {/* ----------------------- Navigation in size of bigger than 720 -------------------------------*/}
         <nav className='hidden w-full md:flex h-20 justify-between items-center shadow-md bg-white'>
+          <div className='flex items-center justify-center px-2 mr-4 lg:mr-12 xl:mr-12'>
+            <span className='text-slate-700 text-lg lg:text-xl'>tize</span>
+            <span className='text-2xl lg:text-3xl text-red-500'>Digi</span>
+          </div>
           {/*-------------------- Search box -----------------------------*/}
           <div className='flex relative ml-4'>
-            <input type="text" className='w-[40vw] lg:w-[30vw] relative px-4 py-2 rounded-md shadow-md outline-none bg-slate-200 ml-4' placeholder='... جست و جوی نام محصول , نام برند و' />
-            <FiSearch className='text-3xl absolute top-1 right-2  text-slate-500 cursor-pointer' />
+            <FiSearch className='text-3xl absolute top-1 right-2  text-slate-500 cursor-pointer z-50' />
+            <input type="text" className='w-[40vw] lg:w-[30vw] relative pr-10 pl-4 py-2 rounded-md shadow-md outline-none bg-slate-200 ml-4 z-30' placeholder=' جست و جوی نام محصول , نام برند و ...' />
           </div>
           {/* ------------------- Nav items ----------------------------- */}
-          <ul className='w-[60vw] h-full flex flex-row-reverse justify-start items-center px-4 '>
-            <li className='mr-2 lg:mr-6 xl:mr-10 text-sm lg:text-lg xl:text-xl text-gray-500 hover:text-gray-700'>
-              <NavLink to={'/'}>
-                خانه
-              </NavLink>
-            </li>
-            <li className='mr-3 lg:mr-9 xl:mr-20 text-sm lg:text-lg xl:text-xl text-gray-500 hover:text-gray-700'>
-              <NavLink to={'/phone'}>
-                تلفن همراه
-              </NavLink>
-            </li>
-            <li className='mr-3 lg:mr-9 xl:mr-20 text-sm lg:text-lg xl:text-xl text-gray-500 hover:text-gray-700'>
-              <NavLink to={'/laptop'}>
-                لپ تاپ
-              </NavLink>
-            </li>
-            <li className='mr-3 lg:mr-9 xl:mr-20 text-sm lg:text-lg xl:text-xl text-gray-500 hover:text-gray-700'>
-              <NavLink to={'/watch'}>
-                ساعت هوشمند
-              </NavLink>
-            </li>
-          </ul>
-          <div className='flex items-center justify-center px-2 mr-4 lg:mr-12 xl:mr-12'>
-            <span className='text-2xl lg:text-3xl text-red-500'>Digi</span>
-            <span className='text-slate-700 text-lg lg:text-xl'>tize</span>
+          <div className='w-60 flex justify-between px-12'>
+          <div className='w-auto h-auto relative'>
+                <NavLink to={'/cart'}>
+                  <HiShoppingCart className='text-3xl text-red-600 mt-1 ml-4 cursor-pointer' />
+                </NavLink>
+                <span className='w-4 h-4 bg-red-600 text-white flex justify-center items-center rounded-full absolute bottom-5 left-8 text-[11px] ring-1 ring-white  '>2</span>
+              </div>
+          <div className='flex justify-center cursor-pointer bg-white items-center px-3 py-1 shadow-md rounded-md text-stone-500 mr-2'>
+            <NavLink to={'/login'}>ورود</NavLink>
+            <PiSignInBold className='text-xl ml-1 text-red-700' />
           </div>
+              </div>
         </nav>
       </header>
     </div>
