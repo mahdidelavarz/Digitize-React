@@ -1,15 +1,13 @@
 import { PiStarFill } from "react-icons/pi";
-import { NavLink } from "react-router-dom";
 import { BsBookmarkHeart } from "react-icons/bs";
 const Product = ({ product }) => {
-  const handleAddToCart = (e) => {
-    console.log(e.target)
-  }
+  // const handleAddToCart = (e) => {
+
+  // }
   return (
-    <div className="h-auto pb-4 bg-slate-200 rounded-xl mt-4 shadow-lg hover:shadow-slate-400 transition-all duration-300  flex flex-col cursor-pointer" onClick={handleAddToCart}>
+    <div className="h-auto pb-4 bg-slate-200 rounded-xl mt-4 shadow-lg hover:shadow-slate-400 transition-all duration-300  flex flex-col cursor-pointer">
       {/* like */}
       <BsBookmarkHeart className="text-3xl text-red-300  hover:text-red-500 transition-all duration-300" />
-      <NavLink to={'/product'}>
         {/* photo */}
         <div className='w-full h-auto bg-slate-200 flex justify-center px-4 '>
           <img className='object-cover' src={product.image} alt="phone" />
@@ -35,7 +33,6 @@ const Product = ({ product }) => {
         <div className='w-full px-4 mt-5 flex justify-end text-slate-600 text-sm'>
           <span>42,190,000 تومان </span>
         </div>
-      </NavLink >
     </div>
 
   );
