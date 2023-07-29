@@ -9,7 +9,7 @@ import SingleProduct from './pages/SingleProduct';
 
 
 const routes = [
-    { path: "product/:id", element: <SingleProduct />, id: 1 },
+    { path: "/watch/product/:id", element: <SingleProduct />, id: 1 },
     { path: "/cart", element: <Cart />, id: 2 },
     { path: "/login", element: <Login />, id: 3 },
     { path: "/laptop", element: <Laptop />, id: 4 },
