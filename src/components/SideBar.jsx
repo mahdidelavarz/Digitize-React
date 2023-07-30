@@ -5,7 +5,6 @@ import { IoWatchOutline } from "react-icons/io5";
 const SideBar = () => {
   return (
     <div className=" hidden md:block col-span-3 row-span-2 bg-white rounded-l-xl max-h-[100vh] overflow-scroll p-5">
-
       <ul className='w-full  flex flex-col  xl:px-4 '>
         <li className='mt-8 text-lg text-orange-500'>دسته بندی</li>
         <li className='w-full h-12  text-lg text-slate-600 lg:px-4 cursor-pointer flex items-center mt-6 hover:bg-gradient-to-l from-slate-200 rounded-md transition-all duration-300'>

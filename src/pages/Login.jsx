@@ -23,7 +23,7 @@ const Login = () => {
     console.log(formik.errors);
     return (
         <div  className="w-full h-[100vh] bg-gradient-to-r from-blue-300 to-purple-300 flex justify-center items-center">
-            <form className='w-[75vw] md:w-[60vw] lg:w-[34vw] h-[80vh] bg-gradient-to-r from-blue-200 to-purple-300 rounded-2xl py-4 px-10 flex flex-col items-center'>
+            <form className='w-full md:w-[60vw] lg:w-[34vw] h-full md:h-auto bg-gradient-to-r from-blue-200 to-purple-200 rounded-2xl py-12 px-10 flex flex-col items-center'>
                 <div className='w-full p-4 flex justify-center'>
                     <span className='font-extrabold text-2xl text-slate-600'> ثبت نام | ورود</span>
                 </div>

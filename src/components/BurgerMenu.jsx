@@ -7,7 +7,7 @@ import { IoWatchOutline } from "react-icons/io5";
 const BurgerMenu = ({ burgerActive, handleBurger }) => {
   return (
     <div className="bg-slate-300 ">
-      <div className={`w-[55vw] h-full bg-slate-300 transition-all duration-500 absolute top-0 right-0 rounded-md bg-opacity-100 ${burgerActive && 'translate-x-96 hidden'} `}>
+      <div className={`w-[70vw] h-full bg-slate-300 transition-all duration-500 absolute top-0 right-0 rounded-md bg-opacity-100 z-50 ${burgerActive && 'translate-x-96 hidden'} `}>
         {/* ---------------------- header of the menu ------------------------------- */}
         <div className="w-full h-20 bg-gradient-to-r from-slate-500 flex items-center justify-end rounded-t-md">
           <GiCrossMark onClick={handleBurger} className="text-[35px] text-white ml-6 cursor-pointer hover:text-red-300 transition-all duration-500" />
