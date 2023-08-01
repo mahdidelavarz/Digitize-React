@@ -1,6 +1,6 @@
-import { useParams } from "react-router-dom";
 import * as data from '../data'
 import Layout from "../Layout/Layout";
+import { useParams } from "react-router-dom";
 import { useState } from 'react';
 import { BsCheck, BsFillShareFill } from "react-icons/bs";
 import { AiOutlineHeart, AiOutlineSafety } from "react-icons/ai";
@@ -8,6 +8,7 @@ import { PiBellRinging } from "react-icons/pi";
 import { BiMessageDetail, BiStore } from "react-icons/bi";
 import { TfiMenuAlt } from "react-icons/tfi";
 import { FaTruckPlane } from "react-icons/fa6";
+import { CartActions } from "../context/CartProvider";
 
 
 
@@ -21,11 +22,16 @@ const SingleProduct = () => {
       return value;
     }, {});
 
-  const [selected, setSelected] = useState(0);
-  const handleSelect = (key) => {
-    setSelected(key);
-  }
+  const [selected, setSelected] = useState({ key: '', val: '' });
+  const dispatch = CartActions();
 
+  const handleSelect = (key, val) => {
+    setSelected({ key, val });
+  }
+  const handleAddToCart = () => {
+    console.log(product);
+    dispatch({ type: 'ADD_TO_CART', payload: { ...product, selectedColor: selected.val } })
+  }
   return (
     <Layout>
       <section className="w-full col-span-12 md:col-span-9 h-auto  relative grid grid-cols-12 md:grid-rows-12 bg-white p-2 rounded-lg items-center z-20">
@@ -47,13 +53,14 @@ const SingleProduct = () => {
         </div>
         {/* -----------------------------items details------------------------ */}
         <div className="col-span-12  md:col-span-5 lg:col-span-4  flex flex-col md:h-full md:justify-evenly">
-          <h1 className="text-xl mt-4 md:text-base text-slate-700">{product.name}</h1>
+          <h1 className=" text-xl mt-8 md:text-base text-slate-500">{product.name}</h1>
+          <h1 className="text-xl mt-2 md:text-base text-slate-500">{product.nameF}</h1>
           <div className="mt-8">
             <p className="text-slate-600">انتخاب رنگ :</p>
             <div className="w-full flex gap-1 mt-4 ">
               {Object.entries(product.colors).map(([key, val]) => {
-                return <div key={key} onClick={() => handleSelect(key)} className={`${selected === key ? 'ring-2 ring-orange-500  border-2 border-white' : ''} ${val === 'bg-white' && ' ring-black border-2 border-solid border-slate-500 rounded-full'} w-6 h-6 ${val} rounded-full cursor-pointer flex justify-center items-center ml-4`}>
-                  <BsCheck className={`${selected === key ? 'flex' : 'hidden'} ${val === 'bg-white' ? 'text-black ' : 'text-white'} text-xl`} />
+                return <div key={key} onClick={() => handleSelect(key, val)} className={`${selected.key === key ? 'ring-2 ring-orange-500  border-2 border-white' : ''} ${val === 'bg-white' && ' ring-black border-2 border-solid border-slate-500 rounded-full'} w-6 h-6 ${val} rounded-full cursor-pointer flex justify-center items-center ml-4`}>
+                  <BsCheck className={`${selected.key === key ? 'flex' : 'hidden'} ${val === 'bg-white' ? 'text-black ' : 'text-white'} text-xl`} />
                 </div>
               })}
             </div>
@@ -127,7 +134,7 @@ const SingleProduct = () => {
           </div>
           <div className="w-full flex md:flex-col flex-row-reverse justify-between md:justify-end items-end  mt-6">
             <span className="text-orange-700  md:w-auto  text-xl lg:text-base xl:text-lg">{product.price} تومان</span>
-            <button className=" w-1/2 md:w-full py-2 px-6 bg-orange-500 rounded-lg mt-2  text-white text-xs lg:text-base md:text-xl">افزودن به سبد خرید</button>
+            <button onClick={handleAddToCart} className=" w-1/2 md:w-full py-2 px-6 bg-orange-500 rounded-lg mt-2  text-white text-xs lg:text-base md:text-xl">افزودن به سبد خرید</button>
           </div>
         </div>
       </section>

@@ -1,8 +1,9 @@
 export const products = [
   {
     id: 1,
-    colors: { black: 'bg-black', blue: 'bg-blue-500', white: 'bg-white', red: 'bg-red-500' },
-    name: "ساعت هوشمند اپل واچ مدل Ultra 49 mm Alpine Loop",
+    colors: { مشکی: 'bg-black', آبی: 'bg-blue-500', سفید: 'bg-white', قرمز: 'bg-red-500' },
+    name: "ساعت هوشمند اپل واچ مدل :",
+    nameF:"Ultra 49 mm Alpine Loop",
     description: [
       { support: "گارانتی مادام العمر" },
       { support: "ارسال رایگان" },
@@ -17,7 +18,7 @@ export const products = [
   },
   {
     id: 2,
-    colors: ['bg-black', 'bg-blue-500', 'bg-white', 'bg-yellow-500'],
+    colors: { مشکی: 'bg-black', آبی: 'bg-blue-500', سفید: 'bg-white', قرمز: 'bg-red-500' },
     name: "ساعت هوشمند اپل مدل Series 8 Aluminum 45mm",
     description: [{ support: "گارانتی مادام العمر" }, { support: "اورجینال" }],
     logo: 'https://dkstatics-public.digikala.com/digikala-static/40103386d101974d18b40cee05e8d62823a657fa_1678547065.png',
@@ -29,7 +30,7 @@ export const products = [
   },
   {
     id: 3,
-    colors: ['bg-black', 'bg-stone-500', 'bg-white', 'bg-yellow-500'],
+    colors: { مشکی: 'bg-black', آبی: 'bg-blue-500', سفید: 'bg-white', قرمز: 'bg-red-500' },
     name: "ساعت هوشمند اپل واچ مدل Ultra 49 mm Ocean Band",
     description: [
       { support: "گارانتی مادام العمر" },
@@ -45,7 +46,7 @@ export const products = [
   },
   {
     id: 4,
-    colors: ['bg-black', 'bg-orange-500', 'bg-white', 'bg-red-500'],
+    colors: { مشکی: 'bg-black', آبی: 'bg-blue-500', سفید: 'bg-white', قرمز: 'bg-red-500' },
     name: "ساعت هوشمند اپل مدل Series 8 Aluminum 41mm",
     description: [
       { support: "گارانتی مادام العمر" },
@@ -61,7 +62,7 @@ export const products = [
   },
   {
     id: 5,
-    colors: ['bg-black', 'bg-blue-400', 'bg-white', 'bg-purple-500' , 'bg-pink-500'],
+    colors: { مشکی: 'bg-black', آبی: 'bg-blue-500', سفید: 'bg-white', قرمز: 'bg-red-500' },
     name: "ساعت هوشمند اپل مدل Watch Series 5",
     description: [
       { support: "گارانتی مادام العمر" },
@@ -77,7 +78,7 @@ export const products = [
   },
   {
     id: 6,
-    colors: ['bg-black', 'bg-blue-500', 'bg-white', 'bg-gray-500'],
+    colors: { مشکی: 'bg-black', آبی: 'bg-blue-500', سفید: 'bg-white', قرمز: 'bg-red-500' },
     name: "ساعت هوشمند اپل سری 7 مدل 45mm Aluminum Case with Nike Sport silicone Band",
     description: [
       { support: "گارانتی مادام العمر" },
@@ -93,7 +94,7 @@ export const products = [
   },
   {
     id: 7,
-    colors: ['bg-black', 'bg-emerald-500', 'bg-white', 'bg-purple-500'],
+    colors: { مشکی: 'bg-black', آبی: 'bg-blue-500', سفید: 'bg-white', قرمز: 'bg-red-500' },
     name: "ساعت هوشمند اپل مدل Series 8 Aluminum 41mm",
     description: [
       { support: "گارانتی مادام العمر" },

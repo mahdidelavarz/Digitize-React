@@ -1,9 +1,6 @@
 import { PiStarFill } from "react-icons/pi";
 import { BsBookmarkHeart } from "react-icons/bs";
 const Product = ({ product }) => {
-  // const handleAddToCart = (e) => {
-
-  // }
   return (
     <div className="h-auto pb-4 bg-slate-200 rounded-xl mt-4 shadow-lg hover:shadow-slate-400 transition-all duration-300  flex flex-col cursor-pointer">
       {/* like */}

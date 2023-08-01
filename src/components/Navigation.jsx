@@ -68,10 +68,10 @@ const Navigation = () => {
           {/* ------------------- Nav items ----------------------------- */}
           <div className='w-60 flex justify-between px-12'>
             <div className='w-auto h-auto relative'>
-              <NavLink to={'/cart'}>
-                <HiShoppingCart className='text-3xl text-red-600 mt-1 ml-4 cursor-pointer' />
+              <NavLink to={'/cart'} >
+                <HiShoppingCart className='text-3xl text-red-600 mt-1 ml-4 cursor-pointer' name='cart' />
               </NavLink>
-              <span className='w-4 h-4 bg-red-600 text-white flex justify-center items-center rounded-full absolute bottom-5 left-8 text-[11px] ring-1 ring-white  '>2</span>
+              <span className='w-4 h-4 bg-red-600 text-white flex justify-center items-center rounded-full absolute bottom-5 left-8 text-[11px] ring-1 ring-white cursor-pointer' name='cart'>0</span>
             </div>
             <div className='flex justify-center cursor-pointer bg-white items-center px-3 py-1 shadow-md rounded-md text-stone-500 mr-2'>
               <NavLink to={'/login'}>ورود</NavLink>
