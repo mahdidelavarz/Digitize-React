@@ -1,3 +1,4 @@
+
 import * as data from '../data'
 import Layout from "../Layout/Layout";
 import { useParams } from "react-router-dom";
@@ -8,10 +9,8 @@ import { PiBellRinging } from "react-icons/pi";
 import { BiMessageDetail, BiStore } from "react-icons/bi";
 import { TfiMenuAlt } from "react-icons/tfi";
 import { FaTruckPlane } from "react-icons/fa6";
-import { CartActions } from "../context/CartProvider";
-
-
-
+import { UseCart, CartActions } from "../context/CartProvider";
+import { toast } from 'react-toastify';
 
 const SingleProduct = () => {
   const { id } = useParams();
@@ -22,15 +21,20 @@ const SingleProduct = () => {
       return value;
     }, {});
 
-  const [selected, setSelected] = useState({ key: '', val: '' });
+  const [selected, setSelected] = useState({ key: 'مشکی', val: 'bg-black' });
+  const { cart } = UseCart();
   const dispatch = CartActions();
 
   const handleSelect = (key, val) => {
     setSelected({ key, val });
   }
   const handleAddToCart = () => {
-    console.log(product);
-    dispatch({ type: 'ADD_TO_CART', payload: { ...product, selectedColor: selected.val } })
+    toast.success(`به سبدخرید اضافه شد`)
+    dispatch({ type: 'ADD_TO_CART', payload: { ...product, selectedColor: selected } })
+  }
+  const checkInCart = (cart, product) => {
+    return cart.find((item) => item.id === product.id);
+
   }
   return (
     <Layout>
@@ -134,7 +138,7 @@ const SingleProduct = () => {
           </div>
           <div className="w-full flex md:flex-col flex-row-reverse justify-between md:justify-end items-end  mt-6">
             <span className="text-orange-700  md:w-auto  text-xl lg:text-base xl:text-lg">{product.price} تومان</span>
-            <button onClick={handleAddToCart} className=" w-1/2 md:w-full py-2 px-6 bg-orange-500 rounded-lg mt-2  text-white text-xs lg:text-base md:text-xl">افزودن به سبد خرید</button>
+            <button onClick={handleAddToCart} className=" w-1/2 md:w-full py-2 px-6 bg-orange-500 rounded-lg mt-2  text-white text-xs lg:text-base md:text-xl">{checkInCart(cart, product) ? 'در سبدخرید موجود است' : 'افزودن به سبدخرید'}</button>
           </div>
         </div>
       </section>

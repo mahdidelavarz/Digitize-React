@@ -28,7 +28,7 @@ const Product = ({ product }) => {
         </div>
         {/* price */}
         <div className='w-full px-4 mt-5 flex justify-end text-slate-600 text-sm'>
-          <span>42,190,000 تومان </span>
+          <span>{product.price} تومان</span>
         </div>
     </div>
 

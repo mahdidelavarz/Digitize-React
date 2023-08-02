@@ -1,6 +1,6 @@
 import Navigation from "../components/Navigation";
-import SortMenu from "../components/SortMenu";
 import SideBar from "../components/SideBar";
+import Footer from "../components/Footer"
 
 const Layout = ({ children }) => {
     return (
@@ -11,6 +11,7 @@ const Layout = ({ children }) => {
                 {/* <SortMenu /> */}
                 {children}
             </section>
+            <Footer/>
         </div>
     );
 }
