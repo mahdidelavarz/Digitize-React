@@ -3,14 +3,15 @@ import { NavLink } from 'react-router-dom';
 import { HiOutlineHome, HiOutlineDeviceMobile } from "react-icons/hi";
 import { MdOutlineLaptopMac } from "react-icons/md";
 import { IoWatchOutline } from "react-icons/io5";
+import { slide as Menu } from 'react-burger-menu'
+const BurgerMenu = () => {
 
-const BurgerMenu = ({ burgerActive, handleBurger }) => {
   return (
-    <div className="bg-slate-300 ">
-      <div className={`w-[70vw] h-full bg-slate-300 transition-all duration-500 absolute top-0 right-0 rounded-md bg-opacity-100 z-50 ${burgerActive && 'translate-x-96 hidden'} `}>
+    <Menu right className="w-[70vw] bg-slate-300 fixed top-0 right-0">
+      <div className={`h-full bg-slate-300 `}>
         {/* ---------------------- header of the menu ------------------------------- */}
         <div className="w-full h-20 bg-gradient-to-r from-slate-500 flex items-center justify-end rounded-t-md">
-          <GiCrossMark onClick={handleBurger} className="text-[35px] text-white ml-6 cursor-pointer hover:text-red-300 transition-all duration-500" />
+          <GiCrossMark className=" text-[35px] text-white ml-6 cursor-pointer hover:text-red-300 transition-all duration-700"/>
         </div>
         <div>
           {/* -------------------- items of the menu --------------------------------- */}
@@ -54,7 +55,7 @@ const BurgerMenu = ({ burgerActive, handleBurger }) => {
           </ul>
         </div>
       </div>
-    </div>
+    </Menu>
   );
 }
 

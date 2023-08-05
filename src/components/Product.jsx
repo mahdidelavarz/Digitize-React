@@ -1,10 +1,18 @@
 import { PiStarFill } from "react-icons/pi";
 import { BsBookmarkHeart } from "react-icons/bs";
+import { NavLink } from 'react-router-dom';
+import { toast } from 'react-toastify';
 const Product = ({ product }) => {
+  const handleLike = () => {
+    toast.success(`به علاقمندی ها اضافه شد`)
+  }
   return (
-    <div className="h-auto pb-4 bg-slate-200 rounded-xl mt-4 shadow-lg hover:shadow-slate-400 transition-all duration-300  flex flex-col cursor-pointer">
+    <div className="h-auto pb-4 bg-slate-200 rounded-xl mt-4 shadow-lg hover:shadow-slate-400 transition-all duration-300  flex flex-col cursor-pointer relative">
       {/* like */}
-      <BsBookmarkHeart className="text-3xl text-red-300  hover:text-red-500 transition-all duration-300" />
+        <button onClick={handleLike}>
+          <BsBookmarkHeart  className=" text-3xl text-red-400  hover:text-red-600 transition-all duration-300 absolute top-0 right-0" />
+        </button>
+      <NavLink to={product.to} key={product.id} product={product}>
         {/* photo */}
         <div className='w-full h-auto bg-slate-200 flex justify-center px-4 '>
           <img className='object-cover' src={product.image} alt="phone" />
@@ -30,6 +38,7 @@ const Product = ({ product }) => {
         <div className='w-full px-4 mt-5 flex justify-end text-slate-600 text-sm'>
           <span>{product.price} تومان</span>
         </div>
+      </NavLink>
     </div>
 
   );

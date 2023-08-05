@@ -11,7 +11,7 @@ export const products = [
     offPrice: 120,
     discount: 0,
     image: "https://my.uupload.ir/dl/yoO19j11",
-    to: "product/1"
+    to: "product/1",
   },
   {
     id: 2,

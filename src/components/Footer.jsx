@@ -1,5 +1,5 @@
 import { LuPhoneCall } from "react-icons/lu";
-import { HiOutlineMail , HiViewGrid } from "react-icons/hi";
+import { HiOutlineMail, HiViewGrid } from "react-icons/hi";
 import { BsGoogle, BsTwitter, BsTelegram, BsWhatsapp, BsGithub, BsFillBuildingsFill, BsFillHeartFill } from "react-icons/bs";
 import { FaFacebookF } from "react-icons/fa";
 import { CgProfile } from "react-icons/cg";
@@ -9,30 +9,30 @@ import { AiTwotoneHome } from "react-icons/ai";
 
 const Footer = () => {
     return (
-        <section>
+        <section className="relative col-span-12">
             {/* --------------------laptop size footer----------------------- */}
-            <div className="w-full h-auto p-6 mt-6 bg-white fixed bottom-0 lg:flex md:static items-center justify-end hidden ">
-                <div className='flex gap-x-20 ml-20'>
-                    <div className="flex flex-col gap-8">
-                        <BsGoogle className='w-8 h-8 text-2xl text-white bg-red-600 rounded-lg p-2 cursor-pointer' />
-                        <FaFacebookF className='w-8 h-8 text-2xl text-white bg-blue-800 rounded-lg p-2 cursor-pointer' />
-                    </div>
-                    <div className="flex flex-col gap-8">
-                        <BsTwitter className='w-8 h-8 text-2xl text-white bg-blue-600 rounded-lg p-2 cursor-pointer' />
-                        <BsWhatsapp className='w-8 h-8 text-2xl text-white bg-green-500 rounded-lg p-2 cursor-pointer' />
-                    </div>
-                    <div className="flex flex-col gap-8">
-                        <BsGithub className='w-8 h-8 text-2xl text-white bg-gray-600 rounded-lg p-2 cursor-pointer' />
-                        <BsTelegram className='w-8 h-8 text-2xl text-white bg-purple-700 rounded-lg p-2 cursor-pointer' />
+            <div className=" h-auto p-6 mt-6 bg-white md:flex md:static items-center justify-end lg:justify-between mb-20">
+                <div className=" flex w-full md:w-1/2 justify-between lg:justify-start mb-6 lg:mb-0 xl:w-2/3 md:px-8 xl:justify-between">
+                    <img src="https://my.uupload.ir/dl/v9pDZJQW" alt="rezi" className="w-20 h-28 object-cover " />
+                    <img src="https://my.uupload.ir/dl/n2vX7aWQ" alt="rezi" className="w-20 h-28 object-cover lg:mr-10" />
+                    <img src="https://my.uupload.ir/dl/dxVXDybE" alt="rezi" className="w-20  h-28 object-cover lg:mr-10" />
+                    <div className='hidden xl:flex gap-x-20 justify-end items-center'>
+                        <div className="flex-col gap-8 flex ">
+                            <BsGoogle className='w-8 h-8 text-2xl text-white bg-red-600 rounded-lg p-2 cursor-pointer' />
+                            <FaFacebookF className='w-8 h-8 text-2xl text-white bg-blue-800 rounded-lg p-2 cursor-pointer' />
+                        </div>
+                        <div className=" flex-col gap-8 flex">
+                            <BsTwitter className='w-8 h-8 text-2xl text-white bg-blue-600 rounded-lg p-2 cursor-pointer' />
+                            <BsWhatsapp className='w-8 h-8 text-2xl text-white bg-green-500 rounded-lg p-2 cursor-pointer' />
+                        </div>
+                        <div className=" flex-col gap-8 flex">
+                            <BsGithub className='w-8 h-8 text-2xl text-white bg-gray-600 rounded-lg p-2 cursor-pointer' />
+                            <BsTelegram className='w-8 h-8 text-2xl text-white bg-purple-700 rounded-lg p-2 cursor-pointer' />
+                        </div>
                     </div>
                 </div>
-                <div className=" flex ml-14">
-                    <img src="https://my.uupload.ir/dl/v9pDZJQW" alt="rezi" className="w-20 h-28 object-cover mx-10" />
-                    <img src="https://my.uupload.ir/dl/n2vX7aWQ" alt="rezi" className="w-20 h-28 object-cover mx-10" />
-                    <img src="https://my.uupload.ir/dl/dxVXDybE" alt="rezi" className="w-20  h-28 object-cover mx-10" />
-                </div>
-                <div className=" flex">
-                    <div className="w-full flex flex-col items-end gap-2">
+                <div className="flex items-center xl:items-end md:w-1/2 xl:w-1/3">
+                    <div className="w-full flex flex-col items-end gap-2 ">
                         <div className="flex items-center gap-2">
                             <span className="text-sm">04136691369</span>
                             <LuPhoneCall className="text-green-500 text-lg" />
@@ -46,13 +46,13 @@ const Footer = () => {
                             <BsFillBuildingsFill className="text-stone-500 text-lg" />
                         </div>
                     </div>
-                    <img src="https://my.uupload.ir/dl/6E4K6WBE" alt="location" className="w-60 object-cover mx-6 cursor-pointer rounded-lg" />
+                    <img src="https://my.uupload.ir/dl/6E4K6WBE" alt="location" className="w-40 object-cover mr-8 cursor-pointer rounded-lg" />
                 </div>
             </div>
             {/* -------------------------mobile size footer---------------------------- */}
 
-            <div className="w-full fixed bottom-0 py-3 px-6 bg-white rounded-t-3xl md:hidden text-slate-600 shadow-sdt">
-                <ul className="flex justify-between">
+            {/* <div className="w-full fixed bottom-0 p-6 bg-white rounded-t-3xl md:hidden text-slate-600 shadow-sdt">
+                <div className="flex justify-between">
                     <div className="flex gap-2 items-center cursor-pointer">
                         <AiTwotoneHome />
                         <p className="text-sm">خانه</p>
@@ -69,8 +69,8 @@ const Footer = () => {
                         <CgProfile />
                         <p className="text-sm">پروفایل</p>
                     </div>
-                </ul>
-            </div>
+                </div>
+            </div> */}
         </section>
     )
 }

@@ -12,3 +12,16 @@
     font-family: tanha;
     direction: rtl;
 }
+#react-burger-menu-btn{
+    width: 35px!important;
+    height: 35px!important;
+    right: 16px!important;
+    top: 30px!important;
+}
+.bm-overlay{
+    top: 0;
+    left: 0;
+}
+.bm-burger-bars{
+    display: none;
+}

@@ -11,7 +11,7 @@ const CartReducer = (state, action) => {
                     updatedItem.quantity++;
                     updatedCart[index] = updatedItem;
                 }
-                return { ...state, cart: updatedCart };
+                return { ...state, cart: updatedCart, total: state.total + action.payload.price };
             }
         case 'REMOVE_FROM_CART':
             {
@@ -24,7 +24,7 @@ const CartReducer = (state, action) => {
                 } else {
                     updatedItem.quantity--;
                     updatedCart[index] = updatedItem;
-                    return { ...state, cart: updatedCart };
+                    return { ...state, cart: updatedCart, total: state.total + action.payload.price };
                 }
             }
         default:

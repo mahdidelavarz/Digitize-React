@@ -12,6 +12,7 @@ import { FaTruckPlane } from "react-icons/fa6";
 import { UseCart, CartActions } from "../context/CartProvider";
 import { toast } from 'react-toastify';
 
+
 const SingleProduct = () => {
   const { id } = useParams();
   const product = data.products
@@ -36,13 +37,16 @@ const SingleProduct = () => {
     return cart.find((item) => item.id === product.id);
 
   }
+  const handleLike = () => {
+    toast.success(`به علاقمندی ها اضافه شد`)
+  }
   return (
     <Layout>
       <section className="w-full col-span-12 md:col-span-9 h-auto  relative grid grid-cols-12 md:grid-rows-12 bg-white p-2 rounded-lg items-center z-20">
         {/* ----------------------------items image--------------------------- */}
         <div className="h-full col-span-12 md:col-span-7 lg:col-span-4 relative flex items-center flex-col justify-evenly z-30">
           <div className="flex justify-end absolute right-[-15px] top-0 p-4 flex-col ">
-            <AiOutlineHeart className="ml-5 text-2xl text-indigo-900 hover:text-rose-500 cursor-pointer transition-all duration-300" />
+            <AiOutlineHeart onClick={handleLike} className="ml-5 text-2xl text-indigo-900 hover:text-rose-500 cursor-pointer transition-all duration-300" />
             <BsFillShareFill className="ml-5 mt-5 text-2xl text-indigo-900 hover:text-rose-500 cursor-pointer transition-all duration-300" />
             <PiBellRinging className="ml-5 mt-5 text-2xl text-indigo-900 hover:text-rose-500 cursor-pointer transition-all duration-300" />
             <BiMessageDetail className="ml-5 mt-5 text-2xl text-indigo-900 hover:text-rose-500 cursor-pointer transition-all duration-300" />
@@ -136,9 +140,9 @@ const SingleProduct = () => {
               <span className=" mr-2 lg:text-sm xl:text-base"> ارسال توسط : </span> <span className="text-slate-500 lg:text-sm xl:text-base"> انبار تهران</span>
             </div>
           </div>
-          <div className="w-full flex md:flex-col flex-row-reverse justify-between md:justify-end items-end  mt-6">
+          <div className="w-full flex md:flex-col flex-row-reverse justify-between md:justify-end md:items-end mt-6 fixed md:static bottom-0 bg-orange-100 md:bg-slate-100 px-8 py-4 md:p-0 rounded-t-[50px] md:rounded-none z-50 lg:z-30 items-center">
             <span className="text-orange-700  md:w-auto  text-xl lg:text-base xl:text-lg">{product.price} تومان</span>
-            <button onClick={handleAddToCart} className=" w-1/2 md:w-full py-2 px-6 bg-orange-500 rounded-lg mt-2  text-white text-xs lg:text-base md:text-xl">{checkInCart(cart, product) ? 'در سبدخرید موجود است' : 'افزودن به سبدخرید'}</button>
+            <button onClick={handleAddToCart} className=" w-1/2 md:w-full py-3 md:py-2  bg-orange-500 rounded-lg mt-2  text-white text-sm lg:text-base md:text-lg">{checkInCart(cart, product) ? 'در سبدخرید موجود است' : 'افزودن به سبدخرید'}</button>
           </div>
         </div>
       </section>

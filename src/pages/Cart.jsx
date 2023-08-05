@@ -6,11 +6,11 @@ import { IoExitOutline } from "react-icons/io5";
 import { NavLink } from "react-router-dom";
 import { FaClipboardCheck, FaRegTrashAlt } from "react-icons/fa";
 import { PiArticleNyTimes } from "react-icons/pi";
-
+import Navigation from "../components/Navigation";
 
 
 const Cart = () => {
-  const { cart } = UseCart();
+  const { cart , total } = UseCart();
   const dispatch = CartActions();
 
   const handleInc = (item) => {
@@ -20,8 +20,10 @@ const Cart = () => {
     dispatch({ type: "REMOVE_FROM_CART", payload: item })
   }
   return (
-    <Layout>
-      <main className="col-span-12 md:col-span-9 flex flex-col">
+    <div>
+      <Navigation />
+      <main className="col-span-12 md:col-span-9 flex flex-col md:p-2 min-h-[88vh] ">
+
         {/* ---------------------------phone size------------------------ */}
         <div className="flex justify-between md:hidden px-2 mb-2">
           <NavLink to={'../'}>
@@ -42,7 +44,7 @@ const Cart = () => {
         </div>
         <div className="w-full h-auto flex gap-2">
           {/* ---------------------------------items -------------------------- */}
-          <div className="w-full h-auto lg:max-h-[78vh] mt-2 bg-white p-1 rounded-lg grid grid-cols-12 lg:w-2/3 lg:overflow-scroll ">
+          <div className={`w-full h-auto lg:max-h-[78vh] mt-2 bg-white p-1 rounded-lg grid grid-cols-12 lg:w-2/3 lg:overflow-scroll mb-40 lg:mb-0 ${!cart.length && 'lg:w-full mb-0'}`} >
             {cart.length ? cart.map((item) => {
               console.log(item.price)
               // -------------------single item--------------------------------------
@@ -92,16 +94,19 @@ const Cart = () => {
                   <div className="mr-6 text-slate-500 text-xl">{item.price * item.quantity} تومان</div>
                 </div>
               </div>
-            }) : <p className="col-span-12">سبد خرید شما خالی است !</p>}
+            }) : <div className="col-span-12 h-auto"><img src="https://my.uupload.ir/dl/0j5DVzyj" className="w-full h-[75vh] object-fit"></img></div>}
           </div>
-          <div className="hidden lg:flex h-96 w-1/3 bg-white mt-8 border-2 border-solid rounded-lg flex-col justify-between p-4">
+
+          <div className={`fixed lg:static bottom-0  lg:flex h-auto lg:h-96 w-full lg:w-1/3 bg-white mt-8 border-2 border-solid rounded-lg flex-col justify-between p-4 ${!cart.length && 'hidden'}`} >
             <p>جمع قیمت سفارش ها :</p>
+            <div className="w-full p-4">
+              <span className="text-2xl text-orange-500">{total} تومان</span>
+            </div>
             <button className="w-full py-3 bg-orange-400 rounded-lg text-white">ثبت سفارش</button>
           </div>
         </div>
-
       </main>
-    </Layout>
+    </div>
   );
 }
 
