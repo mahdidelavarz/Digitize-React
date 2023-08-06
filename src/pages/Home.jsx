@@ -7,7 +7,7 @@ const Home = () => {
         <div>
             <Layout>
                 <SortMenu/>
-                <ProductList/>
+                {/* <ProductList/> */}
             </Layout>
         </div>
     );

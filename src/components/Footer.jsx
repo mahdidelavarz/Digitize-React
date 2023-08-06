@@ -11,7 +11,7 @@ const Footer = () => {
     return (
         <section className="relative col-span-12">
             {/* --------------------laptop size footer----------------------- */}
-            <div className=" h-auto p-6 mt-6 bg-white md:flex md:static items-center justify-end lg:justify-between mb-20">
+            <div className=" h-auto p-3  bg-white md:flex md:static items-center justify-end lg:justify-between mb-20 md:mb-0">
                 <div className=" flex w-full md:w-1/2 justify-between lg:justify-start mb-6 lg:mb-0 xl:w-2/3 md:px-8 xl:justify-between">
                     <img src="https://my.uupload.ir/dl/v9pDZJQW" alt="rezi" className="w-20 h-28 object-cover " />
                     <img src="https://my.uupload.ir/dl/n2vX7aWQ" alt="rezi" className="w-20 h-28 object-cover lg:mr-10" />
@@ -46,31 +46,12 @@ const Footer = () => {
                             <BsFillBuildingsFill className="text-stone-500 text-lg" />
                         </div>
                     </div>
-                    <img src="https://my.uupload.ir/dl/6E4K6WBE" alt="location" className="w-40 object-cover mr-8 cursor-pointer rounded-lg" />
+                    <img src="https://my.uupload.ir/dl/6E4K6WBE" alt="location" className="w-32 md:w-40 object-cover mr-3 md:mr-5 lg:mr-8 lg:w-44  cursor-pointer" />
                 </div>
             </div>
             {/* -------------------------mobile size footer---------------------------- */}
 
-            {/* <div className="w-full fixed bottom-0 p-6 bg-white rounded-t-3xl md:hidden text-slate-600 shadow-sdt">
-                <div className="flex justify-between">
-                    <div className="flex gap-2 items-center cursor-pointer">
-                        <AiTwotoneHome />
-                        <p className="text-sm">خانه</p>
-                    </div>
-                    <div className="flex gap-2 items-center cursor-pointer">
-                        <BsFillHeartFill />
-                        <p className="text-sm">علاقمندی ها</p>
-                    </div>
-                    <div className="flex gap-2 items-center cursor-pointer">
-                        <HiViewGrid />
-                        <p className="text-sm">دسته بندی</p>
-                    </div>
-                    <div className="flex gap-2 items-center cursor-pointer">
-                        <CgProfile />
-                        <p className="text-sm">پروفایل</p>
-                    </div>
-                </div>
-            </div> */}
+            
         </section>
     )
 }

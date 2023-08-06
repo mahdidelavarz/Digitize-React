@@ -10,7 +10,7 @@ import Navigation from "../components/Navigation";
 
 
 const Cart = () => {
-  const { cart , total } = UseCart();
+  const { cart, total } = UseCart();
   const dispatch = CartActions();
 
   const handleInc = (item) => {
