@@ -25,7 +25,7 @@ const Cart = () => {
       <main className="col-span-12 md:col-span-9 flex flex-col md:p-2 min-h-[88vh] ">
 
         {/* ---------------------------phone size------------------------ */}
-        <div className="flex justify-between md:hidden px-2 mb-2">
+        <div className="flex justify-between md:hidden px-6 mb-2">
           <NavLink to={'../'}>
             <AiOutlineRight className="text-3xl p-1 bg-white rounded-lg text-slate-600 cursor-pointer" />
           </NavLink>
@@ -94,7 +94,7 @@ const Cart = () => {
                   <div className="mr-6 text-slate-500 text-xl">{item.price * item.quantity} تومان</div>
                 </div>
               </div>
-            }) : <div className="col-span-12 h-auto"><img src="https://my.uupload.ir/dl/0j5DVzyj" className="w-full h-[75vh] object-fit"></img></div>}
+            }) : <div className="col-span-12 h-auto"><img src="https://my.uupload.ir/dl/0j5DVzyj" className="w-full h-[75vh] object-scale-down"></img></div>}
           </div>
 
           <div className={`fixed lg:static bottom-0  lg:flex h-auto lg:h-96 w-full lg:w-1/3 bg-white mt-8 border-2 border-solid rounded-lg flex-col justify-between p-4 ${!cart.length && 'hidden'}`} >

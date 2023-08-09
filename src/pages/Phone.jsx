@@ -6,7 +6,7 @@ const Phone = () => {
         <div>
             <Layout>
                 <SortMenu/>
-               <ProductList/>
+               <ProductList category='phone'/>
             </Layout>
         </div>
     );

@@ -1,3 +1,5 @@
+
+
 export const products = [
   {
     id: 1,
@@ -12,6 +14,7 @@ export const products = [
     discount: 0,
     image: "https://my.uupload.ir/dl/yoO19j11",
     to: "product/1",
+    grouping:"watch"
   },
   {
     id: 2,
@@ -23,8 +26,9 @@ export const products = [
     price: 18800000,
     offPrice: 100,
     discount: 8,
-    image: "https://my.uupload.ir/dl/yoO19j11",
-    to: "product/2"
+    image: "https://my.uupload.ir/dl/1LzNYWjb",
+    to: "product/2",
+    grouping:"watch"
   },
   {
     id: 3,
@@ -36,8 +40,9 @@ export const products = [
     price: 9500000,
     offPrice: 89,
     discount: 10,
-    image: "https://my.uupload.ir/dl/yoO19j11",
-    to: "product/3"
+    image: "https://my.uupload.ir/dl/JgyprBBB",
+    to: "product/3",
+    grouping:"watch"
   },
   {
     id: 4,
@@ -49,8 +54,9 @@ export const products = [
     price: 12680000,
     offPrice: 220,
     discount: 15,
-    image: "https://my.uupload.ir/dl/1LzNYWjb",
-    to: "product/4"
+    image: "https://my.uupload.ir/dl/wZ2gOLGw",
+    to: "product/4",
+    grouping:"watch"
   },
   {
     id: 5,
@@ -62,8 +68,9 @@ export const products = [
     price: 22500000,
     offPrice: 150,
     discount: 0,
-    image: "https://my.uupload.ir/dl/JgyprBBB",
-    to: "product/5"
+    image: "https://my.uupload.ir/dl/5L5jga4e",
+    to: "product/5",
+    grouping:"watch"
   },
   {
     id: 6,
@@ -75,8 +82,9 @@ export const products = [
     price: 9900000,
     offPrice: 200,
     discount: 13,
-    image: "https://my.uupload.ir/dl/1LzNYWjb",
-    to: "product/6"
+    image: "https://my.uupload.ir/dl/n2vYGpvD",
+    to: "product/6",
+    grouping:"laptop"
   },
   {
     id: 7,
@@ -88,7 +96,191 @@ export const products = [
     price: 19800000,
     offPrice: 200,
     discount: 13,
-    image: "https://my.uupload.ir/dl/1LzNYWjb",
-    to: "product/7"
+    image: "https://my.uupload.ir/dl/n2vYGpvD",
+    to: "product/7",
+    grouping:"laptop"
+  },
+  {
+    id: 8,
+    colors: { مشکی: 'bg-black', آبی: 'bg-blue-500', سفید: 'bg-white', قرمز: 'bg-red-500' },
+    name: "ساعت هوشمند اپل مدل Series 8 Aluminum 41mm",
+    garanti: 'گارانتی 18 ماهه',
+    existed: 'موجود در انبار دیجی تایز',
+    logo: 'https://dkstatics-public.digikala.com/digikala-static/40103386d101974d18b40cee05e8d62823a657fa_1678547065.png',
+    price: 19800000,
+    offPrice: 200,
+    discount: 13,
+    image: "https://my.uupload.ir/dl/n2vYGpvD",
+    to: "product/8",
+    grouping:"laptop"
+  },
+  {
+    id: 9,
+    colors: { مشکی: 'bg-black', آبی: 'bg-blue-500', سفید: 'bg-white', قرمز: 'bg-red-500' },
+    name: "ساعت هوشمند اپل مدل Series 8 Aluminum 41mm",
+    garanti: 'گارانتی 18 ماهه',
+    existed: 'موجود در انبار دیجی تایز',
+    logo: 'https://dkstatics-public.digikala.com/digikala-static/40103386d101974d18b40cee05e8d62823a657fa_1678547065.png',
+    price: 19800000,
+    offPrice: 200,
+    discount: 13,
+    image: "https://my.uupload.ir/dl/n2vYGpvD",
+    to: "product/9",
+    grouping:"laptop"
+  },
+  {
+    id: 10,
+    colors: { مشکی: 'bg-black', آبی: 'bg-blue-500', سفید: 'bg-white', قرمز: 'bg-red-500' },
+    name: "ساعت هوشمند اپل مدل Series 8 Aluminum 41mm",
+    garanti: 'گارانتی 18 ماهه',
+    existed: 'موجود در انبار دیجی تایز',
+    logo: 'https://dkstatics-public.digikala.com/digikala-static/40103386d101974d18b40cee05e8d62823a657fa_1678547065.png',
+    price: 19800000,
+    offPrice: 200,
+    discount: 13,
+    image: "https://my.uupload.ir/dl/n2vYGpvD",
+    to: "product/10",
+    grouping:"laptop"
+  },
+  {
+    id: 11,
+    colors: { مشکی: 'bg-black', آبی: 'bg-blue-500', سفید: 'bg-white', قرمز: 'bg-red-500' },
+    name: "ساعت هوشمند اپل مدل Series 8 Aluminum 41mm",
+    garanti: 'گارانتی 18 ماهه',
+    existed: 'موجود در انبار دیجی تایز',
+    logo: 'https://dkstatics-public.digikala.com/digikala-static/40103386d101974d18b40cee05e8d62823a657fa_1678547065.png',
+    price: 19800000,
+    offPrice: 200,
+    discount: 13,
+    image: "https://my.uupload.ir/dl/JgyxY2bk",
+    to: "product/11",
+    grouping:"phone"
+  },
+  {
+    id: 12,
+    colors: { مشکی: 'bg-black', آبی: 'bg-blue-500', سفید: 'bg-white', قرمز: 'bg-red-500' },
+    name: "ساعت هوشمند اپل مدل Series 8 Aluminum 41mm",
+    garanti: 'گارانتی 18 ماهه',
+    existed: 'موجود در انبار دیجی تایز',
+    logo: 'https://dkstatics-public.digikala.com/digikala-static/40103386d101974d18b40cee05e8d62823a657fa_1678547065.png',
+    price: 19800000,
+    offPrice: 200,
+    discount: 13,
+    image: "https://my.uupload.ir/dl/kjgY1v7e",
+    to: "product/12",
+    grouping:"phone"
+  },
+  {
+    id: 13,
+    colors: { مشکی: 'bg-black', آبی: 'bg-blue-500', سفید: 'bg-white', قرمز: 'bg-red-500' },
+    name: "ساعت هوشمند اپل مدل Series 8 Aluminum 41mm",
+    garanti: 'گارانتی 18 ماهه',
+    existed: 'موجود در انبار دیجی تایز',
+    logo: 'https://dkstatics-public.digikala.com/digikala-static/40103386d101974d18b40cee05e8d62823a657fa_1678547065.png',
+    price: 19800000,
+    offPrice: 200,
+    discount: 13,
+    image: "https://my.uupload.ir/dl/VX71EJ6p",
+    to: "product/13",
+    grouping:"phone"
+  },
+  {
+    id: 14,
+    colors: { مشکی: 'bg-black', آبی: 'bg-blue-500', سفید: 'bg-white', قرمز: 'bg-red-500' },
+    name: "ساعت هوشمند اپل مدل Series 8 Aluminum 41mm",
+    garanti: 'گارانتی 18 ماهه',
+    existed: 'موجود در انبار دیجی تایز',
+    logo: 'https://dkstatics-public.digikala.com/digikala-static/40103386d101974d18b40cee05e8d62823a657fa_1678547065.png',
+    price: 19800000,
+    offPrice: 200,
+    discount: 13,
+    image: "https://my.uupload.ir/dl/zbRgvXJB",
+    to: "product/14",
+    grouping:"phone"
+  },
+  {
+    id: 15,
+    colors: { مشکی: 'bg-black', آبی: 'bg-blue-500', سفید: 'bg-white', قرمز: 'bg-red-500' },
+    name: "ساعت هوشمند اپل مدل Series 8 Aluminum 41mm",
+    garanti: 'گارانتی 18 ماهه',
+    existed: 'موجود در انبار دیجی تایز',
+    logo: 'https://dkstatics-public.digikala.com/digikala-static/40103386d101974d18b40cee05e8d62823a657fa_1678547065.png',
+    price: 19800000,
+    offPrice: 200,
+    discount: 13,
+    image: "https://my.uupload.ir/dl/VX71EJjW",
+    to: "product/15",
+    grouping:"airPod"
+  },
+  {
+    id: 16,
+    colors: { مشکی: 'bg-black', آبی: 'bg-blue-500', سفید: 'bg-white', قرمز: 'bg-red-500' },
+    name: "ساعت هوشمند اپل مدل Series 8 Aluminum 41mm",
+    garanti: 'گارانتی 18 ماهه',
+    existed: 'موجود در انبار دیجی تایز',
+    logo: 'https://dkstatics-public.digikala.com/digikala-static/40103386d101974d18b40cee05e8d62823a657fa_1678547065.png',
+    price: 19800000,
+    offPrice: 200,
+    discount: 13,
+    image: "https://my.uupload.ir/dl/EOgen710",
+    to: "product/16",
+    grouping:"airPod"
+  },
+  {
+    id: 17,
+    colors: { مشکی: 'bg-black', آبی: 'bg-blue-500', سفید: 'bg-white', قرمز: 'bg-red-500' },
+    name: "ساعت هوشمند اپل مدل Series 8 Aluminum 41mm",
+    garanti: 'گارانتی 18 ماهه',
+    existed: 'موجود در انبار دیجی تایز',
+    logo: 'https://dkstatics-public.digikala.com/digikala-static/40103386d101974d18b40cee05e8d62823a657fa_1678547065.png',
+    price: 19800000,
+    offPrice: 200,
+    discount: 13,
+    image: "https://my.uupload.ir/dl/zbRgvLzA",
+    to: "product/17",
+    grouping:"airPod"
+  },
+  {
+    id: 18,
+    colors: { مشکی: 'bg-black', آبی: 'bg-blue-500', سفید: 'bg-white', قرمز: 'bg-red-500' },
+    name: "ساعت هوشمند اپل مدل Series 8 Aluminum 41mm",
+    garanti: 'گارانتی 18 ماهه',
+    existed: 'موجود در انبار دیجی تایز',
+    logo: 'https://dkstatics-public.digikala.com/digikala-static/40103386d101974d18b40cee05e8d62823a657fa_1678547065.png',
+    price: 19800000,
+    offPrice: 200,
+    discount: 13,
+    image: "https://my.uupload.ir/dl/1Lzj4kry",
+    to: "product/18",
+    grouping:"airPod"
+  },
+  {
+    id: 19,
+    colors: { مشکی: 'bg-black', آبی: 'bg-blue-500', سفید: 'bg-white', قرمز: 'bg-red-500' },
+    name: "ساعت هوشمند اپل مدل Series 8 Aluminum 41mm",
+    garanti: 'گارانتی 18 ماهه',
+    existed: 'موجود در انبار دیجی تایز',
+    logo: 'https://dkstatics-public.digikala.com/digikala-static/40103386d101974d18b40cee05e8d62823a657fa_1678547065.png',
+    price: 19800000,
+    offPrice: 200,
+    discount: 13,
+    image: "https://my.uupload.ir/dl/zbRgvLVb",
+    to: "product/19",
+    grouping:"airPod"
+  },
+  {
+    id: 20,
+    colors: { مشکی: 'bg-black', آبی: 'bg-blue-500', سفید: 'bg-white', قرمز: 'bg-red-500' },
+    name: "ساعت هوشمند اپل مدل Series 8 Aluminum 41mm",
+    garanti: 'گارانتی 18 ماهه',
+    existed: 'موجود در انبار دیجی تایز',
+    logo: 'https://dkstatics-public.digikala.com/digikala-static/40103386d101974d18b40cee05e8d62823a657fa_1678547065.png',
+    price: 19800000,
+    offPrice: 200,
+    discount: 13,
+    image: "https://my.uffupload.ir/dl/1Lzj4kBn",
+    to: "product/20",
+    grouping:"airPod"
   },
 ];
+

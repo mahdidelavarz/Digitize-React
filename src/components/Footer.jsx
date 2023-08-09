@@ -1,9 +1,7 @@
 import { LuPhoneCall } from "react-icons/lu";
-import { HiOutlineMail, HiViewGrid } from "react-icons/hi";
-import { BsGoogle, BsTwitter, BsTelegram, BsWhatsapp, BsGithub, BsFillBuildingsFill, BsFillHeartFill } from "react-icons/bs";
+import { HiOutlineMail} from "react-icons/hi";
+import { BsGoogle, BsTwitter, BsTelegram, BsWhatsapp, BsGithub, BsFillBuildingsFill} from "react-icons/bs";
 import { FaFacebookF } from "react-icons/fa";
-import { CgProfile } from "react-icons/cg";
-import { AiTwotoneHome } from "react-icons/ai";
 
 
 

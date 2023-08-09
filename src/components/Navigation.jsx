@@ -18,7 +18,7 @@ const Navigation = () => {
             <div className='flex '>
               <RxHamburgerMenu className="bg-white w-9 h-9 lg:h-11 lg:w-11 text-stone-500 rounded-md p-1 cursor-pointer outline-none" />
               <div className='flex justify-center cursor-pointer bg-white items-center px-3 py-1 shadow-md rounded-md text-stone-500 mr-2'>
-                <NavLink to={'/login'} className='flex items-center'>ورود  
+                <NavLink to={'/login'} className='flex items-center'>ورود
                   <PiSignInBold className='text-xl ml-1 text-red-700' />
                 </NavLink>
               </div>
@@ -31,13 +31,13 @@ const Navigation = () => {
               <div className='w-auto h-auto relative'>
                 <NavLink to={'/cart'}>
                   <HiShoppingCart className='text-3xl text-red-600 mt-1 ml-4 cursor-pointer' />
-                <span className='w-4 h-4 bg-red-600 text-white flex justify-center items-center rounded-full absolute bottom-5 left-8 text-[11px] ring-1 ring-white'>{cart.length}</span>
+                  <span className='w-4 h-4 bg-red-600 text-white flex justify-center items-center rounded-full absolute bottom-5 left-8 text-[11px] ring-1 ring-white'>{cart.length}</span>
                 </NavLink>
               </div>
               <BiSearchAlt className="bg-white w-9 h-9 lg:h-11 lg:w-11 text-stone-500 rounded-md p-1 cursor-pointer outline-none" />
             </div>
           </div>
-          <BurgerMenu />
+          <BurgerMenu/>
           {/* --------------------- Filter - sort mobile div -------------------------------------------*/}
           <div className='w-full h-16 flex justify-evenly items-center'>
             <div className='bg-white flex justify-center items-center p-2 w-1/2 rounded-md ml-2 cursor-pointer'>
@@ -68,7 +68,7 @@ const Navigation = () => {
             <div className='w-auto h-auto relative'>
               <NavLink to={'/cart'} >
                 <HiShoppingCart className='text-3xl text-red-600 mt-1 ml-4 cursor-pointer' name='cart' />
-              <span className='w-4 h-4 bg-red-600 text-white flex justify-center items-center rounded-full absolute bottom-5 left-8 text-[11px] ring-1 ring-white cursor-pointer' name='cart'>{cart.length}</span>
+                <span className='w-4 h-4 bg-red-600 text-white flex justify-center items-center rounded-full absolute bottom-5 left-8 text-[11px] ring-1 ring-white cursor-pointer' name='cart'>{cart.length}</span>
               </NavLink>
             </div>
             <div className='flex cursor-pointer bg-white  shadow-md rounded-md text-stone-500 mr-2'>

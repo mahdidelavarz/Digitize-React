@@ -3,8 +3,10 @@ import { BsBookmarkHeart } from "react-icons/bs";
 import { NavLink } from 'react-router-dom';
 import { toast } from 'react-toastify';
 const Product = ({ product }) => {
+  
   const handleLike = () => {
     toast.success(`به علاقمندی ها اضافه شد`)
+    console.log(product)
   }
   return (
     <div className="h-auto pb-4 bg-slate-200 rounded-xl mt-4 shadow-lg hover:shadow-slate-400 transition-all duration-300  flex flex-col cursor-pointer relative">
@@ -14,7 +16,7 @@ const Product = ({ product }) => {
         </button>
       <NavLink to={product.to} key={product.id} product={product}>
         {/* photo */}
-        <div className='w-full h-auto bg-slate-200 flex justify-center px-4 '>
+        <div className='w-full h-[26vh] bg-slate-200 flex justify-center px-4 '>
           <img className='object-cover' src={product.image} alt="phone" />
         </div>
         {/* free transport */}

@@ -15,14 +15,14 @@ import 'react-toastify/dist/ReactToastify.css';
 
 
 const SingleProduct = () => {
-  const { id } = useParams();
+  const {id} = useParams();
   const product = data.products
     .filter((p) => parseInt(p.id) === parseInt(id))
     .reduce((key, value) => {
       key[value] = key;
       return value;
     }, {});
-
+    console.log(product);
   const [selected, setSelected] = useState({ key: 'مشکی', val: 'bg-black' });
   const { cart } = UseCart();
   const dispatch = CartActions();
@@ -48,7 +48,7 @@ const SingleProduct = () => {
         <div className="h-full col-span-12 md:col-span-7 lg:col-span-4 relative flex items-center flex-col justify-evenly z-30">
           <div className="flex justify-end absolute right-[-15px] top-0 p-4 flex-col ">
             <AiOutlineHeart onClick={handleLike} className="ml-5 text-2xl text-indigo-900 hover:text-rose-500 cursor-pointer transition-all duration-300" />
-            <ToastContainer className='text-stone-400'/>
+            {/* <ToastContainer className='text-stone-800 '/> */}
             <BsFillShareFill className="ml-5 mt-5 text-2xl text-indigo-900 hover:text-rose-500 cursor-pointer transition-all duration-300" />
             <PiBellRinging className="ml-5 mt-5 text-2xl text-indigo-900 hover:text-rose-500 cursor-pointer transition-all duration-300" />
             <BiMessageDetail className="ml-5 mt-5 text-2xl text-indigo-900 hover:text-rose-500 cursor-pointer transition-all duration-300" />

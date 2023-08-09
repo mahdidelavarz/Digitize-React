@@ -1,16 +1,15 @@
 import Layout from "../Layout/Layout";
-import ProductList from "../components/ProductList";
+// import ProductList from "../components/ProductList";
 import SortMenu from "../components/SortMenu";
+
 
 const Home = () => {
     return (
         <div>
             <Layout>
-                <SortMenu/>
-                {/* <ProductList/> */}
+                <SortMenu />
             </Layout>
         </div>
     );
 }
-
-export default Home;
+    export default Home;

@@ -6,7 +6,7 @@ const Laptop = () => {
         <div>
             <Layout>
                 <SortMenu/>
-               <ProductList/>
+               <ProductList category='laptop'/>
             </Layout>
         </div>
     );

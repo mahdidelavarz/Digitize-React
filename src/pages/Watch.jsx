@@ -6,7 +6,7 @@ const Watch = () => {
         <div>
             <Layout>
                 <SortMenu/>
-               <ProductList/>
+               <ProductList category='watch'/>
             </Layout>
         </div>
     );
