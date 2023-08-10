@@ -30,7 +30,7 @@ const SingleProduct = () => {
   const handleSelect = (key, val) => {
     setSelected({ key, val });
   }
-  const handleAddToCart = () => {
+  const handleAddToCart = (e) => {
     toast.success(`به سبدخرید اضافه شد`)
     dispatch({ type: 'ADD_TO_CART', payload: { ...product, selectedColor: selected } })
   }
@@ -143,8 +143,9 @@ const SingleProduct = () => {
             </div>
           </div>
           <div className="w-full flex md:flex-col flex-row-reverse justify-between md:justify-end md:items-end mt-6 fixed md:static bottom-0 bg-orange-100 md:bg-slate-100 px-8 py-4 md:p-0 rounded-t-2xl md:rounded-none z-50 lg:z-30 items-center">
+
             <span className="text-orange-700  md:w-auto  text-xl lg:text-base xl:text-lg">{product.price} تومان</span>
-            <button onClick={handleAddToCart} className=" w-1/2 md:w-full py-3 md:py-2  bg-orange-500 rounded-md mt-2  text-white text-sm lg:text-base md:text-lg">{checkInCart(cart, product) ? 'برو به سبد خرید' : 'افزودن به سبدخرید'}</button>
+            <button onClick={handleAddToCart} className=" w-1/2 md:w-full py-3 md:py-2  bg-orange-500 rounded-md mt-2  text-white text-sm lg:text-base md:text-lg">{checkInCart(cart, product) ? 'در سبد خرید موجود است': 'افزودن به سبدخرید'}</button>
           </div>
         </div>
       </section>

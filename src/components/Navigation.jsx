@@ -5,7 +5,6 @@ import { HiOutlineFilter, HiShoppingCart } from "react-icons/hi";
 import { PiListMagnifyingGlassLight, PiSignInBold } from "react-icons/pi";
 import { FiSearch } from "react-icons/fi";
 import BurgerMenu from './BurgerMenu';
-import { useState } from 'react';
 import { UseCart } from "../context/CartProvider";
 const Navigation = () => {
   const { cart } = UseCart();

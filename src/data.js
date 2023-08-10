@@ -10,11 +10,11 @@ export const products = [
     existed: 'موجود در انبار دیجی تایز',
     logo: 'https://dkstatics-public.digikala.com/digikala-static/40103386d101974d18b40cee05e8d62823a657fa_1678547065.png',
     price: 1200000,
-    offPrice: 120,
-    discount: 0,
+    offPrice: 2550000,
+    discount: '%10',
     image: "https://my.uupload.ir/dl/yoO19j11",
     to: "product/1",
-    grouping:"watch"
+    grouping: "watch"
   },
   {
     id: 2,
@@ -24,11 +24,11 @@ export const products = [
     existed: 'موجود در انبار دیجی تایز',
     logo: 'https://dkstatics-public.digikala.com/digikala-static/40103386d101974d18b40cee05e8d62823a657fa_1678547065.png',
     price: 18800000,
-    offPrice: 100,
-    discount: 8,
+    offPrice: 2550000,
+    discount: '%10',
     image: "https://my.uupload.ir/dl/1LzNYWjb",
     to: "product/2",
-    grouping:"watch"
+    grouping: "watch"
   },
   {
     id: 3,
@@ -38,11 +38,11 @@ export const products = [
     existed: 'موجود در انبار دیجی تایز',
     logo: 'https://dkstatics-public.digikala.com/digikala-static/40103386d101974d18b40cee05e8d62823a657fa_1678547065.png',
     price: 9500000,
-    offPrice: 89,
-    discount: 10,
+    offPrice: 2550000,
+    discount: '%10',
     image: "https://my.uupload.ir/dl/JgyprBBB",
     to: "product/3",
-    grouping:"watch"
+    grouping: "watch"
   },
   {
     id: 4,
@@ -52,11 +52,11 @@ export const products = [
     existed: 'موجود در انبار دیجی تایز',
     logo: 'https://dkstatics-public.digikala.com/digikala-static/40103386d101974d18b40cee05e8d62823a657fa_1678547065.png',
     price: 12680000,
-    offPrice: 220,
-    discount: 15,
+    offPrice: 2550000,
+    discount: '%13',
     image: "https://my.uupload.ir/dl/wZ2gOLGw",
     to: "product/4",
-    grouping:"watch"
+    grouping: "watch"
   },
   {
     id: 5,
@@ -66,11 +66,11 @@ export const products = [
     existed: 'موجود در انبار دیجی تایز',
     logo: 'https://dkstatics-public.digikala.com/digikala-static/40103386d101974d18b40cee05e8d62823a657fa_1678547065.png',
     price: 22500000,
-    offPrice: 150,
-    discount: 0,
+    offPrice: 2550000,
+    discount: '%10',
     image: "https://my.uupload.ir/dl/5L5jga4e",
     to: "product/5",
-    grouping:"watch"
+    grouping: "watch"
   },
   {
     id: 6,
@@ -81,11 +81,9 @@ export const products = [
     existed: 'موجود در انبار دیجی تایز',
     logo: 'https://dkstatics-public.digikala.com/digikala-static/40103386d101974d18b40cee05e8d62823a657fa_1678547065.png',
     price: 1200000,
-    offPrice: 120,
-    discount: 0,
     image: "https://my.uupload.ir/dl/yoO19j11",
     to: "product/6",
-    grouping:"watch"
+    grouping: "watch"
   },
   {
     id: 7,
@@ -95,11 +93,9 @@ export const products = [
     existed: 'موجود در انبار دیجی تایز',
     logo: 'https://dkstatics-public.digikala.com/digikala-static/40103386d101974d18b40cee05e8d62823a657fa_1678547065.png',
     price: 18800000,
-    offPrice: 100,
-    discount: 8,
     image: "https://my.uupload.ir/dl/1LzNYWjb",
     to: "product/7",
-    grouping:"watch"
+    grouping: "watch"
   },
   {
     id: 8,
@@ -109,11 +105,9 @@ export const products = [
     existed: 'موجود در انبار دیجی تایز',
     logo: 'https://dkstatics-public.digikala.com/digikala-static/40103386d101974d18b40cee05e8d62823a657fa_1678547065.png',
     price: 9500000,
-    offPrice: 89,
-    discount: 10,
     image: "https://my.uupload.ir/dl/JgyprBBB",
     to: "product/8",
-    grouping:"watch"
+    grouping: "watch"
   },
   {
     id: 9,
@@ -123,11 +117,9 @@ export const products = [
     existed: 'موجود در انبار دیجی تایز',
     logo: 'https://dkstatics-public.digikala.com/digikala-static/40103386d101974d18b40cee05e8d62823a657fa_1678547065.png',
     price: 12680000,
-    offPrice: 220,
-    discount: 15,
     image: "https://my.uupload.ir/dl/wZ2gOLGw",
     to: "product/9",
-    grouping:"watch"
+    grouping: "watch"
   },
   {
     id: 10,
@@ -137,11 +129,9 @@ export const products = [
     existed: 'موجود در انبار دیجی تایز',
     logo: 'https://dkstatics-public.digikala.com/digikala-static/40103386d101974d18b40cee05e8d62823a657fa_1678547065.png',
     price: 22500000,
-    offPrice: 150,
-    discount: 0,
     image: "https://my.uupload.ir/dl/5L5jga4e",
     to: "product/10",
-    grouping:"watch"
+    grouping: "watch"
   },
   {
     id: 11,
@@ -151,11 +141,9 @@ export const products = [
     existed: 'موجود در انبار دیجی تایز',
     logo: 'https://dkstatics-public.digikala.com/digikala-static/40103386d101974d18b40cee05e8d62823a657fa_1678547065.png',
     price: 9900000,
-    offPrice: 200,
-    discount: 13,
     image: "https://my.uupload.ir/dl/n2vYGpvD",
     to: "product/11",
-    grouping:"laptop"
+    grouping: "laptop"
   },
   {
     id: 12,
@@ -165,11 +153,9 @@ export const products = [
     existed: 'موجود در انبار دیجی تایز',
     logo: 'https://dkstatics-public.digikala.com/digikala-static/40103386d101974d18b40cee05e8d62823a657fa_1678547065.png',
     price: 19800000,
-    offPrice: 200,
-    discount: 13,
     image: "https://my.uupload.ir/dl/n2vYGpvD",
     to: "product/12",
-    grouping:"laptop"
+    grouping: "laptop"
   },
   {
     id: 13,
@@ -179,11 +165,9 @@ export const products = [
     existed: 'موجود در انبار دیجی تایز',
     logo: 'https://dkstatics-public.digikala.com/digikala-static/40103386d101974d18b40cee05e8d62823a657fa_1678547065.png',
     price: 19800000,
-    offPrice: 200,
-    discount: 13,
     image: "https://my.uupload.ir/dl/n2vYGpvD",
     to: "product/13",
-    grouping:"laptop"
+    grouping: "laptop"
   },
   {
     id: 14,
@@ -193,11 +177,9 @@ export const products = [
     existed: 'موجود در انبار دیجی تایز',
     logo: 'https://dkstatics-public.digikala.com/digikala-static/40103386d101974d18b40cee05e8d62823a657fa_1678547065.png',
     price: 19800000,
-    offPrice: 200,
-    discount: 13,
     image: "https://my.uupload.ir/dl/n2vYGpvD",
     to: "product/14",
-    grouping:"laptop"
+    grouping: "laptop"
   },
   {
     id: 15,
@@ -207,11 +189,9 @@ export const products = [
     existed: 'موجود در انبار دیجی تایز',
     logo: 'https://dkstatics-public.digikala.com/digikala-static/40103386d101974d18b40cee05e8d62823a657fa_1678547065.png',
     price: 19800000,
-    offPrice: 200,
-    discount: 13,
     image: "https://my.uupload.ir/dl/n2vYGpvD",
     to: "product/15",
-    grouping:"laptop"
+    grouping: "laptop"
   },
   {
     id: 16,
@@ -221,11 +201,9 @@ export const products = [
     existed: 'موجود در انبار دیجی تایز',
     logo: 'https://dkstatics-public.digikala.com/digikala-static/40103386d101974d18b40cee05e8d62823a657fa_1678547065.png',
     price: 9900000,
-    offPrice: 200,
-    discount: 13,
     image: "https://my.uupload.ir/dl/n2vYGpvD",
     to: "product/16",
-    grouping:"laptop"
+    grouping: "laptop"
   },
   {
     id: 17,
@@ -235,11 +213,9 @@ export const products = [
     existed: 'موجود در انبار دیجی تایز',
     logo: 'https://dkstatics-public.digikala.com/digikala-static/40103386d101974d18b40cee05e8d62823a657fa_1678547065.png',
     price: 19800000,
-    offPrice: 200,
-    discount: 13,
     image: "https://my.uupload.ir/dl/n2vYGpvD",
     to: "product/17",
-    grouping:"laptop"
+    grouping: "laptop"
   },
   {
     id: 18,
@@ -249,11 +225,9 @@ export const products = [
     existed: 'موجود در انبار دیجی تایز',
     logo: 'https://dkstatics-public.digikala.com/digikala-static/40103386d101974d18b40cee05e8d62823a657fa_1678547065.png',
     price: 19800000,
-    offPrice: 200,
-    discount: 13,
     image: "https://my.uupload.ir/dl/n2vYGpvD",
     to: "product/18",
-    grouping:"laptop"
+    grouping: "laptop"
   },
   {
     id: 19,
@@ -263,11 +237,9 @@ export const products = [
     existed: 'موجود در انبار دیجی تایز',
     logo: 'https://dkstatics-public.digikala.com/digikala-static/40103386d101974d18b40cee05e8d62823a657fa_1678547065.png',
     price: 19800000,
-    offPrice: 200,
-    discount: 13,
     image: "https://my.uupload.ir/dl/n2vYGpvD",
     to: "product/19",
-    grouping:"laptop"
+    grouping: "laptop"
   },
   {
     id: 20,
@@ -277,11 +249,11 @@ export const products = [
     existed: 'موجود در انبار دیجی تایز',
     logo: 'https://dkstatics-public.digikala.com/digikala-static/40103386d101974d18b40cee05e8d62823a657fa_1678547065.png',
     price: 19800000,
-    offPrice: 200,
-    discount: 13,
+    offPrice: 2550000,
+    discount: '%13',
     image: "https://my.uupload.ir/dl/n2vYGpvD",
     to: "product/20",
-    grouping:"laptop"
+    grouping: "laptop"
   },
   {
     id: 21,
@@ -291,11 +263,9 @@ export const products = [
     existed: 'موجود در انبار دیجی تایز',
     logo: 'https://dkstatics-public.digikala.com/digikala-static/40103386d101974d18b40cee05e8d62823a657fa_1678547065.png',
     price: 9900000,
-    offPrice: 200,
-    discount: 13,
     image: "https://my.uupload.ir/dl/n2vYGpvD",
     to: "product/21",
-    grouping:"laptop"
+    grouping: "laptop"
   },
   {
     id: 22,
@@ -305,11 +275,9 @@ export const products = [
     existed: 'موجود در انبار دیجی تایز',
     logo: 'https://dkstatics-public.digikala.com/digikala-static/40103386d101974d18b40cee05e8d62823a657fa_1678547065.png',
     price: 19800000,
-    offPrice: 200,
-    discount: 13,
     image: "https://my.uupload.ir/dl/n2vYGpvD",
     to: "product/22",
-    grouping:"laptop"
+    grouping: "laptop"
   },
   {
     id: 23,
@@ -319,11 +287,9 @@ export const products = [
     existed: 'موجود در انبار دیجی تایز',
     logo: 'https://dkstatics-public.digikala.com/digikala-static/40103386d101974d18b40cee05e8d62823a657fa_1678547065.png',
     price: 19800000,
-    offPrice: 200,
-    discount: 13,
     image: "https://my.uupload.ir/dl/n2vYGpvD",
     to: "product/23",
-    grouping:"laptop"
+    grouping: "laptop"
   },
   {
     id: 24,
@@ -333,11 +299,11 @@ export const products = [
     existed: 'موجود در انبار دیجی تایز',
     logo: 'https://dkstatics-public.digikala.com/digikala-static/40103386d101974d18b40cee05e8d62823a657fa_1678547065.png',
     price: 19800000,
-    offPrice: 200,
-    discount: 13,
+    offPrice: 2550000,
+    discount: '%13',
     image: "https://my.uupload.ir/dl/n2vYGpvD",
     to: "product/24",
-    grouping:"laptop"
+    grouping: "laptop"
   },
   {
     id: 25,
@@ -347,11 +313,9 @@ export const products = [
     existed: 'موجود در انبار دیجی تایز',
     logo: 'https://dkstatics-public.digikala.com/digikala-static/40103386d101974d18b40cee05e8d62823a657fa_1678547065.png',
     price: 19800000,
-    offPrice: 200,
-    discount: 13,
     image: "https://my.uupload.ir/dl/n2vYGpvD",
     to: "product/25",
-    grouping:"laptop"
+    grouping: "laptop"
   },
   {
     id: 26,
@@ -361,11 +325,11 @@ export const products = [
     existed: 'موجود در انبار دیجی تایز',
     logo: 'https://dkstatics-public.digikala.com/digikala-static/40103386d101974d18b40cee05e8d62823a657fa_1678547065.png',
     price: 19800000,
-    offPrice: 200,
-    discount: 13,
+    offPrice: 2550000,
+    discount: '%13',
     image: "https://my.uupload.ir/dl/JgyxY2bk",
     to: "product/26",
-    grouping:"phone"
+    grouping: "phone"
   },
   {
     id: 27,
@@ -375,11 +339,11 @@ export const products = [
     existed: 'موجود در انبار دیجی تایز',
     logo: 'https://dkstatics-public.digikala.com/digikala-static/40103386d101974d18b40cee05e8d62823a657fa_1678547065.png',
     price: 19800000,
-    offPrice: 200,
-    discount: 13,
+    offPrice: 2550000,
+    discount: '%13',
     image: "https://my.uupload.ir/dl/kjgY1v7e",
     to: "product/27",
-    grouping:"phone"
+    grouping: "phone"
   },
   {
     id: 28,
@@ -389,11 +353,9 @@ export const products = [
     existed: 'موجود در انبار دیجی تایز',
     logo: 'https://dkstatics-public.digikala.com/digikala-static/40103386d101974d18b40cee05e8d62823a657fa_1678547065.png',
     price: 19800000,
-    offPrice: 200,
-    discount: 13,
     image: "https://my.uupload.ir/dl/VX71EJ6p",
     to: "product/28",
-    grouping:"phone"
+    grouping: "phone"
   },
   {
     id: 29,
@@ -403,11 +365,11 @@ export const products = [
     existed: 'موجود در انبار دیجی تایز',
     logo: 'https://dkstatics-public.digikala.com/digikala-static/40103386d101974d18b40cee05e8d62823a657fa_1678547065.png',
     price: 19800000,
-    offPrice: 200,
-    discount: 13,
+    offPrice: 2550000,
+    discount: '%10',
     image: "https://my.uupload.ir/dl/zbRgvXJB",
     to: "product/29",
-    grouping:"phone"
+    grouping: "phone"
   },
   {
     id: 30,
@@ -417,11 +379,11 @@ export const products = [
     existed: 'موجود در انبار دیجی تایز',
     logo: 'https://dkstatics-public.digikala.com/digikala-static/40103386d101974d18b40cee05e8d62823a657fa_1678547065.png',
     price: 19800000,
-    offPrice: 200,
-    discount: 13,
+    offPrice: 2550000,
+    discount: '%13',
     image: "https://my.uupload.ir/dl/JgyxY2bk",
     to: "product/30",
-    grouping:"phone"
+    grouping: "phone"
   },
   {
     id: 31,
@@ -431,11 +393,9 @@ export const products = [
     existed: 'موجود در انبار دیجی تایز',
     logo: 'https://dkstatics-public.digikala.com/digikala-static/40103386d101974d18b40cee05e8d62823a657fa_1678547065.png',
     price: 19800000,
-    offPrice: 200,
-    discount: 13,
     image: "https://my.uupload.ir/dl/kjgY1v7e",
     to: "product/31",
-    grouping:"phone"
+    grouping: "phone"
   },
   {
     id: 32,
@@ -445,11 +405,9 @@ export const products = [
     existed: 'موجود در انبار دیجی تایز',
     logo: 'https://dkstatics-public.digikala.com/digikala-static/40103386d101974d18b40cee05e8d62823a657fa_1678547065.png',
     price: 19800000,
-    offPrice: 200,
-    discount: 13,
     image: "https://my.uupload.ir/dl/VX71EJ6p",
     to: "product/32",
-    grouping:"phone"
+    grouping: "phone"
   },
   {
     id: 33,
@@ -459,11 +417,9 @@ export const products = [
     existed: 'موجود در انبار دیجی تایز',
     logo: 'https://dkstatics-public.digikala.com/digikala-static/40103386d101974d18b40cee05e8d62823a657fa_1678547065.png',
     price: 19800000,
-    offPrice: 200,
-    discount: 13,
     image: "https://my.uupload.ir/dl/zbRgvXJB",
     to: "product/33",
-    grouping:"phone"
+    grouping: "phone"
   },
   {
     id: 34,
@@ -473,11 +429,9 @@ export const products = [
     existed: 'موجود در انبار دیجی تایز',
     logo: 'https://dkstatics-public.digikala.com/digikala-static/40103386d101974d18b40cee05e8d62823a657fa_1678547065.png',
     price: 19800000,
-    offPrice: 200,
-    discount: 13,
     image: "https://my.uupload.ir/dl/VX71EJjW",
     to: "product/34",
-    grouping:"airPod"
+    grouping: "airPod"
   },
   {
     id: 35,
@@ -487,11 +441,9 @@ export const products = [
     existed: 'موجود در انبار دیجی تایز',
     logo: 'https://dkstatics-public.digikala.com/digikala-static/40103386d101974d18b40cee05e8d62823a657fa_1678547065.png',
     price: 19800000,
-    offPrice: 200,
-    discount: 13,
     image: "https://my.uupload.ir/dl/EOgen710",
     to: "product/35",
-    grouping:"airPod"
+    grouping: "airPod"
   },
   {
     id: 36,
@@ -501,11 +453,9 @@ export const products = [
     existed: 'موجود در انبار دیجی تایز',
     logo: 'https://dkstatics-public.digikala.com/digikala-static/40103386d101974d18b40cee05e8d62823a657fa_1678547065.png',
     price: 19800000,
-    offPrice: 200,
-    discount: 13,
     image: "https://my.uupload.ir/dl/zbRgvLzA",
     to: "product/36",
-    grouping:"airPod"
+    grouping: "airPod"
   },
   {
     id: 37,
@@ -515,11 +465,9 @@ export const products = [
     existed: 'موجود در انبار دیجی تایز',
     logo: 'https://dkstatics-public.digikala.com/digikala-static/40103386d101974d18b40cee05e8d62823a657fa_1678547065.png',
     price: 19800000,
-    offPrice: 200,
-    discount: 13,
     image: "https://my.uupload.ir/dl/1Lzj4kry",
     to: "product/37",
-    grouping:"airPod"
+    grouping: "airPod"
   },
   {
     id: 38,
@@ -529,11 +477,9 @@ export const products = [
     existed: 'موجود در انبار دیجی تایز',
     logo: 'https://dkstatics-public.digikala.com/digikala-static/40103386d101974d18b40cee05e8d62823a657fa_1678547065.png',
     price: 19800000,
-    offPrice: 200,
-    discount: 13,
     image: "https://my.uupload.ir/dl/zbRgvLVb",
     to: "product/38",
-    grouping:"airPod"
+    grouping: "airPod"
   },
   {
     id: 39,
@@ -543,11 +489,9 @@ export const products = [
     existed: 'موجود در انبار دیجی تایز',
     logo: 'https://dkstatics-public.digikala.com/digikala-static/40103386d101974d18b40cee05e8d62823a657fa_1678547065.png',
     price: 19800000,
-    offPrice: 200,
-    discount: 13,
     image: "https://my.uffupload.ir/dl/1Lzj4kBn",
     to: "product/39",
-    grouping:"airPod"
+    grouping: "airPod"
   },
 ];
 
