@@ -10,19 +10,19 @@ import { BiMessageDetail, BiStore } from "react-icons/bi";
 import { TfiMenuAlt } from "react-icons/tfi";
 import { FaTruckPlane } from "react-icons/fa6";
 import { UseCart, CartActions } from "../context/CartProvider";
-import { toast ,  ToastContainer } from 'react-toastify';
+import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 
 const SingleProduct = () => {
-  const {id} = useParams();
+  const { id } = useParams();
   const product = data.products
     .filter((p) => parseInt(p.id) === parseInt(id))
     .reduce((key, value) => {
       key[value] = key;
       return value;
     }, {});
-    console.log(product);
+  console.log(product);
   const [selected, setSelected] = useState({ key: 'مشکی', val: 'bg-black' });
   const { cart } = UseCart();
   const dispatch = CartActions();
@@ -54,7 +54,7 @@ const SingleProduct = () => {
             <BiMessageDetail className="ml-5 mt-5 text-2xl text-indigo-900 hover:text-rose-500 cursor-pointer transition-all duration-300" />
             <TfiMenuAlt className="ml-5 mt-5 text-2xl text-indigo-900 hover:text-rose-500 cursor-pointer transition-all duration-300" />
           </div>
-          <img src={product.image} alt={product.name} className="object-cover mr-8 md:mt-2 md:mr-3" />
+          <img src={product.image} alt={product.name} className="object-cover md:mt-2" />
           <div className="lg:flex mt-4 hidden col-span-4 ">
             <div className="w-1/3 p-2 border-2 border-slate-400 m-1 rounded-md cursor-pointer object-cover "> <img className="w-full h-full" src={product.image} alt={product.name} /> </div>
             <div className="w-1/3 p-2 border-2 border-slate-400 m-1 rounded-md  cursor-pointer object-cover"><img className="w-full h-full" src={product.image} alt={product.name} /></div>
@@ -142,9 +142,9 @@ const SingleProduct = () => {
               <span className=" mr-2 lg:text-sm xl:text-base"> ارسال توسط : </span> <span className="text-slate-500 lg:text-sm xl:text-base"> انبار تهران</span>
             </div>
           </div>
-          <div className="w-full flex md:flex-col flex-row-reverse justify-between md:justify-end md:items-end mt-6 fixed md:static bottom-0 bg-orange-100 md:bg-slate-100 px-8 py-4 md:p-0 rounded-t-[50px] md:rounded-none z-50 lg:z-30 items-center">
+          <div className="w-full flex md:flex-col flex-row-reverse justify-between md:justify-end md:items-end mt-6 fixed md:static bottom-0 bg-orange-100 md:bg-slate-100 px-8 py-4 md:p-0 rounded-t-2xl md:rounded-none z-50 lg:z-30 items-center">
             <span className="text-orange-700  md:w-auto  text-xl lg:text-base xl:text-lg">{product.price} تومان</span>
-            <button onClick={handleAddToCart} className=" w-1/2 md:w-full py-3 md:py-2  bg-orange-500 rounded-lg mt-2  text-white text-sm lg:text-base md:text-lg">{checkInCart(cart, product) ? 'در سبدخرید موجود است' : 'افزودن به سبدخرید'}</button>
+            <button onClick={handleAddToCart} className=" w-1/2 md:w-full py-3 md:py-2  bg-orange-500 rounded-md mt-2  text-white text-sm lg:text-base md:text-lg">{checkInCart(cart, product) ? 'برو به سبد خرید' : 'افزودن به سبدخرید'}</button>
           </div>
         </div>
       </section>

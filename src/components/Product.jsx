@@ -26,11 +26,12 @@ const Product = ({ product }) => {
         </div>
         {/* title */}
         <div className='w-full px-4 mt-4 text-slate-600 text-xs md:text-sm'>
-          <span> ساعت هوشمند اپل واچ مدل ultra 49 mm Alpine loop </span>
+          <span> {product.name}</span>
+          <span>{product.nameF}</span>
         </div>
         {/* add btn */}
         <div className='w-full flex justify-between text-[10px] md:text-xs px-4 mt-2 text-slate-600'>
-          <span className='text-red-600'>تنها 1 عدد در انبار باقی مانده</span>
+          <span className='text-red-600'>{product.existed}</span>
           <span className='flex items-center'>
             4.2
             <PiStarFill className='text-yellow-500 text-base mr-2 mb-1' />

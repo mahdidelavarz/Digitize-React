@@ -44,7 +44,7 @@ const Cart = () => {
         </div>
         <div className="w-full h-auto flex gap-2">
           {/* ---------------------------------items -------------------------- */}
-          <div className={`w-full h-auto lg:max-h-[78vh] mt-2 bg-white p-1 rounded-lg grid grid-cols-12 lg:w-2/3 lg:overflow-scroll mb-40 lg:mb-0 ${!cart.length && 'lg:w-full mb-0'}`} >
+          <div className={`w-full h-auto lg:max-h-[78vh] mt-2 bg-white p-1 rounded-lg grid grid-cols-12 lg:w-2/3 lg:overflow-scroll mb-40 lg:mb-0 scrollbar-hide ${!cart.length && 'lg:w-full mb-0'}`} >
             {cart.length ? cart.map((item) => {
               console.log(item.price)
               // -------------------single item--------------------------------------

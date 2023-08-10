@@ -9,7 +9,7 @@ const Footer = () => {
     return (
         <section className="relative col-span-12">
             {/* --------------------laptop size footer----------------------- */}
-            <div className=" h-auto p-3  bg-white md:flex md:static items-center justify-end lg:justify-between mb-20 md:mb-0">
+            <div className="h-auto w-full p-3 bg-white md:flex md:static items-center justify-end lg:justify-between mb-20 md:mb-0">
                 <div className=" flex w-full md:w-1/2 justify-between lg:justify-start mb-6 lg:mb-0 xl:w-2/3 md:px-8 xl:justify-between">
                     <img src="https://my.uupload.ir/dl/v9pDZJQW" alt="rezi" className="w-20 h-28 object-cover " />
                     <img src="https://my.uupload.ir/dl/n2vX7aWQ" alt="rezi" className="w-20 h-28 object-cover lg:mr-10" />
@@ -47,9 +47,6 @@ const Footer = () => {
                     <img src="https://my.uupload.ir/dl/6E4K6WBE" alt="location" className="w-32 md:w-40 object-cover mr-3 md:mr-5 lg:mr-8 lg:w-44  cursor-pointer" />
                 </div>
             </div>
-            {/* -------------------------mobile size footer---------------------------- */}
-
-            
         </section>
     )
 }

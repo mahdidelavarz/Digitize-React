@@ -5,8 +5,11 @@ import { CgProfile } from "react-icons/cg";
 import { AiTwotoneHome } from "react-icons/ai";
 import { BsFillHeartFill } from "react-icons/bs";
 import { HiViewGrid } from "react-icons/hi";
+import { useState } from "react";
+import { Transition } from "@headlessui/react";
 
 const Layout = ({ children }) => {
+    const [active, setActive] = useState(0);
     return (
         <div>
             <Navigation />
@@ -15,23 +18,30 @@ const Layout = ({ children }) => {
                 {children}
             </section>
             <Footer />
-            <div className="w-full fixed bottom-0 p-6 bg-white rounded-t-3xl md:hidden text-slate-600 shadow-sdt">
+            <div className="w-full fixed bottom-0 p-2 pb-2 bg-white rounded-t-3xl md:hidden text-slate-600 shadow-sdt">
                 <div className="flex justify-between">
-                    <div className="flex gap-2 items-center cursor-pointer">
-                        <AiTwotoneHome />
-                        <p className="text-sm">خانه</p>
+                    <div className={` Transition-all duration-300 ${active === 1 ? ' bg-slate-200 p-4 rounded-md' : 'p-4 rounded-md'} `}>
+                        <button onClick={() => setActive(1)} className="flex gap-2 items-center cursor-pointer">
+                            <AiTwotoneHome className="text-xl"/><p className="text-sm">{active === 1 ? 'خانه' : ''}</p>
+                        </button>
                     </div>
-                    <div className="flex gap-2 items-center cursor-pointer">
-                        <BsFillHeartFill />
-                        <p className="text-sm">علاقمندی ها</p>
+                    <div className={` Transition-all duration-300 ${active === 2 ? ' bg-slate-200 p-4 rounded-md' : 'p-4 rounded-md'} `}>
+                        <button onClick={() => setActive(2)} className="flex gap-2 items-center cursor-pointer">
+                            <BsFillHeartFill className="text-xl" />
+                            <p className="text-sm">{active === 2 ? 'علاقمندی ها' : ''}</p>
+                        </button>
                     </div>
-                    <div className="flex gap-2 items-center cursor-pointer">
-                        <HiViewGrid />
-                        <p className="text-sm">دسته بندی</p>
+                    <div className={` Transition-all duration-300 ${active === 3 ? ' bg-slate-200 p-4 rounded-md' : 'p-4 rounded-md'} `}>
+                        <button onClick={() => setActive(3)} className="flex gap-2 items-center cursor-pointer">
+                            <HiViewGrid className="text-xl"/>
+                            <p className="text-sm">{active === 3 ? 'دسته بندی' : ''}</p>
+                        </button>
                     </div>
-                    <div className="flex gap-2 items-center cursor-pointer">
-                        <CgProfile />
-                        <p className="text-sm">پروفایل</p>
+                    <div className={` Transition-all duration-300 ${active === 4 ? ' bg-slate-200 p-4 rounded-md' : 'p-4 rounded-md'} `}>
+                        <button onClick={() => setActive(4)} className="flex gap-2 items-center cursor-pointer">
+                            <CgProfile className="text-xl"/>
+                            <p className="text-sm">{active === 4 ? 'پروفایل' : ''}</p>
+                        </button>
                     </div>
                 </div>
             </div>
