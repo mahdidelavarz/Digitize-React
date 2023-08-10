@@ -10,7 +10,7 @@ export const products = [
     existed: 'موجود در انبار دیجی تایز',
     logo: 'https://dkstatics-public.digikala.com/digikala-static/40103386d101974d18b40cee05e8d62823a657fa_1678547065.png',
     price: 1200000,
-    offPrice: 2550000,
+    offPrice: 225000,
     discount: '%10',
     image: "https://my.uupload.ir/dl/yoO19j11",
     to: "product/1",

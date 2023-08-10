@@ -85,19 +85,22 @@ const Home = () => {
             <span className="text-xs md:text-sm  mt-2">لوازم جانبی</span>
           </div>
         </div>
-        <div className="col-span-12 h-auto bg-red-400 mt-10 p-x-2 py-6 grid grid-cols-12 rounded-lg">
-          <div className="col-span-3 md:col-span-2 h-full bg-red-400 flex flex-col justify-center items-center">
+        <div className="col-span-12 h-auto bg-red-500 mt-10 p-x-2 py-6 grid grid-cols-12 rounded-lg">
+          <div className="col-span-4 md:col-span-2 h-full bg-red-500 flex flex-col justify-center items-center">
             <img className="w-32 h-24" src="https://www.digikala.com/statics/img/svg/specialCarousel/Amazings.svg" alt="svg" />
             <img className="w-36" src="https://www.digikala.com/statics/img/png/specialCarousel/box.webp" alt="box" />
           </div>
-          <div className="col-span-9 md:col-span-10 h-72 bg-white transition-all duration-1000 rounded-md">
+          <div className="col-span-8 md:col-span-10 h-72 bg-white transition-all duration-1000 rounded-md">
             <Swiper
               breakpoints={{
                 0: {
-                  slidesPerView: 2,
+                  slidesPerView: 1.3,
+                },
+                470:{
+                  slidesPerView:2,
                 },
                 640: {
-                  slidesPerView: 3,
+                  slidesPerView: 2.5,
                 },
                 1024: {
                   slidesPerView: 5,
@@ -115,7 +118,7 @@ const Home = () => {
               className="mySwiper h-full rounded-md"
             >
               {filteredProducts.map((product) => {
-                return <SwiperSlide className='w-full h-full border-r-2 border-solid border-red-400 cursor-pointer' >
+                return <SwiperSlide className='w-full h-full border-r-2 border-solid border-red-500 cursor-pointer hover:shadow-xl hover:shadow-red-500 hover:transition-all hover:duration-300' >
                   <NavLink to={product.to}>
                     <div className="flex justify-between items-center flex-col h-full py-2 pb-6 px-4 text-sm md:text-base">
                       <img className="w-40 h-40 bg-white object-cover" src={product.image} alt={product.name} />
