@@ -2,18 +2,16 @@ import * as data from '../data';
 import Navigation from "../components/Navigation";
 import SortMenu from "../components/SortMenu";
 import React, { useRef, useState } from 'react';
-// Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
-// Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/free-mode';
 import 'swiper/css/pagination';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-// import required modules
 import { Autoplay, Pagination, FreeMode } from 'swiper/modules';
 import Footer from '../components/Footer';
 import { NavLink } from 'react-router-dom';
+import FooterMenu from '../components/FooterMenu';
 
 
 const Home = () => {
@@ -96,11 +94,14 @@ const Home = () => {
                 0: {
                   slidesPerView: 1.3,
                 },
-                470:{
-                  slidesPerView:2,
+                470: {
+                  slidesPerView: 2,
                 },
-                640: {
+                620: {
                   slidesPerView: 2.5,
+                },
+                760: {
+                  slidesPerView: 3.4,
                 },
                 1024: {
                   slidesPerView: 5,
@@ -111,9 +112,6 @@ const Home = () => {
                 disableOnInteraction: false,
               }}
               freeMode={true}
-              // pagination={{
-              //   clickable: true,
-              // }}
               modules={[FreeMode, Pagination, Autoplay]}
               className="mySwiper h-full rounded-md"
             >
@@ -122,12 +120,12 @@ const Home = () => {
                   <NavLink to={product.to}>
                     <div className="flex justify-between items-center flex-col h-full py-2 pb-6 px-4 text-sm md:text-base">
                       <img className="w-40 h-40 bg-white object-cover" src={product.image} alt={product.name} />
-                      <div className='flex justify-between w-full'>
-                        <span className='block text-slate-600'>{product.price} تومان </span>
-                        <span className='w-10 h-6 flex justify-center items-center text-xs md:text-sm text-white bg-red-500 rounded-full'>{product.discount}</span>
+                      <span className='text-[10px] md:text-xs  text-slate-600'>{product.name}</span>
+                      <div className='flex justify-between w-full mt-4'>
+                        <span className='block text-slate-600 text-xs md:text-sm'>{product.price} تومان </span>
+                        <span className='w-9 h-5 flex justify-center items-center text-xs md:text-sm text-white bg-red-500 rounded-full'>{product.discount}</span>
                       </div>
-
-                      <span className='w-full flex justify-end text-slate-400 line-through'>{product.offPrice}</span>
+                      <span className='w-full flex justify-end text-slate-400 line-through mt-2'>{product.offPrice}</span>
                     </div>
                   </NavLink>
                 </SwiperSlide>
@@ -137,6 +135,7 @@ const Home = () => {
         </div>
       </div>
       <Footer />
+      <FooterMenu />
     </div>
   );
 }
