@@ -2,6 +2,7 @@ import { CgProfile } from "react-icons/cg";
 import { AiTwotoneHome } from "react-icons/ai";
 import { BsFillHeartFill } from "react-icons/bs";
 import { HiViewGrid } from "react-icons/hi";
+import { NavLink } from "react-router-dom";
 import { useState } from "react";
 const FooterMenu = () => {
     const [active, setActive] = useState(0);
@@ -10,14 +11,18 @@ const FooterMenu = () => {
             <div className="flex justify-between">
                 <div className={` Transition-all duration-300 ${active === 1 ? ' bg-slate-200 p-4 rounded-md' : 'p-4 rounded-md'} `}>
                     <button onClick={() => setActive(1)} className="flex gap-2 items-center cursor-pointer">
-                        <AiTwotoneHome className="text-xl" /><p className="text-sm">{active === 1 ? 'خانه' : ''}</p>
+                        <NavLink to={'/'} >
+                            <AiTwotoneHome className="text-xl" /><p className="text-sm">{active === 1 ? 'خانه' : ''}</p>
+                        </NavLink>
                     </button>
                 </div>
                 <div className={` Transition-all duration-300 ${active === 2 ? ' bg-slate-200 p-4 rounded-md' : 'p-4 rounded-md'} `}>
-                    <button onClick={() => setActive(2)} className="flex gap-2 items-center cursor-pointer">
-                        <BsFillHeartFill className="text-xl" />
-                        <p className="text-sm">{active === 2 ? 'علاقمندی ها' : ''}</p>
-                    </button>
+                    <NavLink to={'/interests'}>
+                        <button onClick={() => setActive(2)} className="flex gap-2 items-center cursor-pointer">
+                            <BsFillHeartFill className="text-xl" />
+                            <p className="text-sm">{active === 2 ? 'علاقمندی ها' : ''}</p>
+                        </button>
+                    </NavLink>
                 </div>
                 <div className={` Transition-all duration-300 ${active === 3 ? ' bg-slate-200 p-4 rounded-md' : 'p-4 rounded-md'} `}>
                     <button onClick={() => setActive(3)} className="flex gap-2 items-center cursor-pointer">

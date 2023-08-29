@@ -116,7 +116,7 @@ const Home = () => {
               className="mySwiper h-full rounded-md"
             >
               {filteredProducts.map((product) => {
-                return <SwiperSlide className='w-full h-full border-r-2 border-solid border-red-500 cursor-pointer hover:shadow-xl hover:shadow-red-500 hover:transition-all hover:duration-300' >
+                return <SwiperSlide key={product.id} className='w-full h-full border-r-2 border-solid border-red-500 cursor-pointer hover:shadow-xl hover:shadow-red-500 hover:transition-all hover:duration-300' >
                   <NavLink to={product.to}>
                     <div className="flex justify-between items-center flex-col h-full py-2 pb-6 px-4 text-sm md:text-base">
                       <img className="w-40 h-40 bg-white object-cover" src={product.image} alt={product.name} />
