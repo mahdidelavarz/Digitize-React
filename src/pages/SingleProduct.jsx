@@ -1,16 +1,16 @@
-
 import * as data from '../data';
 import Layout from "../Layout/Layout";
 import { useParams } from "react-router-dom";
 import { useState } from 'react';
 import { BsCheck, BsFillShareFill } from "react-icons/bs";
-import { AiOutlineHeart, AiOutlineSafety } from "react-icons/ai";
+import { AiOutlineHeart, AiOutlineSafety, AiFillHeart } from "react-icons/ai";
 import { PiBellRinging } from "react-icons/pi";
 import { BiMessageDetail, BiStore } from "react-icons/bi";
 import { TfiMenuAlt } from "react-icons/tfi";
 import { FaTruckPlane } from "react-icons/fa6";
-import { UseCart, CartActions } from "../context/CartProvider";
-import { toast, ToastContainer } from 'react-toastify';
+import { UseCart, CartActions } from "../context/Cart/CartProvider";
+import { UseInterests, InterestsActions } from '../context/favorites/InterestsProvider';
+import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 
@@ -22,24 +22,29 @@ const SingleProduct = () => {
       key[value] = key;
       return value;
     }, {});
-  console.log(product);
+
   const [selected, setSelected] = useState({ key: 'مشکی', val: 'bg-black' });
   const { cart } = UseCart();
   const dispatch = CartActions();
+  const { interestList } = UseInterests();
+  const dispatchInterest = InterestsActions();
 
   const handleSelect = (key, val) => {
     setSelected({ key, val });
   }
   const handleAddToCart = (e) => {
     toast.success(`به سبدخرید اضافه شد`)
-    dispatch({ type: 'ADD_TO_CART', payload: { ...product, selectedColor: selected } })
+    dispatch({ type: 'ADD_TO_CART', payload: { ...product, selectedColor: selected } });
   }
   const checkInCart = (cart, product) => {
     return cart.find((item) => item.id === product.id);
-
+  }
+  const checkInInterestList = (interestList, product) => {
+    return interestList.find((item) => item.id === product.id);
   }
   const handleLike = () => {
-    toast.success(`به علاقمندی ها اضافه شد`)
+    toast.success(`به علاقمندی ها اضافه شد`);
+    dispatchInterest({ type: 'ADD_TO_INTERESTS', payload: { ...product } });
   }
   return (
     <Layout>
@@ -47,7 +52,7 @@ const SingleProduct = () => {
         {/* ----------------------------items image--------------------------- */}
         <div className="h-full col-span-12 md:col-span-7 lg:col-span-4 relative flex items-center flex-col justify-evenly z-30">
           <div className="flex justify-end absolute right-[-15px] top-0 p-4 flex-col ">
-            <AiOutlineHeart onClick={handleLike} className="ml-5 text-2xl text-indigo-900 hover:text-rose-500 cursor-pointer transition-all duration-300" />
+            {checkInInterestList(interestList, product) ? <AiFillHeart onClick={handleLike} className="ml-5 text-2xl text-red-600 cursor-pointer transition-all duration-300" /> : <AiOutlineHeart onClick={handleLike} className="ml-5 text-2xl text-indigo-900 hover:text-rose-500 cursor-pointer transition-all duration-300" />}
             {/* <ToastContainer className='text-stone-800 '/> */}
             <BsFillShareFill className="ml-5 mt-5 text-2xl text-indigo-900 hover:text-rose-500 cursor-pointer transition-all duration-300" />
             <PiBellRinging className="ml-5 mt-5 text-2xl text-indigo-900 hover:text-rose-500 cursor-pointer transition-all duration-300" />
@@ -145,7 +150,7 @@ const SingleProduct = () => {
           <div className="w-full flex md:flex-col flex-row-reverse justify-between md:justify-end md:items-end mt-6 fixed md:static bottom-0 bg-orange-100 md:bg-slate-100 px-8 py-4 md:p-0 rounded-t-2xl md:rounded-none z-50 lg:z-30 items-center">
 
             <span className="text-orange-700  md:w-auto  text-xl lg:text-base xl:text-lg">{product.price} تومان</span>
-            <button onClick={handleAddToCart} className=" w-1/2 md:w-full py-3 md:py-2  bg-orange-500 rounded-md mt-2  text-white text-sm lg:text-base md:text-lg">{checkInCart(cart, product) ? 'در سبد خرید موجود است': 'افزودن به سبدخرید'}</button>
+            <button onClick={handleAddToCart} className=" w-1/2 md:w-full py-3 md:py-2  bg-orange-500 rounded-md mt-2  text-white text-sm lg:text-base md:text-lg">{checkInCart(cart, product) ? 'در سبد خرید موجود است' : 'افزودن به سبدخرید'}</button>
           </div>
         </div>
       </section>

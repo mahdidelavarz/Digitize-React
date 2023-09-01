@@ -41,7 +41,7 @@ const Home = () => {
         </Swiper>
         <div className="w-full h-auto mt-16 grid grid-cols-12 gap-y-10 gap-x-6">
           <div className="col-span-4 cursor-pointer lg:col-span-2 flex flex-col justify-center items-center">
-            <NavLink to={"/phone"}>
+            <NavLink to={"/phone"} className='flex flex-col items-center'>
               <div className="w-20 h-20 md:w-28 md:h-28 lg:w-36 lg:h-36 bg-slate-100 rounded-full relative">
                 <img className=" absolute -top-5" src="https://my.uupload.ir/dl/kjgY1v7e" alt="logo" />
               </div>
@@ -49,7 +49,7 @@ const Home = () => {
             </NavLink>
           </div>
           <div className="col-span-4 cursor-pointer lg:col-span-2 flex flex-col justify-center items-center">
-            <NavLink to={"/laptop"}>
+            <NavLink to={"/laptop"} className='flex flex-col items-center'>
               <div className="w-20 h-20 md:w-28 md:h-28 lg:w-36 lg:h-36 bg-slate-100 rounded-full relative">
                 <img className=" absolute -top-5" src="https://my.uupload.ir/dl/n2vYGpvD" alt="logo" />
               </div>
@@ -57,7 +57,7 @@ const Home = () => {
             </NavLink>
           </div>
           <div className="col-span-4 cursor-pointer lg:col-span-2 flex flex-col justify-center items-center">
-            <NavLink to={"/watch"}>
+            <NavLink to={"/watch"} className='flex flex-col items-center'>
               <div className="w-20 h-20 md:w-28 md:h-28 lg:w-36 lg:h-36 bg-slate-100 rounded-full relative">
                 <img className=" absolute -top-5" src="https://my.uupload.ir/dl/JgyprBBB" alt="logo" />
               </div>

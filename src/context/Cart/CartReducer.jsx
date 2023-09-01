@@ -20,11 +20,11 @@ const CartReducer = (state, action) => {
                 const updatedItem = { ...updatedCart[index] };
                 if (updatedItem.quantity === 1) {
                     const filteredCart = updatedCart.filter((item) => item.id !== action.payload.id);
-                    return { ...state, cart: filteredCart };
+                    return { ...state, cart: filteredCart, total: state.total - action.payload.price };
                 } else {
                     updatedItem.quantity--;
                     updatedCart[index] = updatedItem;
-                    return { ...state, cart: updatedCart, total: state.total + action.payload.price };
+                    return { ...state, cart: updatedCart, total: state.total - action.payload.price };
                 }
             }
         default:

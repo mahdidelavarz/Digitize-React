@@ -1,40 +1,50 @@
-import { CgProfile } from "react-icons/cg";
 import { AiTwotoneHome } from "react-icons/ai";
-import { BsFillHeartFill } from "react-icons/bs";
+import { BsFillHeartFill , BsFillPersonFill } from "react-icons/bs";
 import { HiViewGrid } from "react-icons/hi";
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
+import { BiSolidMessageSquareDetail } from "react-icons/bi";
 const FooterMenu = () => {
     const [active, setActive] = useState(0);
     return (
-        <div className="w-full fixed bottom-0 p-2 pb-2 bg-white rounded-t-3xl md:hidden text-slate-600 shadow-sdt z-50">
-            <div className="flex justify-between">
-                <div className={` Transition-all duration-300 ${active === 1 ? ' bg-slate-200 p-4 rounded-md' : 'p-4 rounded-md'} `}>
-                    <button onClick={() => setActive(1)} className="flex gap-2 items-center cursor-pointer">
-                        <NavLink to={'/'} >
-                            <AiTwotoneHome className="text-xl" /><p className="text-sm">{active === 1 ? 'خانه' : ''}</p>
+        <div className="w-full h-[4.5rem] fixed bottom-1 px-9 py-3 md:hidden z-50">
+            <div className="w-full h-full rounded-3xl bg-rose-600 flex justify-between items-center px-2">
+                <div className="w-32 h-full  flex justify-center items-center gap-10">
+                    <div>
+                        <NavLink to={'/interests'}>
+                            <button onClick={() => setActive(2)} className="flex gap-2 items-center cursor-pointer">
+                                <BsFillHeartFill className="text-2xl text-white" />
+                            </button>
                         </NavLink>
-                    </button>
+                    </div>
+                    <div>
+                        <NavLink to={'/interests'}>
+                            <button onClick={() => setActive(2)} className="flex gap-2 items-center cursor-pointer">
+                                <BiSolidMessageSquareDetail className="text-2xl text-white" />
+                            </button>
+                        </NavLink>
+                    </div>
                 </div>
-                <div className={` Transition-all duration-300 ${active === 2 ? ' bg-slate-200 p-4 rounded-md' : 'p-4 rounded-md'} `}>
-                    <NavLink to={'/interests'}>
-                        <button onClick={() => setActive(2)} className="flex gap-2 items-center cursor-pointer">
-                            <BsFillHeartFill className="text-xl" />
-                            <p className="text-sm">{active === 2 ? 'علاقمندی ها' : ''}</p>
+                <div className="w-16 h-16 rounded-full bg-rose-800 flex justify-center items-center">
+                    <div>
+                        <NavLink to={'/'} >
+                            <button onClick={() => setActive(1)} className="flex  items-center cursor-pointer">
+                                <AiTwotoneHome className="text-3xl text-white" />
+                            </button>
+                        </NavLink>
+                    </div>
+                </div>
+                <div className="w-32 h-full flex justify-center items-center gap-10">
+                    <div>
+                        <button onClick={() => setActive(3)} className="flex gap-2 items-center cursor-pointer">
+                            <HiViewGrid className="text-2xl text-white" />
                         </button>
-                    </NavLink>
-                </div>
-                <div className={` Transition-all duration-300 ${active === 3 ? ' bg-slate-200 p-4 rounded-md' : 'p-4 rounded-md'} `}>
-                    <button onClick={() => setActive(3)} className="flex gap-2 items-center cursor-pointer">
-                        <HiViewGrid className="text-xl" />
-                        <p className="text-sm">{active === 3 ? 'دسته بندی' : ''}</p>
-                    </button>
-                </div>
-                <div className={` Transition-all duration-300 ${active === 4 ? ' bg-slate-200 p-4 rounded-md' : 'p-4 rounded-md'} `}>
-                    <button onClick={() => setActive(4)} className="flex gap-2 items-center cursor-pointer">
-                        <CgProfile className="text-xl" />
-                        <p className="text-sm">{active === 4 ? 'پروفایل' : ''}</p>
-                    </button>
+                    </div>
+                    <div>
+                        <button onClick={() => setActive(4)} className="flex gap-2 items-center cursor-pointer">
+                            <BsFillPersonFill className="text-2xl text-white" />
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>

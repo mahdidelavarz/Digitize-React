@@ -1,5 +1,4 @@
-import Layout from "../Layout/Layout";
-import { UseCart, CartActions } from "../context/CartProvider";
+import { UseCart, CartActions } from "../context/Cart/CartProvider";
 import { BiDotsVerticalRounded } from "react-icons/bi";
 import { AiOutlineRight, AiOutlineSafety, AiOutlinePlus, AiOutlineMinus } from "react-icons/ai";
 import { IoExitOutline } from "react-icons/io5";
@@ -46,9 +45,8 @@ const Cart = () => {
           {/* ---------------------------------items -------------------------- */}
           <div className={`w-full h-auto lg:max-h-[78vh] mt-2 bg-white p-1 rounded-lg grid grid-cols-12 lg:w-2/3 lg:overflow-scroll mb-40 lg:mb-0 scrollbar-hide ${!cart.length && 'lg:w-full mb-0'}`} >
             {cart.length ? cart.map((item) => {
-              console.log(item.price)
               // -------------------single item--------------------------------------
-              return <div className="col-span-12 grid grid-cols-12 gap-1 py-4 border-b-2 border-solid ">
+              return <div className="col-span-12 grid grid-cols-12 gap-1 py-4 border-b-2 border-solid " key={item.id}>
                 {/* -------------img--------------------------- */}
                 <div className="col-span-4 p-2 bg-white">
                   <img src={item.image} alt={item.name} />
@@ -94,7 +92,7 @@ const Cart = () => {
                   <div className="mr-6 text-slate-500 text-xl">{item.price * item.quantity} تومان</div>
                 </div>
               </div>
-            }) : <div className="col-span-12 h-auto"><img src="https://my.uupload.ir/dl/0j5DVzyj" className="w-full h-[75vh] object-scale-down"></img></div>}
+            }) : <div className="col-span-12 h-auto"><img src="https://my.uupload.ir/dl/0j5DVzyj" alt="product" className="w-full h-[75vh] object-scale-down"></img></div>}
           </div>
 
           <div className={`fixed lg:static bottom-0  lg:flex h-auto lg:h-96 w-full lg:w-1/3 bg-white mt-8 border-2 border-solid rounded-lg flex-col justify-between p-4 ${!cart.length && 'hidden'}`} >
