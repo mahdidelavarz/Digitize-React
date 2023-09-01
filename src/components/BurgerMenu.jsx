@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom';
 import { HiOutlineHome, HiOutlineDeviceMobile } from "react-icons/hi";
 import { MdOutlineLaptopMac } from "react-icons/md";
 import { IoWatchOutline } from "react-icons/io5";
+import { BsHeartHalf } from "react-icons/bs";
 import { slide as Menu } from 'react-burger-menu'
 import { useState } from "react";
 const BurgerMenu = () => {
@@ -52,6 +53,15 @@ const BurgerMenu = () => {
               </div>
               <NavLink to={'/watch'} className='w-full flex '>
                 ساعت هوشمند
+              </NavLink>
+            </li>
+            <li className='w-full h-12  text-lg text-slate-600 px-4 cursor-pointer flex items-center mt-6 hover:bg-gradient-to-l from-slate-200 rounded-md transition-all duration-300'>
+              <div className="w-10 h-5  relative">
+                <div className="w-6 h-6  bg-gradient-to-l from-slate-400 absolute top-[-5px] right-[-10px] rounded-full z-0"></div>
+                <BsHeartHalf className="text-orange-400 text-2lg" />
+              </div>
+              <NavLink to={'/interests'} className='w-full flex '>
+                علاقمندی
               </NavLink>
             </li>
           </ul>

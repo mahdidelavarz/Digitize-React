@@ -1,7 +1,6 @@
 import Navigation from "../components/Navigation";
 import SideBar from "../components/SideBar";
 import Footer from "../components/Footer"
-import { useState } from "react";
 import FooterMenu from "../components/FooterMenu";
 
 const Layout = ({ children }) => {

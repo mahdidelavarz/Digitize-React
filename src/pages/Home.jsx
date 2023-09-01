@@ -1,7 +1,6 @@
 import * as data from '../data';
 import Navigation from "../components/Navigation";
-import SortMenu from "../components/SortMenu";
-import React, { useRef, useState } from 'react';
+import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/free-mode';
@@ -12,6 +11,7 @@ import { Autoplay, Pagination, FreeMode } from 'swiper/modules';
 import Footer from '../components/Footer';
 import { NavLink } from 'react-router-dom';
 import FooterMenu from '../components/FooterMenu';
+import HomeGrouping from '../components/HomeGrouping';
 
 
 const Home = () => {
@@ -21,7 +21,7 @@ const Home = () => {
     <div>
       <Navigation />
       <div className="col-span-12 md:col-span-9 h-auto md:p-4 md:rounded-md">
-        <SortMenu />
+        <HomeGrouping />
         < Swiper
           spaceBetween={30}
           centeredSlides={true}

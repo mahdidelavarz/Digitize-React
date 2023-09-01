@@ -1,14 +1,17 @@
 import * as data from '../data';
+import { NavLink } from "react-router-dom";
 import Layout from "../Layout/Layout";
 import { UseInterests, InterestsActions } from "../context/favorites/InterestsProvider";
 import { CartActions } from "../context/Cart/CartProvider";
 import { useState } from 'react';
-import { AiOutlineSafety } from "react-icons/ai";
-import { FaClipboardCheck} from "react-icons/fa";
+import { AiOutlineSafety, AiOutlineRight } from "react-icons/ai";
+import { BiDotsVerticalRounded } from "react-icons/bi";
+import { FaClipboardCheck } from "react-icons/fa";
 import { PiArticleNyTimes } from "react-icons/pi";
 import { BsCheck } from "react-icons/bs";
 import { CiShoppingCart } from "react-icons/ci";
 import { MdOutlineDeleteSweep } from "react-icons/md";
+import { IoExitOutline } from "react-icons/io5";
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -42,8 +45,26 @@ const Interests = () => {
   return (
     <Layout>
       <div className="col-span-12 md:col-span-9 grid grid-cols-12 mt-2">
+        {/* phone size */}
+        <div className="flex col-span-12 justify-between md:hidden px-6 mb-2">
+          <NavLink to={'../'}>
+            <AiOutlineRight className="text-3xl p-1 bg-white rounded-lg text-slate-600 cursor-pointer" />
+          </NavLink>
+          <span>علاقمندی های شما</span>
+          <BiDotsVerticalRounded className="text-3xl p-1 bg-white rounded-lg text-slate-600 cursor-pointer " />
+        </div>
+        {/* desktop size */}
+        <div className="col-span-12 hidden md:flex justify-between text-slate-700 pr-8 pl-28  bg-white py-4 rounded-lg mb-4">
+          <span>علاقمندی های شما</span>
+          <NavLink to={'../'}>
+            <div className="flex items-center cursor-pointer">
+              <IoExitOutline className="text-2xl ml-2 text-red-600" />
+              <span>بازگشت به خانه</span>
+            </div>
+          </NavLink>
+        </div>
+        <div className="w-full h-auto flex gap-2"></div>
         {interestList.length ? interestList.map((item) => {
-          // console.log(item);
           return (
             <div className="col-span-12  grid grid-cols-12 border-b-2 border-solid rounded-lg relative md:gap-y-2" key={item.id}>
               {/* -------------img--------------------------- */}
@@ -95,7 +116,7 @@ const Interests = () => {
               </div>
             </div>
           )
-        }) : <div className="col-span-12 h-auto"><img src="https://my.uupload.ir/dl/0j5DVzyj" alt="empty" className="w-full h-[75vh] object-scale-down"></img></div>}
+        }) : <div className="col-span-12 h-auto"><img src="https://my.uupload.ir/dl/0j5DVzyj" alt="empty" className="w-full h-auto  object-scale-down mt-4 "></img></div>}
       </div>
     </Layout>
   );

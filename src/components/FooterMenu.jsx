@@ -7,9 +7,9 @@ import { BiSolidMessageSquareDetail } from "react-icons/bi";
 const FooterMenu = () => {
     const [active, setActive] = useState(0);
     return (
-        <div className="w-full h-[4.5rem] fixed bottom-1 px-9 py-3 md:hidden z-50">
-            <div className="w-full h-full rounded-3xl bg-rose-600 flex justify-between items-center px-2">
-                <div className="w-32 h-full  flex justify-center items-center gap-10">
+        <div className="w-full h-[4.5rem] fixed bottom-1 px-5 py-3 md:hidden z-50">
+            <div className="w-full h-full rounded-3xl bg-slate-700 flex justify-between items-center px-2">
+                <div className="w-32 h-full  flex justify-center items-center gap-8">
                     <div>
                         <NavLink to={'/interests'}>
                             <button onClick={() => setActive(2)} className="flex gap-2 items-center cursor-pointer">
@@ -25,7 +25,7 @@ const FooterMenu = () => {
                         </NavLink>
                     </div>
                 </div>
-                <div className="w-16 h-16 rounded-full bg-rose-800 flex justify-center items-center">
+                <div className="w-16 h-16 rounded-full bg-blue-950 flex justify-center items-center">
                     <div>
                         <NavLink to={'/'} >
                             <button onClick={() => setActive(1)} className="flex  items-center cursor-pointer">
@@ -34,7 +34,7 @@ const FooterMenu = () => {
                         </NavLink>
                     </div>
                 </div>
-                <div className="w-32 h-full flex justify-center items-center gap-10">
+                <div className="w-32 h-full flex justify-center items-center gap-9">
                     <div>
                         <button onClick={() => setActive(3)} className="flex gap-2 items-center cursor-pointer">
                             <HiViewGrid className="text-2xl text-white" />
