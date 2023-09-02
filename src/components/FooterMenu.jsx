@@ -17,7 +17,7 @@ const FooterMenu = () => {
                             <button onClick={() => setActive(2)} className="flex gap-2 items-center cursor-pointer">
                                 <BsFillHeartFill className="text-2xl text-white" />
                             </button>
-                           {interestList.length > 0 &&  <div className="w-4 h-4 rounded-full absolute -top-1 -right-2 bg-red-500 flex justify-center items-center text-xs text-white">{interestList.length}</div>}
+                           {interestList.length > 0 &&  <div className="w-4 h-4 rounded-full absolute -top-1 -right-2 bg-red-500 flex justify-center items-center text-[10px] text-white ">{interestList.length}</div>}
                         </NavLink>
                     </div>
                     <div>

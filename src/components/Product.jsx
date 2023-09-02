@@ -19,8 +19,8 @@ const Product = ({ product }) => {
       </button>
       <NavLink to={product.to} key={product.id} product={product}>
         {/* photo */}
-        <div className='w-full h-[26vh] bg-slate-200 flex justify-center px-4 '>
-          <img className='object-cover' src={product.image} alt="phone" />
+        <div className='w-full md:h-[26vh] bg-slate-200 flex justify-center px-4 '>
+          <img className='w-32 h-32 object-contain md:object-cover md:w-40 md:h-40' src={product.image} alt="phone" />
         </div>
         {/* free transport */}
         <div className='w-[6.3rem] md:w-32 flex  mt-4 px-2 bg-slate-300 rounded-lg mr-2  text-slate-600'>

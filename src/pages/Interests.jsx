@@ -69,7 +69,7 @@ const Interests = () => {
             <div className="col-span-12  grid grid-cols-12 border-b-2 border-solid rounded-lg relative md:gap-y-2" key={item.id}>
               {/* -------------img--------------------------- */}
               <div className=" col-span-12 md:col-span-4 p-2 bg-white flex items-center rounded-tr-lg rounded-br-lg justify-center">
-                <img src={item.image} alt={item.name} className="w-60" />
+                <img src={item.image} alt={item.name} className="w-44 object-cover" />
               </div>
               {/* -------descriptions----------------------- */}
               <div className="col-span-12 md:col-span-8 px-6 bg-white py-6">
