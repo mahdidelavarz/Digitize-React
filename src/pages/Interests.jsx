@@ -108,9 +108,9 @@ const Interests = () => {
                     <MdOutlineDeleteSweep className='text-lg' />
                     <button>حذف</button>
                   </div>
-                  <div onClick={() => handleAdd(item)} className='flex px-12 py-2 items-center cursor-pointer gap-2 shadow-lg border border-red-400 text-red-400 rounded-lg'>
+                  <div onClick={() => handleAdd(item)} className='flex w-60 justify-center px-4 py-2 items-center cursor-pointer gap-2 shadow-lg border border-red-400 text-red-400 rounded-lg'>
                     <CiShoppingCart className='text-xl' />
-                    <button className=''>افزودن به سبدخرید</button>
+                    <button>افزودن به سبدخرید</button>
                   </div>
                 </div>
               </div>

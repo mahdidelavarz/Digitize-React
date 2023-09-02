@@ -153,7 +153,7 @@ export const products = [
     existed: 'موجود در انبار دیجی تایز',
     logo: 'https://dkstatics-public.digikala.com/digikala-static/40103386d101974d18b40cee05e8d62823a657fa_1678547065.png',
     price: 19800000,
-    image: "https://my.uupload.ir/dl/n2vYGpvD",
+    image: "https://my.uupload.ir/dl/n2vL9Xjn",
     to: "product/12",
     grouping: "laptop"
   },
@@ -165,7 +165,7 @@ export const products = [
     existed: 'موجود در انبار دیجی تایز',
     logo: 'https://dkstatics-public.digikala.com/digikala-static/40103386d101974d18b40cee05e8d62823a657fa_1678547065.png',
     price: 19800000,
-    image: "https://my.uupload.ir/dl/n2vYGpvD",
+    image: "https://my.uupload.ir/dl/wZ21ENzw",
     to: "product/13",
     grouping: "laptop"
   },
@@ -177,7 +177,7 @@ export const products = [
     existed: 'موجود در انبار دیجی تایز',
     logo: 'https://dkstatics-public.digikala.com/digikala-static/40103386d101974d18b40cee05e8d62823a657fa_1678547065.png',
     price: 19800000,
-    image: "https://my.uupload.ir/dl/n2vYGpvD",
+    image: "https://my.uupload.ir/dl/n2vL9X66",
     to: "product/14",
     grouping: "laptop"
   },
@@ -189,7 +189,7 @@ export const products = [
     existed: 'موجود در انبار دیجی تایز',
     logo: 'https://dkstatics-public.digikala.com/digikala-static/40103386d101974d18b40cee05e8d62823a657fa_1678547065.png',
     price: 19800000,
-    image: "https://my.uupload.ir/dl/n2vYGpvD",
+    image: "https://my.uupload.ir/dl/mbGo1N7b",
     to: "product/15",
     grouping: "laptop"
   },
@@ -201,7 +201,7 @@ export const products = [
     existed: 'موجود در انبار دیجی تایز',
     logo: 'https://dkstatics-public.digikala.com/digikala-static/40103386d101974d18b40cee05e8d62823a657fa_1678547065.png',
     price: 9900000,
-    image: "https://my.uupload.ir/dl/n2vYGpvD",
+    image: "https://my.uupload.ir/dl/mbGo1N7b",
     to: "product/16",
     grouping: "laptop"
   },
@@ -213,7 +213,7 @@ export const products = [
     existed: 'موجود در انبار دیجی تایز',
     logo: 'https://dkstatics-public.digikala.com/digikala-static/40103386d101974d18b40cee05e8d62823a657fa_1678547065.png',
     price: 19800000,
-    image: "https://my.uupload.ir/dl/n2vYGpvD",
+    image: "https://my.uupload.ir/dl/EOgBrpWp",
     to: "product/17",
     grouping: "laptop"
   },
@@ -225,7 +225,7 @@ export const products = [
     existed: 'موجود در انبار دیجی تایز',
     logo: 'https://dkstatics-public.digikala.com/digikala-static/40103386d101974d18b40cee05e8d62823a657fa_1678547065.png',
     price: 19800000,
-    image: "https://my.uupload.ir/dl/n2vYGpvD",
+    image: "https://my.uupload.ir/dl/4e5KrAyM",
     to: "product/18",
     grouping: "laptop"
   },
@@ -237,7 +237,7 @@ export const products = [
     existed: 'موجود در انبار دیجی تایز',
     logo: 'https://dkstatics-public.digikala.com/digikala-static/40103386d101974d18b40cee05e8d62823a657fa_1678547065.png',
     price: 19800000,
-    image: "https://my.uupload.ir/dl/n2vYGpvD",
+    image: "https://my.uupload.ir/dl/wZ21EgZB",
     to: "product/19",
     grouping: "laptop"
   },
@@ -251,7 +251,7 @@ export const products = [
     price: 19800000,
     offPrice: 2550000,
     discount: '%13',
-    image: "https://my.uupload.ir/dl/n2vYGpvD",
+    image: "https://my.uupload.ir/dl/n2vL9X66",
     to: "product/20",
     grouping: "laptop"
   },
@@ -263,7 +263,7 @@ export const products = [
     existed: 'موجود در انبار دیجی تایز',
     logo: 'https://dkstatics-public.digikala.com/digikala-static/40103386d101974d18b40cee05e8d62823a657fa_1678547065.png',
     price: 9900000,
-    image: "https://my.uupload.ir/dl/n2vYGpvD",
+    image: "https://my.uupload.ir/dl/mbGo1N7b",
     to: "product/21",
     grouping: "laptop"
   },
@@ -275,7 +275,7 @@ export const products = [
     existed: 'موجود در انبار دیجی تایز',
     logo: 'https://dkstatics-public.digikala.com/digikala-static/40103386d101974d18b40cee05e8d62823a657fa_1678547065.png',
     price: 19800000,
-    image: "https://my.uupload.ir/dl/n2vYGpvD",
+    image: "https://my.uupload.ir/dl/EOgBrpWp",
     to: "product/22",
     grouping: "laptop"
   },

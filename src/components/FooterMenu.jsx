@@ -9,7 +9,7 @@ const FooterMenu = () => {
     const { interestList } = UseInterests();
     const [active, setActive] = useState(0);
     return (
-        <div className="w-full h-[4.5rem] fixed bottom-1 px-5 py-3 md:hidden z-10">
+        <div className="w-full h-[4.5rem] fixed bottom-2 px-5 py-3 md:hidden z-10">
             <div className="w-full h-full rounded-3xl bg-slate-700 flex justify-between items-center px-2">
                 <div className="w-32 h-full  flex justify-center items-center gap-8">
                     <div className="relative">

@@ -2,7 +2,7 @@ import * as data from '../data';
 import Layout from "../Layout/Layout";
 import { useParams } from "react-router-dom";
 import { useState } from 'react';
-import { BsCheck, BsFillShareFill } from "react-icons/bs";
+import { BsCheck, BsFillShareFill, BsFillCartCheckFill } from "react-icons/bs";
 import { AiOutlineHeart, AiOutlineSafety, AiFillHeart } from "react-icons/ai";
 import { PiBellRinging } from "react-icons/pi";
 import { BiMessageDetail, BiStore } from "react-icons/bi";
@@ -10,6 +10,7 @@ import { TfiMenuAlt } from "react-icons/tfi";
 import { FaTruckPlane } from "react-icons/fa6";
 import { UseCart, CartActions } from "../context/Cart/CartProvider";
 import { UseInterests, InterestsActions } from '../context/favorites/InterestsProvider';
+import { MdOutlineAddShoppingCart } from "react-icons/md";
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -32,8 +33,8 @@ const SingleProduct = () => {
   const handleSelect = (key, val) => {
     setSelected({ key, val });
   }
-  const handleAddToCart = (e) => {
-    toast.success(`به سبدخرید اضافه شد`)
+  const handleAddToCart = (product) => {
+    if (!checkInCart(cart, product)) toast.success(`به سبدخرید اضافه شد`);
     dispatch({ type: 'ADD_TO_CART', payload: { ...product, selectedColor: selected } });
   }
   const checkInCart = (cart, product) => {
@@ -145,10 +146,19 @@ const SingleProduct = () => {
               <span className=" mr-2 lg:text-sm xl:text-base"> ارسال توسط : </span> <span className="text-slate-500 lg:text-sm xl:text-base"> انبار تهران</span>
             </div>
           </div>
-          <div className="w-full flex md:flex-col flex-row-reverse justify-between md:justify-end md:items-end mt-6 fixed md:static bottom-0 bg-orange-100 md:bg-slate-100 px-8 py-4 md:p-0 rounded-t-2xl md:rounded-none z-50 lg:z-30 items-center">
-
-            <span className="text-orange-700  md:w-auto  text-xl lg:text-base xl:text-lg">{product.price} تومان</span>
-            <button onClick={handleAddToCart} className=" w-1/2 md:w-full py-3 md:py-2  bg-orange-500 rounded-md mt-2  text-white text-sm lg:text-base md:text-lg">{checkInCart(cart, product) ? 'در سبد خرید موجود است' : 'افزودن به سبدخرید'}</button>
+          {/* phone add to cart */}
+          <div className='fixed w-full h-[4.3rem] bg-slate-100 bottom-2 rounded-3xl  p-3 z-50 md:hidden'>
+            <div className='w-full h-full flex justify-between items-center px-10 rounded-2xl bg-rose-600'>
+              <div onClick={() => handleAddToCart(product)} className='w-16 h-16 bg-blue-950 rounded-full flex justify-center items-center cursor-pointer'>
+                {checkInCart(cart, product) ? <BsFillCartCheckFill className='text-3xl text-slate-50' /> : <MdOutlineAddShoppingCart className='text-3xl text-white' />}
+              </div>
+              <span className="text-white  w-auto  text-xl lg:text-base xl:text-lg">{product.price} تومان</span>
+            </div>
+          </div>
+          {/* desktop add to cart */}
+          <div className="w-full md:flex flex-col justify-end items-end mt-6 static  bg-slate-100 z-30 hidden ">
+            <span className="text-orange-700  w-auto  text-xl lg:text-base xl:text-lg">{product.price} تومان</span>
+            <button onClick={() => handleAddToCart(product)} className="  w-full py-2  bg-orange-500 rounded-md mt-2  text-white  lg:text-base text-lg">{checkInCart(cart, product) ? 'در سبد خرید موجود است' : 'افزودن به سبدخرید'}</button>
           </div>
         </div>
       </section>
