@@ -78,7 +78,7 @@ const Home = () => {
           </div>
           <div className="col-span-4 cursor-pointer lg:col-span-2 flex flex-col justify-center items-center">
             <div className="w-20 h-20 md:w-28 md:h-28 lg:w-36 lg:h-36 bg-slate-100 rounded-full relative">
-              <img className=" absolute -top-5" src="https://my.uupload.ir/dl/VX71rzJM" alt="logo" />
+              <img className="w-60 absolute -top-5" src="https://my.uupload.ir/dl/VX71rzJM" alt="logo" />
             </div>
             <span className="text-xs md:text-sm  mt-2">لوازم جانبی</span>
           </div>

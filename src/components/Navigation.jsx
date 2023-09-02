@@ -9,8 +9,8 @@ import { UseCart } from "../context/Cart/CartProvider";
 const Navigation = () => {
   const { cart } = UseCart();
   return (
-    <div>
-      <header className='flex  w-full h-auto '>
+    <div className='w-full h-40 md:h-20 '>
+      <header className='flex  w-full h-auto fixed top-0 z-50 bg-slate-200'>
         {/* --------------------- Navigation in Mobile size -------------------------------------------*/}
         <nav className='w-full h-40 md:hidden p-4'>
           <div className='w-full h-16 flex justify-between items-center'>

@@ -43,7 +43,6 @@ const SingleProduct = () => {
     return interestList.find((item) => item.id === product.id);
   }
   const handleLike = () => {
-    toast.success(`به علاقمندی ها اضافه شد`);
     dispatchInterest({ type: 'ADD_TO_INTERESTS', payload: { ...product } });
   }
   return (
@@ -53,7 +52,6 @@ const SingleProduct = () => {
         <div className="h-full col-span-12 md:col-span-7 lg:col-span-4 relative flex items-center flex-col justify-evenly z-30">
           <div className="flex justify-end absolute right-[-15px] top-0 p-4 flex-col ">
             {checkInInterestList(interestList, product) ? <AiFillHeart onClick={handleLike} className="ml-5 text-2xl text-red-600 cursor-pointer transition-all duration-300" /> : <AiOutlineHeart onClick={handleLike} className="ml-5 text-2xl text-indigo-900 hover:text-rose-500 cursor-pointer transition-all duration-300" />}
-            {/* <ToastContainer className='text-stone-800 '/> */}
             <BsFillShareFill className="ml-5 mt-5 text-2xl text-indigo-900 hover:text-rose-500 cursor-pointer transition-all duration-300" />
             <PiBellRinging className="ml-5 mt-5 text-2xl text-indigo-900 hover:text-rose-500 cursor-pointer transition-all duration-300" />
             <BiMessageDetail className="ml-5 mt-5 text-2xl text-indigo-900 hover:text-rose-500 cursor-pointer transition-all duration-300" />
@@ -125,8 +123,8 @@ const SingleProduct = () => {
           </div>
         </div>
         {/* ------------------------------add to cart div--------------------- */}
-        <div className="h-full col-span-12 lg:col-span-4 flex flex-col items-center md:px-6 md:bg-slate-100 py-4 rounded-xl justify-between">
-          <div className="w-full flex relative">
+        <div className="h-full col-span-12 lg:col-span-4 flex flex-col items-center md:px-6 md:bg-slate-100 py-4 rounded-xl justify-between ">
+          <div className="w-full flex relative ">
             <div className="w-6 h-6 bg-slate-300 rounded-full absolute top-0 right-3"></div>
             <AiOutlineSafety className=" z-30 mr-5 text-2xl mt-2" />
             <div className="w-full mt-2 mr-2 flex justify-between">

@@ -1,20 +1,21 @@
 import { UseInterests, InterestsActions } from "../context/favorites/InterestsProvider";
 import { PiStarFill } from "react-icons/pi";
-import { BsBookmarkHeart } from "react-icons/bs";
+import { BsBookmarkHeart , BsBookmarkHeartFill } from "react-icons/bs";
 import { NavLink } from 'react-router-dom';
-import { toast } from 'react-toastify';
 const Product = ({ product }) => {
   const { interestList } = UseInterests();
   const dispatchInterest = InterestsActions();
   const handleLike = () => {
-    toast.success(`به علاقمندی ها اضافه شد`);
     dispatchInterest({ type: 'ADD_TO_INTERESTS', payload: { ...product } });
+  }
+  const checkInInterestList = (interestList, product) => {
+    return interestList.find((item) => item.id === product.id);
   }
   return (
     <div className="h-auto pb-4 bg-slate-200 rounded-xl mt-4 shadow-lg hover:shadow-slate-400 transition-all duration-300  flex flex-col cursor-pointer relative">
       {/* like */}
       <button onClick={handleLike}>
-        <BsBookmarkHeart className=" text-3xl text-red-400  hover:text-red-600 transition-all duration-300 absolute top-0 right-0" />
+        {checkInInterestList(interestList, product) ? <BsBookmarkHeartFill className={`text-3xl text-red-600 transition-all duration-500 absolute top-0 right-0`} /> :<BsBookmarkHeart className={` text-3xl  hover:text-red-600 transition-all duration-300 absolute top-0 right-0 text-red-400`} />}
       </button>
       <NavLink to={product.to} key={product.id} product={product}>
         {/* photo */}

@@ -4,17 +4,20 @@ import { HiViewGrid } from "react-icons/hi";
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
 import { BiSolidMessageSquareDetail } from "react-icons/bi";
+import { UseInterests } from "../context/favorites/InterestsProvider";
 const FooterMenu = () => {
+    const { interestList } = UseInterests();
     const [active, setActive] = useState(0);
     return (
-        <div className="w-full h-[4.5rem] fixed bottom-1 px-5 py-3 md:hidden z-50">
+        <div className="w-full h-[4.5rem] fixed bottom-1 px-5 py-3 md:hidden z-10">
             <div className="w-full h-full rounded-3xl bg-slate-700 flex justify-between items-center px-2">
                 <div className="w-32 h-full  flex justify-center items-center gap-8">
-                    <div>
+                    <div className="relative">
                         <NavLink to={'/interests'}>
                             <button onClick={() => setActive(2)} className="flex gap-2 items-center cursor-pointer">
                                 <BsFillHeartFill className="text-2xl text-white" />
                             </button>
+                           {interestList.length > 0 &&  <div className="w-4 h-4 rounded-full absolute -top-1 -right-2 bg-red-500 flex justify-center items-center text-xs text-white">{interestList.length}</div>}
                         </NavLink>
                     </div>
                     <div>
