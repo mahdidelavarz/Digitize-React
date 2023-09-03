@@ -1,6 +1,6 @@
 import { UseInterests, InterestsActions } from "../context/favorites/InterestsProvider";
 import { PiStarFill } from "react-icons/pi";
-import { BsBookmarkHeart , BsBookmarkHeartFill } from "react-icons/bs";
+import { BsBookmarkHeart, BsBookmarkHeartFill } from "react-icons/bs";
 import { NavLink } from 'react-router-dom';
 const Product = ({ product }) => {
   const { interestList } = UseInterests();
@@ -15,7 +15,7 @@ const Product = ({ product }) => {
     <div className="h-auto pb-4 bg-slate-200 rounded-xl mt-4 shadow-lg hover:shadow-slate-400 transition-all duration-300  flex flex-col cursor-pointer relative">
       {/* like */}
       <button onClick={handleLike}>
-        {checkInInterestList(interestList, product) ? <BsBookmarkHeartFill className={`text-3xl text-red-600 transition-all duration-500 absolute top-0 right-0`} /> :<BsBookmarkHeart className={` text-3xl  hover:text-red-600 transition-all duration-300 absolute top-0 right-0 text-red-400`} />}
+        {checkInInterestList(interestList, product) ? <BsBookmarkHeartFill className={`text-3xl text-red-600 transition-all duration-500 absolute top-0 right-0`} /> : <BsBookmarkHeart className={` text-3xl  hover:text-red-600 transition-all duration-300 absolute top-0 right-0 text-red-400`} />}
       </button>
       <NavLink to={product.to} key={product.id} product={product}>
         {/* photo */}
@@ -42,12 +42,11 @@ const Product = ({ product }) => {
         </div>
         {/* price */}
         <div className='w-full px-4 mt-5 flex justify-end text-slate-600 text-sm'>
-          <span>{product.price} تومان</span>
+          <span>{product.price.toLocaleString()} تومان</span>
         </div>
       </NavLink>
     </div>
 
   );
 }
-
 export default Product;

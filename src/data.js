@@ -4,8 +4,7 @@ export const products = [
   {
     id: 1,
     colors: { مشکی: 'bg-black', آبی: 'bg-blue-500', سفید: 'bg-white', قرمز: 'bg-red-500' },
-    name: "ساعت هوشمند اپل واچ مدل :",
-    nameF: "Ultra 49 mm Alpine Loop",
+    name: "ساعت هوشمند اپل واچ مدل :Ultra 49 mm Alpine Loop",
     garanti: 'گارانتی 18 ماهه',
     existed: 'موجود در انبار دیجی تایز',
     logo: 'https://dkstatics-public.digikala.com/digikala-static/40103386d101974d18b40cee05e8d62823a657fa_1678547065.png',
@@ -75,8 +74,8 @@ export const products = [
   {
     id: 6,
     colors: { مشکی: 'bg-black', آبی: 'bg-blue-500', سفید: 'bg-white', قرمز: 'bg-red-500' },
-    name: "ساعت هوشمند اپل واچ مدل :",
-    // nameF: "Ultra 49 mm Alpine Loop",
+    name: "ساعت هوشمند اپل واچ مدل :Ultra 49 mm Alpine Loop",
+
     garanti: 'گارانتی 18 ماهه',
     existed: 'موجود در انبار دیجی تایز',
     logo: 'https://dkstatics-public.digikala.com/digikala-static/40103386d101974d18b40cee05e8d62823a657fa_1678547065.png',
@@ -136,7 +135,7 @@ export const products = [
   {
     id: 11,
     colors: { مشکی: 'bg-black', آبی: 'bg-blue-500', سفید: 'bg-white', قرمز: 'bg-red-500' },
-    name: "ساعت هوشمند اپل سری 7 مدل 45mm Aluminum Case with Nike Sport silicone Band",
+    name: "لپ تاپ 13.3 اینچی اپل مدل MacBook Air MGN63 2020 LLA",
     garanti: 'گارانتی 18 ماهه',
     existed: 'موجود در انبار دیجی تایز',
     logo: 'https://dkstatics-public.digikala.com/digikala-static/40103386d101974d18b40cee05e8d62823a657fa_1678547065.png',
@@ -148,7 +147,7 @@ export const products = [
   {
     id: 12,
     colors: { مشکی: 'bg-black', آبی: 'bg-blue-500', سفید: 'bg-white', قرمز: 'bg-red-500' },
-    name: "ساعت هوشمند اپل مدل Series 8 Aluminum 41mm",
+    name: "لپ تاپ 16.2 اینچی اپل مدل MacBook Pro MNWE3 2023",
     garanti: 'گارانتی 18 ماهه',
     existed: 'موجود در انبار دیجی تایز',
     logo: 'https://dkstatics-public.digikala.com/digikala-static/40103386d101974d18b40cee05e8d62823a657fa_1678547065.png',
@@ -160,7 +159,7 @@ export const products = [
   {
     id: 13,
     colors: { مشکی: 'bg-black', آبی: 'bg-blue-500', سفید: 'bg-white', قرمز: 'bg-red-500' },
-    name: "ساعت هوشمند اپل مدل Series 8 Aluminum 41mm",
+    name: "لپ تاپ 16.2 اینچی اپل مدل MacBook Pro MNW93 2023",
     garanti: 'گارانتی 18 ماهه',
     existed: 'موجود در انبار دیجی تایز',
     logo: 'https://dkstatics-public.digikala.com/digikala-static/40103386d101974d18b40cee05e8d62823a657fa_1678547065.png',
@@ -172,7 +171,7 @@ export const products = [
   {
     id: 14,
     colors: { مشکی: 'bg-black', آبی: 'bg-blue-500', سفید: 'bg-white', قرمز: 'bg-red-500' },
-    name: "ساعت هوشمند اپل مدل Series 8 Aluminum 41mm",
+    name: "لپ تاپ 13.6 اینچی اپل مدل MacBook Air-B M2 2022",
     garanti: 'گارانتی 18 ماهه',
     existed: 'موجود در انبار دیجی تایز',
     logo: 'https://dkstatics-public.digikala.com/digikala-static/40103386d101974d18b40cee05e8d62823a657fa_1678547065.png',
@@ -184,7 +183,7 @@ export const products = [
   {
     id: 15,
     colors: { مشکی: 'bg-black', آبی: 'bg-blue-500', سفید: 'bg-white', قرمز: 'bg-red-500' },
-    name: "ساعت هوشمند اپل مدل Series 8 Aluminum 41mm",
+    name: "لپ تاپ 16.2 اینچی اپل مدل MacBook Pro MNWA3 2023",
     garanti: 'گارانتی 18 ماهه',
     existed: 'موجود در انبار دیجی تایز',
     logo: 'https://dkstatics-public.digikala.com/digikala-static/40103386d101974d18b40cee05e8d62823a657fa_1678547065.png',
@@ -196,7 +195,7 @@ export const products = [
   {
     id: 16,
     colors: { مشکی: 'bg-black', آبی: 'bg-blue-500', سفید: 'bg-white', قرمز: 'bg-red-500' },
-    name: "ساعت هوشمند اپل سری 7 مدل 45mm Aluminum Case with Nike Sport silicone Band",
+    name: "لپ تاپ 16.2 اینچی اپل مدل MacBook Pro MNWA3 2023",
     garanti: 'گارانتی 18 ماهه',
     existed: 'موجود در انبار دیجی تایز',
     logo: 'https://dkstatics-public.digikala.com/digikala-static/40103386d101974d18b40cee05e8d62823a657fa_1678547065.png',
@@ -208,7 +207,7 @@ export const products = [
   {
     id: 17,
     colors: { مشکی: 'bg-black', آبی: 'bg-blue-500', سفید: 'bg-white', قرمز: 'bg-red-500' },
-    name: "ساعت هوشمند اپل مدل Series 8 Aluminum 41mm",
+    name: "لپ تاپ 13.6 اینچ اپل مدل MacBook Air-MLY33 M2 2022 LLA",
     garanti: 'گارانتی 18 ماهه',
     existed: 'موجود در انبار دیجی تایز',
     logo: 'https://dkstatics-public.digikala.com/digikala-static/40103386d101974d18b40cee05e8d62823a657fa_1678547065.png',
@@ -220,7 +219,7 @@ export const products = [
   {
     id: 18,
     colors: { مشکی: 'bg-black', آبی: 'bg-blue-500', سفید: 'bg-white', قرمز: 'bg-red-500' },
-    name: "ساعت هوشمند اپل مدل Series 8 Aluminum 41mm",
+    name: "لپ تاپ 13.6 اینچ اپل مدل MacBook Air-MLY33 M2 2022 LLA",
     garanti: 'گارانتی 18 ماهه',
     existed: 'موجود در انبار دیجی تایز',
     logo: 'https://dkstatics-public.digikala.com/digikala-static/40103386d101974d18b40cee05e8d62823a657fa_1678547065.png',
@@ -232,7 +231,7 @@ export const products = [
   {
     id: 19,
     colors: { مشکی: 'bg-black', آبی: 'bg-blue-500', سفید: 'bg-white', قرمز: 'bg-red-500' },
-    name: "ساعت هوشمند اپل مدل Series 8 Aluminum 41mm",
+    name: "لپ تاپ 13.3 اینچی اپل مدل MacBook Pro MNEQ3 2022",
     garanti: 'گارانتی 18 ماهه',
     existed: 'موجود در انبار دیجی تایز',
     logo: 'https://dkstatics-public.digikala.com/digikala-static/40103386d101974d18b40cee05e8d62823a657fa_1678547065.png',
@@ -244,7 +243,7 @@ export const products = [
   {
     id: 20,
     colors: { مشکی: 'bg-black', آبی: 'bg-blue-500', سفید: 'bg-white', قرمز: 'bg-red-500' },
-    name: "ساعت هوشمند اپل مدل Series 8 Aluminum 41mm",
+    name: "لپ تاپ 16.2 اینچی اپل مدل MacBook Pro MNWC3 2023",
     garanti: 'گارانتی 18 ماهه',
     existed: 'موجود در انبار دیجی تایز',
     logo: 'https://dkstatics-public.digikala.com/digikala-static/40103386d101974d18b40cee05e8d62823a657fa_1678547065.png',
@@ -258,7 +257,7 @@ export const products = [
   {
     id: 21,
     colors: { مشکی: 'bg-black', آبی: 'bg-blue-500', سفید: 'bg-white', قرمز: 'bg-red-500' },
-    name: "ساعت هوشمند اپل سری 7 مدل 45mm Aluminum Case with Nike Sport silicone Band",
+    name: "لپ تاپ 13.6 اینچی اپل مدل MacBook Air-A M2 2022",
     garanti: 'گارانتی 18 ماهه',
     existed: 'موجود در انبار دیجی تایز',
     logo: 'https://dkstatics-public.digikala.com/digikala-static/40103386d101974d18b40cee05e8d62823a657fa_1678547065.png',
@@ -270,7 +269,7 @@ export const products = [
   {
     id: 22,
     colors: { مشکی: 'bg-black', آبی: 'bg-blue-500', سفید: 'bg-white', قرمز: 'bg-red-500' },
-    name: "ساعت هوشمند اپل مدل Series 8 Aluminum 41mm",
+    name: "لپ تاپ 16.2 اینچی اپل مدل MacBook Pro Mk183 2021",
     garanti: 'گارانتی 18 ماهه',
     existed: 'موجود در انبار دیجی تایز',
     logo: 'https://dkstatics-public.digikala.com/digikala-static/40103386d101974d18b40cee05e8d62823a657fa_1678547065.png',
@@ -282,7 +281,7 @@ export const products = [
   {
     id: 23,
     colors: { مشکی: 'bg-black', آبی: 'bg-blue-500', سفید: 'bg-white', قرمز: 'bg-red-500' },
-    name: "ساعت هوشمند اپل مدل Series 8 Aluminum 41mm",
+    name: "لپ تاپ 13.3 اینچی اپل مدل  Macbook pro MNEP3 2022",
     garanti: 'گارانتی 18 ماهه',
     existed: 'موجود در انبار دیجی تایز',
     logo: 'https://dkstatics-public.digikala.com/digikala-static/40103386d101974d18b40cee05e8d62823a657fa_1678547065.png',
@@ -294,7 +293,7 @@ export const products = [
   {
     id: 24,
     colors: { مشکی: 'bg-black', آبی: 'bg-blue-500', سفید: 'bg-white', قرمز: 'bg-red-500' },
-    name: "ساعت هوشمند اپل مدل Series 8 Aluminum 41mm",
+    name: "لپ تاپ 13.3 اینچی اپل مدل Macbook Pro MNEH3 2022 LLA",
     garanti: 'گارانتی 18 ماهه',
     existed: 'موجود در انبار دیجی تایز',
     logo: 'https://dkstatics-public.digikala.com/digikala-static/40103386d101974d18b40cee05e8d62823a657fa_1678547065.png',
@@ -308,7 +307,7 @@ export const products = [
   {
     id: 25,
     colors: { مشکی: 'bg-black', آبی: 'bg-blue-500', سفید: 'bg-white', قرمز: 'bg-red-500' },
-    name: "ساعت هوشمند اپل مدل Series 8 Aluminum 41mm",
+    name: "لپ تاپ 14.2 اینچی اپل مدل 2023 MacBook Pro MPHF3",
     garanti: 'گارانتی 18 ماهه',
     existed: 'موجود در انبار دیجی تایز',
     logo: 'https://dkstatics-public.digikala.com/digikala-static/40103386d101974d18b40cee05e8d62823a657fa_1678547065.png',
@@ -320,7 +319,7 @@ export const products = [
   {
     id: 26,
     colors: { مشکی: 'bg-black', آبی: 'bg-blue-500', سفید: 'bg-white', قرمز: 'bg-red-500' },
-    name: "ساعت هوشمند اپل مدل Series 8 Aluminum 41mm",
+    name: "گوشی موبایل اپل مدل iPhone 13 CH دو سیم‌ کارت ظرفیت 128 گیگابایت و رم 4 گیگابایت - نات اکتیو",
     garanti: 'گارانتی 18 ماهه',
     existed: 'موجود در انبار دیجی تایز',
     logo: 'https://dkstatics-public.digikala.com/digikala-static/40103386d101974d18b40cee05e8d62823a657fa_1678547065.png',
@@ -334,7 +333,7 @@ export const products = [
   {
     id: 27,
     colors: { مشکی: 'bg-black', آبی: 'bg-blue-500', سفید: 'bg-white', قرمز: 'bg-red-500' },
-    name: "ساعت هوشمند اپل مدل Series 8 Aluminum 41mm",
+    name: "گوشی موبایل اپل مدل iPhone 13 Pro تک سیم کارت ظرفیت یک ترابایت و رم 6 گیگابایت - اروپا نات اکتیو",
     garanti: 'گارانتی 18 ماهه',
     existed: 'موجود در انبار دیجی تایز',
     logo: 'https://dkstatics-public.digikala.com/digikala-static/40103386d101974d18b40cee05e8d62823a657fa_1678547065.png',
@@ -348,7 +347,7 @@ export const products = [
   {
     id: 28,
     colors: { مشکی: 'bg-black', آبی: 'bg-blue-500', سفید: 'bg-white', قرمز: 'bg-red-500' },
-    name: "ساعت هوشمند اپل مدل Series 8 Aluminum 41mm",
+    name: "گوشی موبایل اپل مدل iPhone 13 Pro Max A2644 دو سیم‌ کارت ظرفیت 128 گیگابایت و رم 6 گیگابایت - اکتیو",
     garanti: 'گارانتی 18 ماهه',
     existed: 'موجود در انبار دیجی تایز',
     logo: 'https://dkstatics-public.digikala.com/digikala-static/40103386d101974d18b40cee05e8d62823a657fa_1678547065.png',
@@ -360,7 +359,7 @@ export const products = [
   {
     id: 29,
     colors: { مشکی: 'bg-black', آبی: 'bg-blue-500', سفید: 'bg-white', قرمز: 'bg-red-500' },
-    name: "ساعت هوشمند اپل مدل Series 8 Aluminum 41mm",
+    name: "گوشی موبایل اپل مدل iPhone 13 CH دو سیم‌ کارت ظرفیت 256 گیگابایت و رم 4 گیگابایت - نات اکتیو",
     garanti: 'گارانتی 18 ماهه',
     existed: 'موجود در انبار دیجی تایز',
     logo: 'https://dkstatics-public.digikala.com/digikala-static/40103386d101974d18b40cee05e8d62823a657fa_1678547065.png',
@@ -374,7 +373,7 @@ export const products = [
   {
     id: 30,
     colors: { مشکی: 'bg-black', آبی: 'bg-blue-500', سفید: 'bg-white', قرمز: 'bg-red-500' },
-    name: "ساعت هوشمند اپل مدل Series 8 Aluminum 41mm",
+    name: "گوشی موبایل اپل مدل iPhone 13 CH دو سیم‌ کارت ظرفیت 256 گیگابایت و رم 4 گیگابایت - نات اکتیو",
     garanti: 'گارانتی 18 ماهه',
     existed: 'موجود در انبار دیجی تایز',
     logo: 'https://dkstatics-public.digikala.com/digikala-static/40103386d101974d18b40cee05e8d62823a657fa_1678547065.png',
@@ -388,7 +387,7 @@ export const products = [
   {
     id: 31,
     colors: { مشکی: 'bg-black', آبی: 'bg-blue-500', سفید: 'bg-white', قرمز: 'bg-red-500' },
-    name: "ساعت هوشمند اپل مدل Series 8 Aluminum 41mm",
+    name: "گوشی موبایل اپل مدل iPhone 13 CH دو سیم‌ کارت ظرفیت 256 گیگابایت و رم 4 گیگابایت - نات اکتیو",
     garanti: 'گارانتی 18 ماهه',
     existed: 'موجود در انبار دیجی تایز',
     logo: 'https://dkstatics-public.digikala.com/digikala-static/40103386d101974d18b40cee05e8d62823a657fa_1678547065.png',
@@ -400,7 +399,7 @@ export const products = [
   {
     id: 32,
     colors: { مشکی: 'bg-black', آبی: 'bg-blue-500', سفید: 'bg-white', قرمز: 'bg-red-500' },
-    name: "ساعت هوشمند اپل مدل Series 8 Aluminum 41mm",
+    name: "گوشی موبایل اپل مدل iPhone 13 CH دو سیم‌ کارت ظرفیت 256 گیگابایت و رم 4 گیگابایت - نات اکتیو",
     garanti: 'گارانتی 18 ماهه',
     existed: 'موجود در انبار دیجی تایز',
     logo: 'https://dkstatics-public.digikala.com/digikala-static/40103386d101974d18b40cee05e8d62823a657fa_1678547065.png',
@@ -412,7 +411,7 @@ export const products = [
   {
     id: 33,
     colors: { مشکی: 'bg-black', آبی: 'bg-blue-500', سفید: 'bg-white', قرمز: 'bg-red-500' },
-    name: "ساعت هوشمند اپل مدل Series 8 Aluminum 41mm",
+    name: "گوشی موبایل اپل مدل iPhone 12 A2404 دو سیم‌ کارت ظرفیت 256 گیگابایت ",
     garanti: 'گارانتی 18 ماهه',
     existed: 'موجود در انبار دیجی تایز',
     logo: 'https://dkstatics-public.digikala.com/digikala-static/40103386d101974d18b40cee05e8d62823a657fa_1678547065.png',
@@ -424,7 +423,7 @@ export const products = [
   {
     id: 34,
     colors: { مشکی: 'bg-black', آبی: 'bg-blue-500', سفید: 'bg-white', قرمز: 'bg-red-500' },
-    name: "ساعت هوشمند اپل مدل Series 8 Aluminum 41mm",
+    name: "گوشی موبایل اپل مدل iPhone 13 Pro Max LLA تک سیم‌ کارت ظرفیت 256 گیگابایت و رم 6 گیگابایت - نات اکتیو",
     garanti: 'گارانتی 18 ماهه',
     existed: 'موجود در انبار دیجی تایز',
     logo: 'https://dkstatics-public.digikala.com/digikala-static/40103386d101974d18b40cee05e8d62823a657fa_1678547065.png',

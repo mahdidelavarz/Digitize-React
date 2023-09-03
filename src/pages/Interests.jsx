@@ -101,7 +101,7 @@ const Interests = () => {
                       <BsCheck className={`${selected.key === key ? 'flex' : 'hidden'} ${val === 'bg-white' ? 'text-black ' : 'text-white'} text-xl`} />
                     </div>
                   })}
-                  <div className='w-[35%] text-cyan-700 flex justify-end text-sm lg:text-base'>{item.price} تومان</div>
+                  <div className='w-[35%] text-cyan-700 flex justify-end text-sm lg:text-base'>{item.price.toLocaleString()} تومان</div>
                 </div>
                 <div className='flex mt-4 gap-4 text-xs md:text-sm lg:text-base'>
                   <div onClick={() => handleDelete(item)} className='flex px-4 py-2 items-center cursor-pointer gap-2 shadow-lg border text-slate-400 rounded-lg'>
