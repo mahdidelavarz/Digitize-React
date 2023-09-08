@@ -13,8 +13,8 @@ const SignIn = () => {
     const onSubmit = (values) => console.log(values);
 
     const validationSchema = Yup.object({
-        email: Yup.string().required('please enter the email !'),
-        password: Yup.number().required('please enter the pass !'),
+        email: Yup.string().required('ایمیل نمیتواند خالی باشد !'),
+        password: Yup.number().required('رمز عبور نمیتواند خالی باشد !'),
     })
     const formik = useFormik({
         initialValues,
@@ -23,16 +23,16 @@ const SignIn = () => {
     });
     console.log(formik.errors);
     return (
-            <form className='w-[75%] flex flex-col items-center'>
+            <form className='w-full flex flex-col items-center gap-y-4'>
 
                 <div className="w-full h-auto mt-4 flex flex-col ">
                     <label className='text-slate-700'>ایمیل :</label>
-                    <input className='outline-none border px-4 py-1 mt-2 rounded-xl bg-white' type="email" name='email' placeholder='ایمیل خودرا وارد کنید ...' {...formik.getFieldProps('email')} />
+                    <input className='outline-none border px-4 py-2 mt-2 rounded-xl bg-white' type="email" name='email' placeholder='ایمیل خودرا وارد کنید ...' {...formik.getFieldProps('email')} />
                     {formik.errors.email && formik.touched.email && (<div className='text-red-400 mt-2 ml-4'>{formik.errors.email}</div>)}
                 </div>
                 <div className="w-full h-auto mt-4 flex flex-col ">
                     <label className='text-slate-700'>رمز عبور :</label>
-                    <input className='outline-none border px-4 py-1 mt-2 rounded-xl bg-white' type="tel" name='password' placeholder='رمزعبور خود را وارد کنید ...' {...formik.getFieldProps('password')} />
+                    <input className='outline-none border px-4 py-2 mt-2 rounded-xl bg-white' type="tel" name='password' placeholder='رمزعبور خود را وارد کنید ...' {...formik.getFieldProps('password')} />
                     {formik.errors.password && formik.touched.password && (<div className='text-red-400 mt-2 ml-4'>{formik.errors.password}</div>)}
                 </div>
 

@@ -88,7 +88,7 @@ const Cart = () => {
                     <span>{item.quantity}</span>
                     <button onClick={() => handleDec(item)} >{item.quantity > 1 ? <AiOutlineMinus /> : <FaRegTrashAlt className="text-red-500" />}</button>
                   </div>
-                  <div className="mr-6 text-slate-500 text-xl">{(item.price * item.quantity).toLocaleString()} تومان</div>
+                  <div className="mr-6 text-slate-500 text-xl">{(item.price * item.quantity).toLocaleString('fa-IR')} تومان</div>
                 </div>
               </div>
             }) : <div className="col-span-12 h-auto"><img src="https://my.uupload.ir/dl/0j5DVzyj" alt="product" className="w-full h-[75vh] object-scale-down"></img></div>}
@@ -97,9 +97,9 @@ const Cart = () => {
           <div className={`fixed lg:static bottom-0  lg:flex h-auto lg:h-96 w-full lg:w-1/3 bg-white mt-8 border-2 border-solid rounded-lg flex-col justify-between p-4 ${!cart.length && 'hidden'}`} >
             <p>جمع قیمت سفارش ها :</p>
             <div className="w-full p-4">
-              <span className="text-2xl text-orange-500">{total.toLocaleString()} تومان</span>
+              <span className="text-2xl text-rose-500">{total.toLocaleString('fa-IR')} تومان</span>
             </div>
-            <button className="w-full py-3 bg-orange-400 rounded-lg text-white">ثبت سفارش</button>
+            <button className="w-full py-3 bg-rose-500 rounded-lg text-white">ثبت سفارش</button>
           </div>
         </div>
       </main>

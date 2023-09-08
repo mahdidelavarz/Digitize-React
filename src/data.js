@@ -13,7 +13,8 @@ export const products = [
     discount: '%10',
     image: "https://my.uupload.ir/dl/yoO19j11",
     to: "product/1",
-    grouping: "watch"
+    score: 4.5,
+    category: "watch"
   },
   {
     id: 2,
@@ -27,7 +28,8 @@ export const products = [
     discount: '%10',
     image: "https://my.uupload.ir/dl/1LzNYWjb",
     to: "product/2",
-    grouping: "watch"
+    score: 4.1,
+    category: "watch"
   },
   {
     id: 3,
@@ -41,7 +43,8 @@ export const products = [
     discount: '%10',
     image: "https://my.uupload.ir/dl/JgyprBBB",
     to: "product/3",
-    grouping: "watch"
+    score: 3.2,
+    category: "watch"
   },
   {
     id: 4,
@@ -55,7 +58,8 @@ export const products = [
     discount: '%13',
     image: "https://my.uupload.ir/dl/wZ2gOLGw",
     to: "product/4",
-    grouping: "watch"
+    score: 2.2,
+    category: "watch"
   },
   {
     id: 5,
@@ -69,7 +73,8 @@ export const products = [
     discount: '%10',
     image: "https://my.uupload.ir/dl/5L5jga4e",
     to: "product/5",
-    grouping: "watch"
+    score: 4.8,
+    category: "watch"
   },
   {
     id: 6,
@@ -82,7 +87,8 @@ export const products = [
     price: 1200000,
     image: "https://my.uupload.ir/dl/yoO19j11",
     to: "product/6",
-    grouping: "watch"
+    score: 3.8,
+    category: "watch"
   },
   {
     id: 7,
@@ -94,7 +100,8 @@ export const products = [
     price: 18800000,
     image: "https://my.uupload.ir/dl/1LzNYWjb",
     to: "product/7",
-    grouping: "watch"
+    score: 4.7,
+    category: "watch"
   },
   {
     id: 8,
@@ -106,7 +113,8 @@ export const products = [
     price: 9500000,
     image: "https://my.uupload.ir/dl/JgyprBBB",
     to: "product/8",
-    grouping: "watch"
+    score: 4.5,
+    category: "watch"
   },
   {
     id: 9,
@@ -118,7 +126,8 @@ export const products = [
     price: 12680000,
     image: "https://my.uupload.ir/dl/wZ2gOLGw",
     to: "product/9",
-    grouping: "watch"
+    score: 3.9,
+    category: "watch"
   },
   {
     id: 10,
@@ -130,7 +139,8 @@ export const products = [
     price: 22500000,
     image: "https://my.uupload.ir/dl/5L5jga4e",
     to: "product/10",
-    grouping: "watch"
+    score: 4.2,
+    category: "watch"
   },
   {
     id: 11,
@@ -142,7 +152,8 @@ export const products = [
     price: 9900000,
     image: "https://my.uupload.ir/dl/n2vYGpvD",
     to: "product/11",
-    grouping: "laptop"
+    score: 4.6,
+    category: "laptop"
   },
   {
     id: 12,
@@ -154,7 +165,8 @@ export const products = [
     price: 19800000,
     image: "https://my.uupload.ir/dl/n2vL9Xjn",
     to: "product/12",
-    grouping: "laptop"
+    score: 3.2,
+    category: "laptop"
   },
   {
     id: 13,
@@ -166,7 +178,8 @@ export const products = [
     price: 19800000,
     image: "https://my.uupload.ir/dl/wZ21ENzw",
     to: "product/13",
-    grouping: "laptop"
+    score: 3.6,
+    category: "laptop"
   },
   {
     id: 14,
@@ -178,7 +191,8 @@ export const products = [
     price: 19800000,
     image: "https://my.uupload.ir/dl/n2vL9X66",
     to: "product/14",
-    grouping: "laptop"
+    score: 3.7,
+    category: "laptop"
   },
   {
     id: 15,
@@ -190,7 +204,8 @@ export const products = [
     price: 19800000,
     image: "https://my.uupload.ir/dl/mbGo1N7b",
     to: "product/15",
-    grouping: "laptop"
+    score: 5,
+    category: "laptop"
   },
   {
     id: 16,
@@ -202,7 +217,8 @@ export const products = [
     price: 9900000,
     image: "https://my.uupload.ir/dl/mbGo1N7b",
     to: "product/16",
-    grouping: "laptop"
+    score: 4.1,
+    category: "laptop"
   },
   {
     id: 17,
@@ -214,7 +230,8 @@ export const products = [
     price: 19800000,
     image: "https://my.uupload.ir/dl/EOgBrpWp",
     to: "product/17",
-    grouping: "laptop"
+    score: 3.9,
+    category: "laptop"
   },
   {
     id: 18,
@@ -226,7 +243,8 @@ export const products = [
     price: 19800000,
     image: "https://my.uupload.ir/dl/4e5KrAyM",
     to: "product/18",
-    grouping: "laptop"
+    score: 3.2,
+    category: "laptop"
   },
   {
     id: 19,
@@ -238,7 +256,8 @@ export const products = [
     price: 19800000,
     image: "https://my.uupload.ir/dl/wZ21EgZB",
     to: "product/19",
-    grouping: "laptop"
+    score: 4.5,
+    category: "laptop"
   },
   {
     id: 20,
@@ -252,7 +271,8 @@ export const products = [
     discount: '%13',
     image: "https://my.uupload.ir/dl/n2vL9X66",
     to: "product/20",
-    grouping: "laptop"
+    score: 4.7,
+    category: "laptop"
   },
   {
     id: 21,
@@ -264,7 +284,8 @@ export const products = [
     price: 9900000,
     image: "https://my.uupload.ir/dl/mbGo1N7b",
     to: "product/21",
-    grouping: "laptop"
+    score: 4.1,
+    category: "laptop"
   },
   {
     id: 22,
@@ -276,7 +297,8 @@ export const products = [
     price: 19800000,
     image: "https://my.uupload.ir/dl/EOgBrpWp",
     to: "product/22",
-    grouping: "laptop"
+    score: 3.2,
+    category: "laptop"
   },
   {
     id: 23,
@@ -288,7 +310,8 @@ export const products = [
     price: 19800000,
     image: "https://my.uupload.ir/dl/n2vYGpvD",
     to: "product/23",
-    grouping: "laptop"
+    score: 3.1,
+    category: "laptop"
   },
   {
     id: 24,
@@ -302,7 +325,8 @@ export const products = [
     discount: '%13',
     image: "https://my.uupload.ir/dl/n2vYGpvD",
     to: "product/24",
-    grouping: "laptop"
+    score: 3.7,
+    category: "laptop"
   },
   {
     id: 25,
@@ -314,7 +338,8 @@ export const products = [
     price: 19800000,
     image: "https://my.uupload.ir/dl/n2vYGpvD",
     to: "product/25",
-    grouping: "laptop"
+    score: 3.5,
+    category: "laptop"
   },
   {
     id: 26,
@@ -328,7 +353,8 @@ export const products = [
     discount: '%13',
     image: "https://my.uupload.ir/dl/JgyxY2bk",
     to: "product/26",
-    grouping: "phone"
+    score: 4.5,
+    category: "phone"
   },
   {
     id: 27,
@@ -342,7 +368,8 @@ export const products = [
     discount: '%13',
     image: "https://my.uupload.ir/dl/kjgY1v7e",
     to: "product/27",
-    grouping: "phone"
+    score: 4.8,
+    category: "phone"
   },
   {
     id: 28,
@@ -354,7 +381,8 @@ export const products = [
     price: 19800000,
     image: "https://my.uupload.ir/dl/VX71EJ6p",
     to: "product/28",
-    grouping: "phone"
+    score: 4.9,
+    category: "phone"
   },
   {
     id: 29,
@@ -368,7 +396,8 @@ export const products = [
     discount: '%10',
     image: "https://my.uupload.ir/dl/zbRgvXJB",
     to: "product/29",
-    grouping: "phone"
+    score: 4.4,
+    category: "phone"
   },
   {
     id: 30,
@@ -382,7 +411,8 @@ export const products = [
     discount: '%13',
     image: "https://my.uupload.ir/dl/JgyxY2bk",
     to: "product/30",
-    grouping: "phone"
+    score: 3.3,
+    category: "phone"
   },
   {
     id: 31,
@@ -394,7 +424,8 @@ export const products = [
     price: 19800000,
     image: "https://my.uupload.ir/dl/kjgY1v7e",
     to: "product/31",
-    grouping: "phone"
+    score: 4.5,
+    category: "phone"
   },
   {
     id: 32,
@@ -406,7 +437,8 @@ export const products = [
     price: 19800000,
     image: "https://my.uupload.ir/dl/VX71EJ6p",
     to: "product/32",
-    grouping: "phone"
+    score: 4.8,
+    category: "phone"
   },
   {
     id: 33,
@@ -418,7 +450,8 @@ export const products = [
     price: 19800000,
     image: "https://my.uupload.ir/dl/zbRgvXJB",
     to: "product/33",
-    grouping: "phone"
+    score: 3.8,
+    category: "phone"
   },
   {
     id: 34,
@@ -430,7 +463,8 @@ export const products = [
     price: 19800000,
     image: "https://my.uupload.ir/dl/VX71EJjW",
     to: "product/34",
-    grouping: "airPod"
+    score: 3.9,
+    category: "airPod"
   },
   {
     id: 35,
@@ -442,7 +476,8 @@ export const products = [
     price: 19800000,
     image: "https://my.uupload.ir/dl/EOgen710",
     to: "product/35",
-    grouping: "airPod"
+    score: 4.9,
+    category: "airPod"
   },
   {
     id: 36,
@@ -454,7 +489,8 @@ export const products = [
     price: 19800000,
     image: "https://my.uupload.ir/dl/zbRgvLzA",
     to: "product/36",
-    grouping: "airPod"
+    score: 3.1,
+    category: "airPod"
   },
   {
     id: 37,
@@ -466,7 +502,8 @@ export const products = [
     price: 19800000,
     image: "https://my.uupload.ir/dl/1Lzj4kry",
     to: "product/37",
-    grouping: "airPod"
+    score: 2.4,
+    category: "airPod"
   },
   {
     id: 38,
@@ -478,7 +515,8 @@ export const products = [
     price: 19800000,
     image: "https://my.uupload.ir/dl/zbRgvLVb",
     to: "product/38",
-    grouping: "airPod"
+    score: 3.9,
+    category: "airPod"
   },
   {
     id: 39,
@@ -490,7 +528,8 @@ export const products = [
     price: 19800000,
     image: "https://my.uffupload.ir/dl/1Lzj4kBn",
     to: "product/39",
-    grouping: "airPod"
+    score: 4.8,
+    category: "airPod"
   },
 ];
 

@@ -1,7 +1,7 @@
 import Navigation from "../components/Navigation";
 import SideBar from "../components/SideBar";
 import Footer from "../components/Footer"
-import FooterMenu from "../components/FooterMenu";
+import FooterMenu from "../components/menu/FooterMenu";
 
 const Layout = ({ children }) => {
    

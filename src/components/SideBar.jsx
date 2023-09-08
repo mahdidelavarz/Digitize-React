@@ -1,11 +1,9 @@
-import { NavLink } from 'react-router-dom';
-import { HiOutlineHome, HiOutlineDeviceMobile, HiOutlineColorSwatch } from "react-icons/hi";
+import { HiOutlineColorSwatch } from "react-icons/hi";
 import { HiOutlineBuildingOffice2 } from "react-icons/hi2";
-import { MdOutlineLaptopMac } from "react-icons/md";
-import { IoWatchOutline } from "react-icons/io5";
-import { BsCaretDownFill , BsHeartHalf } from "react-icons/bs";
+import { BsCaretDownFill, BsHeartHalf } from "react-icons/bs";
 import { CiWallet } from "react-icons/ci";
 import { useState } from 'react';
+import Links from './links/Links';
 
 
 const SideBar = () => {
@@ -19,52 +17,7 @@ const SideBar = () => {
     <div className=" hidden md:block col-span-3 row-span-2 bg-white rounded-l-xl max-h-[85vh] mt-2 overflow-scroll p-5 scrollbar-hide">
       <ul className='w-full  flex flex-col  xl:px-4 '>
         <li className='mt-5 text-lg text-orange-500'>دسته بندی</li>
-        <li className='w-full h-12  text-lg text-slate-600 lg:px-4 cursor-pointer flex items-center mt-6 hover:bg-gradient-to-l from-slate-200 rounded-md transition-all duration-300'>
-          <div className="w-10 h-5  relative">
-            <div className="w-4 h-4 lg:w-5 lg:h-5 xl:w-6 xl:h-6 bg-gradient-to-l from-slate-300 absolute top-[-4px] right-[-5px] lg:top-[-5px] lg:right-[-10px] rounded-full"></div>
-            <HiOutlineHome className="text-orange-400 text-xl xl:text-2xl ml-2 lg:ml-4" />
-          </div>
-          <NavLink to={'/'} className='w-full flex text-sm lg:text-base'>
-            خانه
-          </NavLink>
-        </li>
-        <li className='w-full h-12  text-lg text-slate-600 lg:px-4 cursor-pointer flex items-center mt-6 hover:bg-gradient-to-l from-slate-200 rounded-md transition-all duration-300'>
-          <div className="w-10 h-5  relative">
-            <div className="w-4 h-4 lg:w-5 lg:h-5 xl:w-6 xl:h-6 bg-gradient-to-l from-slate-300 absolute top-[-4px] right-[-5px] lg:top-[-5px] lg:right-[-10px] rounded-full"></div>
-            <HiOutlineDeviceMobile className="text-orange-400 text-xl xl:text-2xl ml-2 lg:ml-4" />
-          </div>
-          <NavLink to={'/phone'} className='w-full flex text-sm lg:text-base'>
-            تلفن همراه
-          </NavLink>
-        </li>
-        <li className='w-full h-12  text-lg text-slate-600 lg:px-4 cursor-pointer flex items-center mt-3 lg:mt-6  hover:bg-gradient-to-l from-slate-200 rounded-md transition-all duration-300'>
-          <div className="w-10 h-5  relative">
-            <div className="w-4 h-4 lg:w-5 lg:h-5 xl:w-6 xl:h-6 bg-gradient-to-l from-slate-300 absolute top-[-4px] right-[-5px] lg:top-[-5px] lg:right-[-10px] rounded-full "></div>
-            <MdOutlineLaptopMac className="text-orange-400 text-xl xl:text-2xl ml-2 lg:ml-4" />
-          </div>
-          <NavLink to={'/laptop'} className='w-full flex text-sm lg:text-base '>
-            لپ تاپ
-          </NavLink>
-        </li>
-        <li className='w-full h-12  text-lg text-slate-600 lg:px-4 cursor-pointer flex items-center mt-3 lg:mt-6 hover:bg-gradient-to-l from-slate-200 rounded-md transition-all duration-300'>
-          <div className="w-10 h-5  relative">
-            <div className="w-4 h-4 lg:w-5 lg:h-5 xl:w-6 xl:h-6 bg-gradient-to-l from-slate-300 absolute top-[-4px] right-[-5px] lg:top-[-5px] lg:right-[-10px] rounded-full  z-0"></div>
-            <IoWatchOutline className="text-orange-400 text-xl xl:text-2xl ml-2 lg:ml-4" />
-          </div>
-          <NavLink to={'/watch'} className='w-full flex text-sm lg:text-base'>
-            ساعت هوشمند
-          </NavLink>
-        </li>
-
-        <li className='w-full h-12  text-lg text-slate-600 lg:px-4 cursor-pointer flex items-center mt-6 hover:bg-gradient-to-l from-slate-200 rounded-md transition-all duration-300'>
-          <div className="w-10 h-5  relative">
-            <div className="w-4 h-4 lg:w-5 lg:h-5 xl:w-6 xl:h-6 bg-gradient-to-l from-slate-300 absolute top-[-4px] right-[-5px] lg:top-[-5px] lg:right-[-10px] rounded-full"></div>
-            <BsHeartHalf className="text-orange-400 text-lg xl:text-xl ml-2 lg:ml-4" />
-          </div>
-          <NavLink to={'/interests'} className='w-full flex text-sm lg:text-base'>
-            علاقمندی
-          </NavLink>
-        </li>
+        <Links iconStyle="text-orange-500 text-xl xl:text-2xl ml-2 lg:ml-4" backStyle="bg-gradient-to-l from-slate-300" width="full"/>
         <li className='mt-16 text-lg text-orange-400'>فیلتر</li>
         <div className='w-full h-auto mt-6'>
           <div onClick={() => setActiveBrand(!activeBrand)} className=' w-full h-12  text-lg text-slate-600 lg:px-4 cursor-pointer flex items-center mt-6 hover:bg-gradient-to-l from-slate-200 rounded-md transition-all duration-500'>

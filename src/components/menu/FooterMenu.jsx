@@ -4,7 +4,7 @@ import { HiViewGrid } from "react-icons/hi";
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
 import { BiSolidMessageSquareDetail } from "react-icons/bi";
-import { UseInterests } from "../context/favorites/InterestsProvider";
+import { UseInterests } from "../../context/favorites/InterestsProvider";
 const FooterMenu = () => {
     const { interestList } = UseInterests();
     const [active, setActive] = useState(0);

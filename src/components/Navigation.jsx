@@ -4,7 +4,7 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import { HiOutlineFilter, HiShoppingCart } from "react-icons/hi";
 import { PiListMagnifyingGlassLight, PiSignInBold } from "react-icons/pi";
 import { FiSearch } from "react-icons/fi";
-import BurgerMenu from './BurgerMenu';
+import BurgerMenu from './menu/BurgerMenu';
 import { UseCart } from "../context/Cart/CartProvider";
 const Navigation = () => {
   const { cart } = UseCart();
@@ -16,8 +16,8 @@ const Navigation = () => {
           <div className='w-full h-16 flex justify-between items-center'>
             <div className='flex '>
               <RxHamburgerMenu className="bg-white w-9 h-9 lg:h-11 lg:w-11 text-stone-500 rounded-md p-1 cursor-pointer outline-none" />
-              <div className='flex justify-center cursor-pointer bg-white items-center px-3 py-1 shadow-md rounded-md text-stone-500 mr-2'>
-                <NavLink to={'/login'} className='flex items-center'>ورود
+              <div className='flex justify-center cursor-pointer bg-white items-center px-3 py-1 shadow-md rounded-md text-stone-500 mr-3'>
+                <NavLink to={'/login'} className='flex items-center gap-2'>ورود
                   <PiSignInBold className='text-xl ml-1 text-red-700' />
                 </NavLink>
               </div>
@@ -39,7 +39,7 @@ const Navigation = () => {
           <BurgerMenu/>
           {/* --------------------- Filter - sort mobile div -------------------------------------------*/}
           <div className='w-full h-16 flex justify-evenly items-center'>
-            <div className='bg-white flex justify-center items-center p-2 w-1/2 rounded-md ml-2 cursor-pointer'>
+            <div className='bg-white flex justify-center items-center p-2 w-1/2 rounded-md ml-5 cursor-pointer'>
               <PiListMagnifyingGlassLight className='text-red-700 ml-2  text-xl' />
               <span className='text-stone-600 text-xs'>محبوب ترین محصول</span>
             </div>
