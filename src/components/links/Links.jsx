@@ -17,7 +17,7 @@ const Links = ({ iconStyle, backStyle, width }) => {
     return (
         <>
             {routes.map((item) => {
-                return <li className={`${width} h-12  text-lg text-slate-600 lg:px-4 cursor-pointer flex items-center mt-6 hover:bg-gradient-to-l from-slate-200 rounded-md transition-all duration-300`} key={item.title}>
+                return <li className={`${width} h-12  text-lg text-slate-600 lg:px-4 cursor-pointer flex items-center hover:bg-gradient-to-l from-slate-200 rounded-md transition-all duration-300`} key={item.title}>
                     <div className="w-10 h-5  relative">
                         <div className={`w-5 h-5 md:w-4 md:h-4 lg:w-5 lg:h-5 xl:w-6 xl:h-6 ${backStyle} absolute top-[-4px] right-[-5px] lg:top-[-5px] lg:right-[-10px] rounded-full`}></div>
                         {item.icon}

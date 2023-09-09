@@ -17,7 +17,7 @@ const SideBar = () => {
     <div className=" hidden md:block col-span-3 row-span-2 bg-white rounded-l-xl max-h-[85vh] mt-2 overflow-scroll p-5 scrollbar-hide">
       <ul className='w-full  flex flex-col  xl:px-4 '>
         <li className='mt-5 text-lg text-orange-500'>دسته بندی</li>
-        <Links iconStyle="text-orange-500 text-xl xl:text-2xl ml-2 lg:ml-4" backStyle="bg-gradient-to-l from-slate-300" width="full"/>
+        <Links iconStyle="text-orange-500 text-xl xl:text-2xl ml-2 lg:ml-4" backStyle="bg-gradient-to-l from-slate-300" width="full mt-6"/>
         <li className='mt-16 text-lg text-orange-400'>فیلتر</li>
         <div className='w-full h-auto mt-6'>
           <div onClick={() => setActiveBrand(!activeBrand)} className=' w-full h-12  text-lg text-slate-600 lg:px-4 cursor-pointer flex items-center mt-6 hover:bg-gradient-to-l from-slate-200 rounded-md transition-all duration-500'>

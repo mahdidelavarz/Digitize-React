@@ -6,11 +6,14 @@ import { NavLink } from "react-router-dom";
 import { FaClipboardCheck, FaRegTrashAlt } from "react-icons/fa";
 import { PiArticleNyTimes } from "react-icons/pi";
 import Navigation from "../components/Navigation";
+import useLoading from "../hooks/useLoading";
+import { CartLoading } from "../components/common/Loading";
 
 
 const Cart = () => {
   const { cart, total } = UseCart();
   const dispatch = CartActions();
+  const loading = useLoading();
 
   const handleInc = (item) => {
     dispatch({ type: "ADD_TO_CART", payload: item })
@@ -45,59 +48,63 @@ const Cart = () => {
           <div className={`w-full h-auto lg:max-h-[78vh] mt-2 bg-white p-1 rounded-lg grid grid-cols-12 lg:w-2/3 lg:overflow-scroll mb-40 lg:mb-0 scrollbar-hide ${!cart.length && 'lg:w-full mb-0'}`} >
             {cart.length ? cart.map((item) => {
               // -------------------single item--------------------------------------
-              return <div className="col-span-12 grid grid-cols-12 gap-1 py-4 border-b-2 border-solid " key={item.id}>
-                {/* -------------img--------------------------- */}
-                <div className="col-span-4 p-2 bg-white">
-                  <img src={item.image} alt={item.name} />
-                </div>
-                {/* -------descriptions----------------------- */}
-                <div className="col-span-8 p-2 bg-white pt-6">
-                  <h2 className="text-sm lg:text-base ">{item.name} {item.nameF}</h2>
-                  <div>
-                    <div className="flex items-center gap-2 mt-6 text-sm text-slate-500 ">
-                      <div className={`w-5 h-5 ${item.selectedColor.val} rounded-full `}></div>
-                      <span className="">{item.selectedColor.key}</span>
+              return (
+                <>
+                  {loading ? <div className="col-span-12 grid grid-cols-12 gap-1 py-4 border-b-2 border-solid " key={item.id}>
+                    {/* -------------img--------------------------- */}
+                    <div className="col-span-4 p-2 bg-white">
+                      <img src={item.image} alt={item.name} />
                     </div>
-                    <div className="mt-3 text-xs text-slate-500  flex items-center">
-                      <AiOutlineSafety className="text-xl ml-2" />
-                      <span>{item.garanti}</span>
-                    </div>
-                    <div className="mt-3 text-xs  text-slate-500 flex items-center">
-                      <FaClipboardCheck className="text-xl ml-2 text-cyan-600" />
-                      <span>{item.existed}</span>
-                    </div>
-                    <div className="mt-3 text-xs text-slate-500  flex items-center relative">
-                      <div className="w-[2px] h-7 bg-cyan-600 absolute top-3 right-[7px]"></div>
-                      <div className="w-2 h-2 bg-cyan-600 rounded-full mr-1 ml-5"></div>
-                      <img src={item.logo} className='w-5 h-5 md:w-5 md:h-5 lg:w-6 lg:h-6 object-cover ml-2 ' alt="phone" />
-                      <span>ارسال توسط دیجی تایز</span>
-                    </div>
-                    <div className="mt-3 text-xs text-slate-500  flex items-center">
-                      <div className="w-2 h-2 bg-cyan-600 rounded-full mr-1 ml-5"></div>
-                      <PiArticleNyTimes className="text-xl ml-2 text-blue-700" />
-                      <span>ارسال فوری(تهران)</span>
+                    {/* -------descriptions----------------------- */}
+                    <div className="col-span-8 p-2 bg-white pt-6">
+                      <h2 className="text-sm lg:text-base ">{item.name} {item.nameF}</h2>
+                      <div>
+                        <div className="flex items-center gap-2 mt-6 text-sm text-slate-500 ">
+                          <div className={`w-5 h-5 ${item.selectedColor.val} rounded-full `}></div>
+                          <span className="">{item.selectedColor.key}</span>
+                        </div>
+                        <div className="mt-3 text-xs text-slate-500  flex items-center">
+                          <AiOutlineSafety className="text-xl ml-2" />
+                          <span>{item.garanti}</span>
+                        </div>
+                        <div className="mt-3 text-xs  text-slate-500 flex items-center">
+                          <FaClipboardCheck className="text-xl ml-2 text-cyan-600" />
+                          <span>{item.existed}</span>
+                        </div>
+                        <div className="mt-3 text-xs text-slate-500  flex items-center relative">
+                          <div className="w-[2px] h-7 bg-cyan-600 absolute top-3 right-[7px]"></div>
+                          <div className="w-2 h-2 bg-cyan-600 rounded-full mr-1 ml-5"></div>
+                          <img src={item.logo} className='w-5 h-5 md:w-5 md:h-5 lg:w-6 lg:h-6 object-cover ml-2 ' alt="phone" />
+                          <span>ارسال توسط دیجی تایز</span>
+                        </div>
+                        <div className="mt-3 text-xs text-slate-500  flex items-center">
+                          <div className="w-2 h-2 bg-cyan-600 rounded-full mr-1 ml-5"></div>
+                          <PiArticleNyTimes className="text-xl ml-2 text-blue-700" />
+                          <span>ارسال فوری(تهران)</span>
+                        </div>
+
+                      </div>
                     </div>
 
-                  </div>
-                </div>
-
-                {/*------------- total and price------------------ */}
-                <div className="col-span-12 p-2 bg-white flex items-center mr-8">
-                  <div className="w-24 flex justify-between items-center p-2 border-2 border-solid border-slate-300 rounded-lg text-orange-500">
-                    <button onClick={() => handleInc(item)}><AiOutlinePlus /></button>
-                    <span>{item.quantity}</span>
-                    <button onClick={() => handleDec(item)} >{item.quantity > 1 ? <AiOutlineMinus /> : <FaRegTrashAlt className="text-red-500" />}</button>
-                  </div>
-                  <div className="mr-6 text-slate-500 text-xl">{(item.price * item.quantity).toLocaleString('fa-IR')} تومان</div>
-                </div>
-              </div>
+                    {/*------------- total and price------------------ */}
+                    <div className="col-span-12 p-2 bg-white flex items-center mr-8">
+                      <div className="w-24 flex justify-between items-center p-2 border-2 border-solid border-slate-300 rounded-lg text-orange-500">
+                        <button onClick={() => handleInc(item)}><AiOutlinePlus /></button>
+                        <span>{item.quantity}</span>
+                        <button onClick={() => handleDec(item)} >{item.quantity > 1 ? <AiOutlineMinus /> : <FaRegTrashAlt className="text-red-500" />}</button>
+                      </div>
+                      <div className="mr-6 text-slate-500 text-xl">{(item.price * item.quantity).toLocaleString('fa-IR')} تومان</div>
+                    </div>
+                  </div> : <CartLoading />}
+                </>
+              )
             }) : <div className="col-span-12 h-auto"><img src="https://my.uupload.ir/dl/0j5DVzyj" alt="product" className="w-full h-[75vh] object-scale-down"></img></div>}
           </div>
 
           <div className={`fixed lg:static bottom-0  lg:flex h-auto lg:h-96 w-full lg:w-1/3 bg-white mt-8 border-2 border-solid rounded-lg flex-col justify-between p-4 ${!cart.length && 'hidden'}`} >
             <p>جمع قیمت سفارش ها :</p>
             <div className="w-full p-4">
-              <span className="text-2xl text-rose-500">{total.toLocaleString('fa-IR')} تومان</span>
+              {loading ? <span className="text-2xl text-rose-500">{total.toLocaleString('fa-IR')} تومان</span> : <div className="w-60 h-10 bg-slate-300 rounded-lg animate-pulse"></div>}
             </div>
             <button className="w-full py-3 bg-rose-500 rounded-lg text-white">ثبت سفارش</button>
           </div>
