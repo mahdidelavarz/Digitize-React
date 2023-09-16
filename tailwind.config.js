@@ -8,7 +8,7 @@ module.exports = {
       },
       boxShadow: {
         'sdt': 'rgba(0, 0, 0, 0.56) 0px 22px 70px 4px',
-      }
+      },
     },
   },
   plugins: [

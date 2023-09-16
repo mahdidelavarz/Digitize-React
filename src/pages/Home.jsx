@@ -4,7 +4,6 @@ import React from 'react';
 import Footer from '../components/Footer';
 import { NavLink } from 'react-router-dom';
 import FooterMenu from '../components/menu/FooterMenu';
-import HomeNavBar from '../components/menu/HomeNavBar';
 import HeaderSlide from '../components/swiper-slides/HeaderSlide';
 import DiscountSlide from '../components/swiper-slides/DiscountSlide';
 import useLoading from "../hooks/useLoading";
@@ -19,7 +18,6 @@ const Home = () => {
         <Navigation />
         {loading ?
           <div className=" h-auto md:p-4 md:rounded-md">
-            <HomeNavBar />
             <HeaderSlide />
             <div className="w-full h-auto mt-16 grid grid-cols-12 gap-y-10 gap-x-6 pr-3">
               <div className="col-span-6 cursor-pointer lg:col-span-3 flex flex-col justify-center items-center">

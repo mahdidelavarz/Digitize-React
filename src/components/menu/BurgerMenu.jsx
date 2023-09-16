@@ -1,9 +1,4 @@
 import { GiCrossMark } from "react-icons/gi";
-import { NavLink } from 'react-router-dom';
-import { HiOutlineHome, HiOutlineDeviceMobile } from "react-icons/hi";
-import { MdOutlineLaptopMac } from "react-icons/md";
-import { IoWatchOutline } from "react-icons/io5";
-import { BsHeartHalf } from "react-icons/bs";
 import { slide as Menu } from 'react-burger-menu'
 import { useState } from "react";
 import Links from "../links/Links";
@@ -15,7 +10,7 @@ const BurgerMenu = () => {
       <div className={`h-full bg-slate-300 `}>
         {/* ---------------------- header of the menu ------------------------------- */}
         <div className="w-full h-20 bg-gradient-to-r from-slate-500 flex items-center justify-end ">
-          <GiCrossMark onClick={() => setIsOpen(!isOpen)} className=" text-[35px] text-white ml-6 cursor-pointer hover:text-red-300 transition-all duration-700" />
+          <GiCrossMark onClick={() => setIsOpen(false)} className=" text-[35px] text-white ml-6 cursor-pointer hover:text-red-300 transition-all duration-700" />
         </div>
         <div>
           {/* -------------------- items of the menu --------------------------------- */}

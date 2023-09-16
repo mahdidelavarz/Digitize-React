@@ -26,7 +26,7 @@ const Cart = () => {
       <Navigation />
       <main className="col-span-12 md:col-span-9 flex flex-col md:p-2 min-h-[88vh] ">
         {/* ---------------------------phone size------------------------ */}
-        <div className="flex justify-between md:hidden px-6 mb-2">
+        <div className="flex justify-between md:hidden px-6 mb-2 mt-6 border-t border-solid">
           <NavLink to={'../'}>
             <AiOutlineRight className="text-3xl p-1 bg-white rounded-lg text-slate-600 cursor-pointer" />
           </NavLink>
