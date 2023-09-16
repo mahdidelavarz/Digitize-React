@@ -20,7 +20,7 @@ const HeaderSlide = () => {
                 clickable: true,
             }}
             modules={[Autoplay, Pagination]}
-            className="mySwiper md:rounded-md md:mt-10"
+            className="mySwiper md:rounded-md"
         >
             <SwiperSlide><img className="w-full h-52 md:h-auto object-cover" src="https://dkstatics-public.digikala.com/digikala-adservice-banners/210c6957708eb21ba69eb79f76875e351b39a433_1691397339.jpg?x-oss-process=image/quality,q_95/format,webp" alt="banner" /></SwiperSlide>
             <SwiperSlide><img className="w-full h-52 md:h-auto object-cover" src="https://dkstatics-public.digikala.com/digikala-adservice-banners/98d0c52c68daa732ea2a34b345fec80322654476_1691572692.jpg?x-oss-process=image/quality,q_95/format,webp" alt="banner" /></SwiperSlide>

@@ -17,7 +17,7 @@ const Home = () => {
       <div>
         <Navigation />
         {loading ?
-          <div className=" h-auto md:p-4 md:rounded-md">
+          <div className=" h-auto md:p-4 md:rounded-md mt-4 md:mt-0">
             <HeaderSlide />
             <div className="w-full h-auto mt-16 grid grid-cols-12 gap-y-10 gap-x-6 pr-3">
               <div className="col-span-6 cursor-pointer lg:col-span-3 flex flex-col justify-center items-center">

@@ -15,7 +15,7 @@ const Navigation = () => {
       <div>
         <header className='flex  w-full h-auto fixed top-0 z-50 bg-slate-200 '>
           {/* --------------------- Navigation in Mobile size -------------------------------------------*/}
-          <nav className='w-full h-20 md:hidden p-4 border-b border-solid border-slate-300 shadow-sm'>
+          <nav className='w-full h-[5.5rem] md:hidden p-4 border-b border-solid border-slate-300 shadow-sm'>
             <div className='w-full h-16 flex justify-between items-center'>
               <div className='flex '>
                 <RxHamburgerMenu className="bg-white w-9 h-9 lg:h-11 lg:w-11 text-stone-500 rounded-md p-1 cursor-pointer outline-none" />

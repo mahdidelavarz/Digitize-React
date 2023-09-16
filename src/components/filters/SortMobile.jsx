@@ -27,9 +27,9 @@ const SortMobile = ({ category }) => {
       <Menu
         right
         isOpen={isOpen}
-        className="w-[70vw] bg-slate-300 fixed top-0 right-0"
+        className="w-[70vw] bg-slate-200 fixed top-0 right-0"
       >
-        <div className={`h-full bg-slate-300 `}>
+        <div className={`h-full bg-slate-200 `}>
           {/* ---------------------- header of the menu ------------------------------- */}
           <div className="w-full h-20 bg-gradient-to-r from-slate-500 flex items-center justify-end ">
             <GiCrossMark

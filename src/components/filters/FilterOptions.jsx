@@ -39,29 +39,29 @@ const FilterOptions = ({ category, classes }) => {
   };
   return (
     <div className={classes}>
-      <span className="mt-8 text-lg text-orange-400">فیلتر</span>
+      <span className="mt-8 text-lg text-rose-700">فیلتر</span>
       {filters[category].map((option) => {
         return (
           <div
             key={option.key}
-            className="flex w-full flex-col  px-4 py-2 text-base "
+            className="flex w-full flex-col px-4 py-2 text-base cursor-pointer"
           >
             <span
-              className="flex items-center justify-between lg:cursor-pointer fadeShow"
+              className="flex items-center justify-between lg:cursor-pointer fadeShow text-slate-700"
               onClick={() => toggleShowFilterOptionHandler(option.key)}
             >
               <div className="relative flex items-center">
-                <span className="text-rose-500 text-lg ml-2">
+                <span className="text-rose-600 text-lg ml-2">
                   {option.icon}
                 </span>
-                <div className="absolute -top-2 -right-2 w-5 h-5 bg-gradient-to-l from-rose-300 rounded-full"></div>
+                <div className="absolute -top-2 -right-2 w-5 h-5 bg-gradient-to-l from-slate-400 rounded-full"></div>
               </div>
 
               <p
                 className={`flex w-full items-center justify-between lg:cursor-pointer fadeShow ${
                   showFilters[option.key]
-                    ? "text-rose-700 dark:font-bold dark:text-violet-400"
-                    : "text-gray-800 dark:text-white/70"
+                    ? "text-rose-700 "
+                    : "text-slate-700 "
                 }`}
               >
                 {option.title}

@@ -61,7 +61,7 @@ const SingleProduct = () => {
   return (
     <Layout>
       {loading ? (
-        <section className="col-span-12 h-auto  relative grid grid-cols-12 md:grid-rows-12 bg-white py-2  px-4 rounded-lg items-center z-20 mt-2">
+        <section className="col-span-12 h-auto  relative grid grid-cols-12 md:grid-rows-12 bg-white py-2  px-4 rounded-lg items-center z-20 ">
           {/* ----------------------------items image--------------------------- */}
           <div className="h-full col-span-12 md:col-span-7 lg:col-span-4 relative flex items-center flex-col justify-evenly z-30">
             <div className="flex justify-end absolute right-[-15px] top-0 p-4 flex-col ">
