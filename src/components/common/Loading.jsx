@@ -23,7 +23,7 @@ export const HomeSkeleton = () => {
 
 export const ProductSkeleton = () => {
   return (
-    <div className="h-[26rem] pb-4 bg-slate-200 rounded-xl mt-4 shadow-lg flex flex-col p-3 gap-4 animate-pulse fadeShow dark:bg-main-gray dark:shadow-md dark:shadow-gray-500">
+    <div className="h-[26rem] pb-4 bg-slate-200 rounded-xl mt-4 shadow-lg flex flex-col p-3 gap-4 animate-pulse fadeShow dark:bg-main-gray dark:shadow-md dark:shadow-gray-900">
       <div className="w-full h-44 bg-slate-300 dark:bg-gray-700 rounded-lg"></div>
       <div className="w-1/2 py-3 bg-slate-300 dark:bg-gray-700 rounded-lg"></div>
       <div className="w-full h-20 bg-slate-300 dark:bg-gray-700 rounded-lg"></div>

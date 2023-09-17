@@ -5,7 +5,7 @@ import {
   UseInterests,
   InterestsActions,
 } from "../context/interests/InterestsProvider";
-import { CartActions } from "../context/Cart/CartProvider";
+import { UseCart, CartActions } from "../context/Cart/CartProvider";
 import { useState } from "react";
 import { AiOutlineSafety, AiOutlineRight } from "react-icons/ai";
 import { BiDotsVerticalRounded } from "react-icons/bi";
@@ -27,6 +27,7 @@ const Interests = () => {
   const [selected, setSelected] = useState({ key: "مشکی", val: "bg-black" });
   const [state, setState] = useState(...interestList);
   const loading = useLoading();
+  const { cart } = UseCart();
   const handleState = (id, key, val) => {
     const product = data.products
       .filter((p) => parseInt(p.id) === parseInt(id))
@@ -42,12 +43,17 @@ const Interests = () => {
     console.log(item);
   };
   const handleAdd = (item) => {
-    toast.success(`به سبدخرید اضافه شد`);
+    if (!checkInCart(cart, item)) {
+      toast.success(`به سبدخرید اضافه شد`);
+    }
     dispatchCart({
       type: "ADD_TO_CART",
       payload: { ...item, selectedColor: selected },
     });
     console.log(item);
+  };
+  const checkInCart = (cart, product) => {
+    return cart.find((item) => item.id === product.id);
   };
   return (
     <Layout>
@@ -71,7 +77,7 @@ const Interests = () => {
             </div>
           </NavLink>
         </div>
-        
+
         {interestList.length ? (
           interestList.map((item) => {
             return (
@@ -146,7 +152,7 @@ const Interests = () => {
                             </div>
                           );
                         })}
-                        <div className="w-[35%] text-cyan-700 flex justify-end text-sm lg:text-lg dark:text-yellow-300">
+                        <div className="w-[40%] text-cyan-700 flex justify-end text-base lg:text-lg dark:text-yellow-300">
                           {item.price.toLocaleString("fa-IR")} تومان
                         </div>
                       </div>
@@ -160,10 +166,14 @@ const Interests = () => {
                         </div>
                         <div
                           onClick={() => handleAdd(item)}
-                          className="flex w-60 justify-center px-4 py-2 items-center cursor-pointer gap-2 shadow-lg border border-red-400 text-red-400 rounded-lg dark:text-yellow-200 dark:border-yellow-200">
-                        
+                          className="flex w-60 justify-center px-4 py-2 items-center cursor-pointer gap-2 shadow-lg border border-red-400 text-red-400 rounded-lg dark:text-yellow-200 dark:border-yellow-200"
+                        >
                           <CiShoppingCart className="text-xl" />
-                          <button>افزودن به سبدخرید</button>
+                          <button>
+                            {checkInCart(cart, item)
+                              ? "در سبد موجود است"
+                              : "افزودن به سبدخرید"}
+                          </button>
                         </div>
                       </div>
                     </div>

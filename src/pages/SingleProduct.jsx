@@ -1,6 +1,7 @@
 import * as data from "../data";
 import Layout from "../Layout/Layout";
 import { useParams } from "react-router-dom";
+import { CiShoppingCart } from "react-icons/ci";
 import { useState } from "react";
 import { BsCheck, BsFillShareFill, BsFillCartCheckFill } from "react-icons/bs";
 import { AiOutlineHeart, AiOutlineSafety, AiFillHeart } from "react-icons/ai";
@@ -111,7 +112,7 @@ const SingleProduct = () => {
             </div>
           </div>
           {/* -----------------------------items details------------------------ */}
-          <div className="col-span-12  md:col-span-5 lg:col-span-5  flex flex-col md:h-full md:justify-evenly px-8 ">
+          <div className="col-span-12  md:col-span-5 lg:col-span-5  flex flex-col md:h-full md:justify-evenly px-6 ">
             <h1 className=" text-base mt-8 md:text-base text-slate-500 dark:text-text-gray">
               {product.name}
             </h1>
@@ -255,7 +256,7 @@ const SingleProduct = () => {
             </div>
           </div>
           {/* ------------------------------add to cart div--------------------- */}
-          <div className="h-full col-span-12 lg:col-span-3 flex flex-col items-center md:px-6 md:bg-slate-100 py-4 rounded-xl justify-between dark:md:bg-gray-700 ">
+          <div className="h-full col-span-12 lg:col-span-3 flex flex-col items-center px-6 md:px-6 md:bg-slate-100 py-4 rounded-xl justify-between dark:md:shadow-md dark:md:shadow-gray-900 dark:md:bg-main-gray ">
             <div className="w-full flex relative ">
               <div className="w-6 h-6 bg-slate-300 rounded-full absolute top-0 right-3 dark:bg-gradient-to-tl from-gray-800 opacity-60"></div>
               <AiOutlineSafety className=" z-30 mr-5 text-2xl mt-2 dark:text-yellow-300 " />
@@ -314,14 +315,15 @@ const SingleProduct = () => {
               </div>
             </div>
             {/* desktop add to cart */}
-            <div className="w-full md:flex flex-col justify-end items-end mt-6 static  bg-slate-100 z-30 hidden dark:bg-gray-700">
+            <div className="w-full md:flex flex-col justify-end items-end mt-6 static  bg-slate-100 z-30 hidden dark:bg-main-gray">
               <span className="text-rose-700  w-auto  text-xl lg:text-base xl:text-lg dark:text-yellow-300">
                 {product.price.toLocaleString("fa-IR")} تومان
               </span>
               <button
                 onClick={() => handleAddToCart(product)}
-                className="  w-full py-2  bg-rose-500 rounded-md mt-2  text-white  lg:text-base text-lg dark:bg-gray-600 dark:border dark:border-slate-300 "
+                className="w-full py-2  bg-rose-500 rounded-md mt-4  text-white  lg:text-sm text-lg dark:bg-gray-600 dark:border dark:border-slate-300 flex gap-4 px-6 justify-center "
               >
+                <CiShoppingCart className="text-2xl" />
                 {checkInCart(cart, product)
                   ? "در سبد خرید موجود است"
                   : "افزودن به سبدخرید"}
