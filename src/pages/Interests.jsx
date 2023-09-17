@@ -51,22 +51,22 @@ const Interests = () => {
   };
   return (
     <Layout>
-      <div className=" hidden md:flex col-span-3 row-span-2 bg-white rounded-l-xl max-h-[85vh] mt-2 overflow-scroll p-5 scrollbar-hide flex-col gap-8 "></div>
-      <div className="col-span-12 md:col-span-9 grid grid-cols-12 mt-2">
+      <div className=" hidden md:flex col-span-3 row-span-2 bg-white dark:bg-gray-700 rounded-l-xl max-h-[85vh] mt-2 overflow-scroll p-5 scrollbar-hide flex-col gap-8 "></div>
+      <div className="col-span-12 md:col-span-9 grid grid-cols-12 mt-2 ">
         {/* phone size */}
         <div className="flex col-span-12 justify-between md:hidden px-6 mb-2">
           <NavLink to={"../"}>
-            <AiOutlineRight className="text-3xl p-1 bg-white rounded-lg text-slate-600 cursor-pointer" />
+            <AiOutlineRight className="text-3xl p-1 bg-white rounded-lg text-slate-600 cursor-pointer dark:bg-main-gray dark:text-text-gray" />
           </NavLink>
           <span>علاقمندی های شما</span>
-          <BiDotsVerticalRounded className="text-3xl p-1 bg-white rounded-lg text-slate-600 cursor-pointer " />
+          <BiDotsVerticalRounded className="text-3xl p-1 bg-white rounded-lg text-slate-600 cursor-pointer dark:bg-main-gray dark:text-text-gray" />
         </div>
         {/* desktop size */}
-        <div className="col-span-12 hidden md:flex justify-between text-slate-700 pr-8 pl-28  bg-white py-4 rounded-lg mb-4">
+        <div className="col-span-12 hidden md:flex justify-between text-slate-700 pr-8 pl-28  bg-white py-4 rounded-lg mb-4 dark:text-text-gray dark:bg-gray-700">
           <span>علاقمندی های شما</span>
           <NavLink to={"../"}>
             <div className="flex items-center cursor-pointer">
-              <IoExitOutline className="text-2xl ml-2 text-red-600" />
+              <IoExitOutline className="text-2xl ml-2 text-red-600 dark:text-text-gray" />
               <span>بازگشت به خانه</span>
             </div>
           </NavLink>
@@ -78,11 +78,11 @@ const Interests = () => {
               <>
                 {loading ? (
                   <div
-                    className="col-span-12  grid grid-cols-12 border-b-2 border-solid rounded-lg relative md:gap-y-2"
+                    className="col-span-12  grid grid-cols-12 border-b-2 border-solid rounded-lg relative md:gap-y-2 dark:bg-gray-700 dark:border-slate-600"
                     key={item.id}
                   >
                     {/* -------------img--------------------------- */}
-                    <div className=" col-span-12 md:col-span-4 p-2 bg-white flex items-center rounded-tr-lg rounded-br-lg justify-center">
+                    <div className=" col-span-12 md:col-span-4 p-2 bg-white flex items-center rounded-tr-lg rounded-br-lg justify-center dark:bg-gray-700">
                       <img
                         src={item.image}
                         alt={item.name}
@@ -90,22 +90,22 @@ const Interests = () => {
                       />
                     </div>
                     {/* -------descriptions----------------------- */}
-                    <div className="col-span-12 md:col-span-8 px-6 bg-white py-6">
-                      <h2 className="text-sm lg:text-base w-4/6">
+                    <div className="col-span-12 md:col-span-8 px-6 bg-white py-6 dark:bg-gray-700">
+                      <h2 className="text-sm lg:text-base w-4/6 dark:text-text-gray">
                         {item.name} {item.nameF}
                       </h2>
                       <div>
-                        <div className="mt-3 text-xs text-slate-500  flex items-center">
+                        <div className="mt-3 text-xs text-slate-500  flex items-center dark:text-text-gray">
                           <AiOutlineSafety className="text-xl ml-2" />
                           <span>{item.garanti}</span>
                         </div>
-                        <div className="mt-3 text-xs  text-slate-500 flex items-center">
-                          <FaClipboardCheck className="text-xl ml-2 text-cyan-600" />
+                        <div className="mt-3 text-xs  text-slate-500 flex items-center dark:text-text-gray">
+                          <FaClipboardCheck className="text-xl ml-2 text-cyan-600 dark:text-yellow-300" />
                           <span>{item.existed}</span>
                         </div>
-                        <div className="mt-3 text-xs text-slate-500  flex items-center relative">
-                          <div className="w-[2px] h-7 bg-cyan-600 absolute top-3 right-[7px]"></div>
-                          <div className="w-2 h-2 bg-cyan-600 rounded-full mr-1 ml-5"></div>
+                        <div className="mt-3 text-xs text-slate-500  flex items-center relative dark:text-text-gray">
+                          <div className="w-[2px] h-7 bg-cyan-600 absolute top-3 right-[7px] dark:bg-yellow-300"></div>
+                          <div className="w-2 h-2 bg-cyan-600 rounded-full mr-1 ml-5 dark:bg-yellow-300"></div>
                           <img
                             src={item.logo}
                             className="w-5 h-5 md:w-5 md:h-5 lg:w-6 lg:h-6 object-cover ml-2 "
@@ -113,9 +113,9 @@ const Interests = () => {
                           />
                           <span>ارسال توسط دیجی تایز</span>
                         </div>
-                        <div className="mt-3 text-xs text-slate-500  flex items-center">
-                          <div className="w-2 h-2 bg-cyan-600 rounded-full mr-1 ml-5"></div>
-                          <PiArticleNyTimes className="text-xl ml-2 text-blue-700" />
+                        <div className="mt-3 text-xs text-slate-500  flex items-center dark:text-text-gray">
+                          <div className="w-2 h-2 bg-cyan-600 rounded-full mr-1 ml-5 dark:bg-yellow-300"></div>
+                          <PiArticleNyTimes className="text-xl ml-2 text-blue-700 dark:text-blue-300" />
                           <span>ارسال فوری(تهران)</span>
                         </div>
                       </div>
@@ -127,7 +127,7 @@ const Interests = () => {
                               onClick={() => handleState(item.id, key, val)}
                               className={`${
                                 selected.key === key
-                                  ? "ring-2 ring-orange-500  border-2 border-white"
+                                  ? "ring-2 ring-orange-500  border-2 border-white dark:ring-gray-800"
                                   : ""
                               } ${
                                 val === "bg-white" &&
@@ -146,7 +146,7 @@ const Interests = () => {
                             </div>
                           );
                         })}
-                        <div className="w-[35%] text-cyan-700 flex justify-end text-sm lg:text-base">
+                        <div className="w-[35%] text-cyan-700 flex justify-end text-sm lg:text-base dark:text-text-gray">
                           {item.price.toLocaleString("fa-IR")} تومان
                         </div>
                       </div>
@@ -160,8 +160,8 @@ const Interests = () => {
                         </div>
                         <div
                           onClick={() => handleAdd(item)}
-                          className="flex w-60 justify-center px-4 py-2 items-center cursor-pointer gap-2 shadow-lg border border-red-400 text-red-400 rounded-lg"
-                        >
+                          className="flex w-60 justify-center px-4 py-2 items-center cursor-pointer gap-2 shadow-lg border border-red-400 text-red-400 rounded-lg dark:text-yellow-200 dark:border-yellow-200">
+                        
                           <CiShoppingCart className="text-xl" />
                           <button>افزودن به سبدخرید</button>
                         </div>
@@ -175,7 +175,7 @@ const Interests = () => {
             );
           })
         ) : (
-          <div className="col-span-12 h-auto">
+          <div className="col-span-12 h-auto dark:bg-gray-700">
             <img
               src="https://my.uupload.ir/dl/0j5DVzyj"
               alt="empty"

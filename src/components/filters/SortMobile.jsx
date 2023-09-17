@@ -12,24 +12,24 @@ const SortMobile = ({ category }) => {
   return (
     <div className="md:hidden col-span-12">
       <div className="col-span-12 h-16 flex justify-evenly items-center md:hidden px-4">
-        <div className="bg-white flex justify-center items-center p-2 w-1/2 rounded-md ml-5 cursor-pointer">
-          <PiListMagnifyingGlassLight className="text-red-700 ml-2  text-xl" />
-          <span className="text-stone-600 text-xs">محبوب ترین محصول</span>
+        <div className="bg-white  flex justify-center items-center p-2 w-1/2 rounded-md ml-5 cursor-pointer dark:bg-gray-700">
+          <PiListMagnifyingGlassLight className="text-red-700 ml-2 dark:text-yellow-100 text-xl" />
+          <span className="text-stone-600 text-xs dark:text-text-gray">محبوب ترین محصول</span>
         </div>
         <div
           onClick={openFilterMenu}
-          className="bg-white flex justify-center items-center p-2 w-1/2 rounded-md  cursor-pointer"
+          className="bg-white flex justify-center items-center p-2 w-1/2 rounded-md  cursor-pointer dark:bg-gray-700"
         >
-          <HiOutlineFilter className="text-red-700 ml-2 text-xl" />
-          <span className="text-stone-600 text-xs">فیلتر </span>
+          <HiOutlineFilter className="text-red-700 ml-2 text-xl dark:text-yellow-100" />
+          <span className="text-stone-600 text-xs dark:text-text-gray">فیلتر </span>
         </div>
       </div>
       <Menu
         right
         isOpen={isOpen}
-        className="w-[70vw] bg-slate-200 fixed top-0 right-0"
+        className="w-[70vw] bg-slate-200 dark:bg-main-gray fixed top-0 right-0"
       >
-        <div className={`h-full bg-slate-200 `}>
+        <div className={`h-full bg-slate-200 dark:bg-main-gray`}>
           {/* ---------------------- header of the menu ------------------------------- */}
           <div className="w-full h-20 bg-gradient-to-r from-slate-500 flex items-center justify-end ">
             <GiCrossMark

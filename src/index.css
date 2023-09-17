@@ -27,10 +27,12 @@
   display: none;
 }
 
-.active {
+/* .active {
   color: #e11d48;
+} */
+.active{
+ color: yellow;
 }
-
 @keyframes fadeShow {
   from {
     transform: translateY(-5rem);

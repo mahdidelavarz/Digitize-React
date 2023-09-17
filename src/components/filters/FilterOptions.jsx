@@ -39,7 +39,7 @@ const FilterOptions = ({ category, classes }) => {
   };
   return (
     <div className={classes}>
-      <span className="mt-8 text-lg text-rose-700">فیلتر</span>
+      <span className="mt-8 text-lg text-rose-700 dark:text-yellow-400">فیلتر</span>
       {filters[category].map((option) => {
         return (
           <div
@@ -47,27 +47,27 @@ const FilterOptions = ({ category, classes }) => {
             className="flex w-full flex-col px-4 py-2 text-base cursor-pointer"
           >
             <span
-              className="flex items-center justify-between lg:cursor-pointer fadeShow text-slate-700"
+              className="flex items-center justify-between lg:cursor-pointer fadeShow text-slate-700 dark:text-text-gray"
               onClick={() => toggleShowFilterOptionHandler(option.key)}
             >
               <div className="relative flex items-center">
-                <span className="text-rose-600 text-lg ml-2">
+                <span className="text-rose-600 text-lg ml-2 dark:text-yellow-400">
                   {option.icon}
                 </span>
-                <div className="absolute -top-2 -right-2 w-5 h-5 bg-gradient-to-l from-slate-400 rounded-full"></div>
+                <div className="absolute -top-2 -right-2 w-5 h-5 bg-gradient-to-l from-slate-400 dark:from-yellow-400 rounded-full opacity-50"></div>
               </div>
 
               <p
                 className={`flex w-full items-center justify-between lg:cursor-pointer fadeShow ${
                   showFilters[option.key]
-                    ? "text-rose-700 "
-                    : "text-slate-700 "
+                    ? "text-rose-700 dark:text-yellow-400"
+                    : "text-slate-700 dark:text-text-gray"
                 }`}
               >
                 {option.title}
                 <BsCaretDownFill
                   className={`${
-                    showFilters[option.key] ? "rotate-180 text-rose-600" : ""
+                    showFilters[option.key] ? "rotate-180 text-rose-600 dark:text-yellow-400" : ""
                   } text-slate-400 transition-all duration-300`}
                 />
               </p>
@@ -85,7 +85,7 @@ const FilterOptions = ({ category, classes }) => {
                 );
                 return (
                   <label
-                    className="flex w-full items-center justify-start gap-2 text-slate-600  "
+                    className="flex w-full items-center justify-start gap-2 text-slate-600 dark:text-text-gray "
                     key={item.title}
                   >
                     <input

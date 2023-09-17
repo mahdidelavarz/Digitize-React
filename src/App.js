@@ -8,7 +8,7 @@ import ScrollToTop from "./Utils/ScrollToTop";
 
 function App() {
   return (
-    <div className='bg-slate-200'>
+    <div className='bg-slate-200 dark:bg-main-gray'>
       <Router>
       <ScrollToTop />
         <CartProvider>

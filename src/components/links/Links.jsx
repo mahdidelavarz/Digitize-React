@@ -38,7 +38,7 @@ const Links = ({ iconStyle, backStyle, width }) => {
       {routes.map((item) => {
         return (
           <li
-            className={`${width} h-12  text-lg text-slate-600 lg:px-4 cursor-pointer flex items-center hover:bg-gradient-to-l from-slate-200 rounded-md transition-all duration-300`}
+            className={`${width} h-12  text-lg text-slate-600 dark:text-text-gray lg:px-4 cursor-pointer flex items-center hover:bg-gradient-to-l from-slate-200 dark:hover:bg-gradient-to-l dark:from-gray-700 rounded-md transition-all duration-300`}
             key={item.title}
           >
             <div className="w-10 h-5  relative">
