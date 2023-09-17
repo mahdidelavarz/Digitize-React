@@ -8,7 +8,6 @@ import { TfiThemifyFavicon } from "react-icons/tfi";
 import { PiChecksThin } from "react-icons/pi";
 import { useState } from "react";
 const moment = require("moment-jalaali");
-
 const Aupport = () => {
   const now = moment().local("fa").format("HH:mm");
   const [massage, setMassage] = useState("");
@@ -18,13 +17,12 @@ const Aupport = () => {
     setMassage(e.target.value);
     console.log(massage);
   };
-
   const handleSendMassage = () => {
     setAllMassages([...allMassages, massage]);
     input.current.value = "";
   };
   return (
-    <div className="max-w-[60vw] h-[100vh] bg-white m-auto">
+    <div className="md:max-w-[60vw] h-[100vh] bg-white m-auto dark:bg-main-gray">
       <div className="w-full h-[90%] p-4">
         <div className="w-full h-16 bg-slate-300 rounded-full flex justify-between items-center px-6 text-slate-700">
           <BsThreeDotsVertical className="text-2xl cursor-pointer" />
@@ -43,7 +41,7 @@ const Aupport = () => {
               console.log(massage);
               return (
                 <div id={index} className="w-auto h-auto flex relative">
-                  <p className="w-auto bg-red-200 pr-4 pl-8 py-1 rounded-t-[20px] rounded-bl-[20px] ">
+                  <p className="w-auto bg-red-200 dark:bg-slate-200 pr-4 pl-8 py-1 rounded-t-[20px] rounded-bl-[20px] ">
                     {massage}
                     <div className="flex gap-2">
                       <PiChecksThin className="text-xs" />
