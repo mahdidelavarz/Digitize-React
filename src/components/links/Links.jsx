@@ -24,7 +24,7 @@ const Links = ({ iconStyle, backStyle, width }) => {
     },
     {
       title: "هدفون و هندزفری",
-      path: "/",
+      path: "/airPods",
       icon: <ImHeadphones className={iconStyle} />,
     },
     {
