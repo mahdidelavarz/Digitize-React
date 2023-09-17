@@ -51,14 +51,14 @@ const Interests = () => {
   };
   return (
     <Layout>
-      <div className=" hidden md:flex col-span-3 row-span-2 bg-white dark:bg-gray-700 rounded-l-xl max-h-[85vh] mt-2 overflow-scroll p-5 scrollbar-hide flex-col gap-8 "></div>
+      <div className=" hidden md:flex col-span-3 row-span-2 bg-white dark:bg-gray-800 rounded-l-xl max-h-[85vh] mt-2 overflow-scroll p-5 scrollbar-hide flex-col gap-8 "></div>
       <div className="col-span-12 md:col-span-9 grid grid-cols-12 mt-2 ">
         {/* phone size */}
-        <div className="flex col-span-12 justify-between md:hidden px-6 mb-2">
+        <div className="flex col-span-12 justify-between md:hidden px-6 mb-2 dark:bg-main-gray">
           <NavLink to={"../"}>
             <AiOutlineRight className="text-3xl p-1 bg-white rounded-lg text-slate-600 cursor-pointer dark:bg-main-gray dark:text-text-gray" />
           </NavLink>
-          <span>علاقمندی های شما</span>
+          <span className="text-text-gray">علاقمندی های شما</span>
           <BiDotsVerticalRounded className="text-3xl p-1 bg-white rounded-lg text-slate-600 cursor-pointer dark:bg-main-gray dark:text-text-gray" />
         </div>
         {/* desktop size */}
@@ -71,18 +71,18 @@ const Interests = () => {
             </div>
           </NavLink>
         </div>
-        <div className="w-full h-auto flex gap-2"></div>
+        
         {interestList.length ? (
           interestList.map((item) => {
             return (
               <>
                 {loading ? (
                   <div
-                    className="col-span-12  grid grid-cols-12 border-b-2 border-solid rounded-lg relative md:gap-y-2 dark:bg-gray-700 dark:border-slate-600"
+                    className="col-span-12  grid grid-cols-12 border-b-2 border-solid rounded-lg relative md:gap-y-2 dark:bg-main-gray dark:border-slate-600"
                     key={item.id}
                   >
                     {/* -------------img--------------------------- */}
-                    <div className=" col-span-12 md:col-span-4 p-2 bg-white flex items-center rounded-tr-lg rounded-br-lg justify-center dark:bg-gray-700">
+                    <div className=" col-span-12 md:col-span-4 p-2 bg-white flex items-center rounded-tr-lg rounded-br-lg justify-center dark:bg-main-gray">
                       <img
                         src={item.image}
                         alt={item.name}
@@ -90,7 +90,7 @@ const Interests = () => {
                       />
                     </div>
                     {/* -------descriptions----------------------- */}
-                    <div className="col-span-12 md:col-span-8 px-6 bg-white py-6 dark:bg-gray-700">
+                    <div className="col-span-12 md:col-span-8 px-6 bg-white py-6 dark:bg-main-gray">
                       <h2 className="text-sm lg:text-base w-4/6 dark:text-text-gray">
                         {item.name} {item.nameF}
                       </h2>
@@ -146,7 +146,7 @@ const Interests = () => {
                             </div>
                           );
                         })}
-                        <div className="w-[35%] text-cyan-700 flex justify-end text-sm lg:text-base dark:text-text-gray">
+                        <div className="w-[35%] text-cyan-700 flex justify-end text-sm lg:text-lg dark:text-yellow-300">
                           {item.price.toLocaleString("fa-IR")} تومان
                         </div>
                       </div>

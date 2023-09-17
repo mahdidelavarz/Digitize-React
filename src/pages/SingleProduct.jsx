@@ -297,7 +297,7 @@ const SingleProduct = () => {
             </div>
             {/* phone add to cart */}
             <div className="fixed w-full h-[4.3rem] bg-slate-100 bottom-2 rounded-3xl  p-3 z-50 md:hidden dark:bg-gray-800">
-              <div className="w-full h-full flex justify-between items-center px-10 rounded-2xl bg-rose-600 dark:bg-gray-400">
+              <div className="w-full h-full flex justify-between items-center px-10 rounded-2xl bg-rose-600 dark:bg-gray-700">
                 <div
                   onClick={() => handleAddToCart(product)}
                   className="w-16 h-16 bg-blue-950 rounded-full flex justify-center items-center cursor-pointer"
@@ -308,14 +308,14 @@ const SingleProduct = () => {
                     <MdOutlineAddShoppingCart className="text-3xl text-white" />
                   )}
                 </div>
-                <span className="text-white  w-auto  text-xl lg:text-base xl:text-lg dark:text-blue-950">
+                <span className="text-white  w-auto  text-xl lg:text-base xl:text-lg dark:text-yellow-300">
                   {product.price.toLocaleString("fa-IR")} تومان
                 </span>
               </div>
             </div>
             {/* desktop add to cart */}
             <div className="w-full md:flex flex-col justify-end items-end mt-6 static  bg-slate-100 z-30 hidden dark:bg-gray-700">
-              <span className="text-rose-700  w-auto  text-xl lg:text-base xl:text-lg dark:text-text-gray">
+              <span className="text-rose-700  w-auto  text-xl lg:text-base xl:text-lg dark:text-yellow-300">
                 {product.price.toLocaleString("fa-IR")} تومان
               </span>
               <button

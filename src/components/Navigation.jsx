@@ -20,15 +20,22 @@ const Navigation = () => {
               <div className="flex ">
                 <RxHamburgerMenu className="bg-white dark:bg-slate-700 w-9 h-9 lg:h-11 lg:w-11 text-stone-500 dark:text-text-gray rounded-md p-1 cursor-pointer outline-none" />
                 <div className="flex justify-center cursor-pointer bg-white dark:bg-slate-700 items-center px-3 py-1 shadow-md rounded-md text-stone-500 mr-3">
-                  <NavLink to={"/login"} className="flex items-center gap-2 dark:text-text-gray">
+                  <NavLink
+                    to={"/login"}
+                    className="flex items-center gap-2 dark:text-text-gray"
+                  >
                     ورود
                     <PiSignInBold className="text-xl ml-1 text-red-700 dark:text-slate-300" />
                   </NavLink>
                 </div>
               </div>
               <div className="flex items-center justify-center px-2">
-                <span className="text-3xl text-red-500 dark:text-yellow-400">دیجی</span>
-                <span className="text-slate-700 dark:text-text-gray text-xl">تایز</span>
+                <span className="text-3xl text-red-500 dark:text-yellow-400">
+                  دیجی
+                </span>
+                <span className="text-slate-700 dark:text-text-gray text-xl">
+                  تایز
+                </span>
               </div>
               <div className="flex ">
                 <div className="w-auto h-auto relative">
@@ -48,13 +55,18 @@ const Navigation = () => {
           <nav className="hidden w-full md:flex h-20 justify-between items-center border-b border-solid bg-white dark:bg-main-gray">
             <div className="flex">
               <div className="flex items-center justify-center px-2 mr-4 lg:mr-12 xl:mr-12">
-                <span className="text-2xl lg:text-3xl text-red-500 dark:text-yellow-400">دیجی</span>
-                <span className="text-slate-700 text-lg lg:text-xl dark:text-text-gray">تایز</span>
+                <span className="text-2xl lg:text-3xl text-red-500 dark:text-yellow-400">
+                  دیجی
+                </span>
+                <span className="text-slate-700 text-lg lg:text-xl dark:text-text-gray">
+                  تایز
+                </span>
               </div>
               {/*-------------------- Search box -----------------------------*/}
               <Search />
             </div>
             {/* ------------------- Nav items ----------------------------- */}
+                <ThemeButton />
             <div className="w-60 flex justify-between px-12">
               <div className="w-auto h-auto relative">
                 <NavLink to={"/cart"}>
@@ -71,12 +83,14 @@ const Navigation = () => {
                 </NavLink>
               </div>
               <div className="flex cursor-pointer bg-white  shadow-md rounded-md text-stone-500 mr-2 dark:bg-slate-700 dark:text-text-gray">
-                <NavLink to={"/login"} className="flex items-center px-3 py-1 gap-2">
+                <NavLink
+                  to={"/login"}
+                  className="flex items-center px-3 py-1 gap-2"
+                >
                   ورود
                   <PiSignInBold className="text-xl text-red-700 dark:text-text-gray" />
                 </NavLink>
               </div>
-            <ThemeButton />
             </div>
           </nav>
         </header>

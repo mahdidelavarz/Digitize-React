@@ -45,18 +45,18 @@ const Cart = () => {
         </div>
         <div className="w-full h-auto flex gap-2">
           {/* ---------------------------------items -------------------------- */}
-          <div className={`w-full h-auto lg:max-h-[78vh] mt-2 bg-white p-1 rounded-lg grid grid-cols-12 lg:w-2/3 lg:overflow-scroll mb-40 lg:mb-0 scrollbar-hide ${!cart.length && 'lg:w-full mb-0'} dark:bg-gray-700`} >
+          <div className={`w-full h-auto lg:max-h-[78vh] mt-2 bg-white p-1 rounded-lg grid grid-cols-12 lg:w-2/3 lg:overflow-scroll mb-40 lg:mb-0 scrollbar-hide ${!cart.length && 'lg:w-full mb-0'} dark:bg-main-gray`} >
             {cart.length ? cart.map((item) => {
               // -------------------single item--------------------------------------
               return (
                 <>
                   {loading ? <div className="col-span-12 grid grid-cols-12 gap-1 py-4 border-b-2 border-solid " key={item.id}>
                     {/* -------------img--------------------------- */}
-                    <div className="col-span-4 p-2 bg-white dark:bg-gray-700">
+                    <div className="col-span-4 p-2 bg-white dark:bg-main-gray">
                       <img src={item.image} alt={item.name} />
                     </div>
                     {/* -------descriptions----------------------- */}
-                    <div className="col-span-8 p-2 bg-white pt-6 dark:text-gray-200 dark:bg-gray-700">
+                    <div className="col-span-8 p-2 bg-white pt-6 dark:text-gray-200 dark:bg-main-gray">
                       <h2 className="text-sm lg:text-base ">{item.name} {item.nameF}</h2>
                       <div>
                         <div className="flex items-center gap-2 mt-6 text-sm text-slate-500 dark:text-text-gray">
@@ -87,13 +87,13 @@ const Cart = () => {
                     </div>
 
                     {/*------------- total and price------------------ */}
-                    <div className="col-span-12 p-2 bg-white flex items-center mr-8 dark:bg-gray-700">
+                    <div className="col-span-12 p-2 bg-white flex items-center mr-8 dark:bg-main-gray">
                       <div className="w-24 flex justify-between items-center p-2 border-2 border-solid border-slate-300 rounded-lg text-orange-500 dark:text-text-gray ">
                         <button onClick={() => handleInc(item)}><AiOutlinePlus /></button>
                         <span>{item.quantity}</span>
                         <button onClick={() => handleDec(item)} >{item.quantity > 1 ? <AiOutlineMinus /> : <FaRegTrashAlt className="text-red-500 dark:text-red-300" />}</button>
                       </div>
-                      <div className="mr-6 text-slate-500 dark:text-slate-200 text-xl">{(item.price * item.quantity).toLocaleString('fa-IR')} تومان</div>
+                      <div className="mr-6 text-slate-500 dark:text-yellow-300 text-xl">{(item.price * item.quantity).toLocaleString('fa-IR')} تومان</div>
                     </div>
                   </div> : <CartLoading />}
                 </>

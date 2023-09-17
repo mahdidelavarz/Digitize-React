@@ -19,7 +19,7 @@ const Product = ({ product }) => {
     return interestList.find((item) => item.id === product.id);
   };
   return (
-    <div className="h-auto pb-4 bg-slate-200 dark:bg-main-gray rounded-xl mt-4 shadow-lg hover:shadow-slate-400 dark:hover:shadow-slate-600 transition-all dark:shadow-slate-700 duration-300  flex flex-col cursor-pointer relative gap-2">
+    <div className="h-auto pb-4 bg-slate-200 dark:bg-main-gray rounded-xl mt-4 shadow-md hover:shadow-slate-400 dark:hover:shadow-slate-600 transition-all dark:shadow-slate-900 duration-300  flex flex-col cursor-pointer relative gap-2">
       {/* like */}
       <button>
         {checkInInterestList(interestList, product) ? (
@@ -60,13 +60,13 @@ const Product = ({ product }) => {
         </div>
         {/* add btn */}
         <div className="w-full h-10 flex justify-between items-center text-[9px] md:text-xs px-4 text-slate-600 dark:text-text-gray">
-          <span className="text-red-600 dark:text-yellow-300">{product.existed}</span>
+          <span className="text-red-600 dark:text-yellow-100">{product.existed}</span>
           <span className="flex items-center">
             {product.score}
             <PiStarFill className="text-yellow-500 text-base mr-2 mb-1" />
           </span>
         </div>
-        <div className="w-full px-4 mt-5 flex justify-end text-slate-600 dark:text-text-gray text-base">
+        <div className="w-full px-4 mt-5 flex justify-end text-slate-600 dark:text-yellow-300 text-base">
           <span>{product.price.toLocaleString("fa-IR")} تومان</span>
         </div>
       </NavLink>

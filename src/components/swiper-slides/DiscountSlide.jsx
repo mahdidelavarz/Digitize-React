@@ -51,7 +51,7 @@ const DiscountSlide = () => {
                             <span className='text-[10px] md:text-xs  text-slate-600 dark:text-text-gray'>{product.name}</span>
                             <div className='flex justify-between w-full mt-4'>
                                 <span className='w-9 h-5 flex justify-center items-center text-xs md:text-sm text-white bg-rose-500 rounded-full'>{product.discount}</span>
-                                <span className='block text-slate-600 dark:text-text-gray text-xs md:text-base mt-1'>{product.price.toLocaleString('fa-IR')} تومان </span>
+                                <span className='block text-slate-600 dark:text-yellow-300 text-xs md:text-base mt-1'>{product.price.toLocaleString('fa-IR')} تومان </span>
                             </div>
                             <span className='w-full flex justify-end text-slate-400 line-through mt-4 text-xs'>{product.offPrice.toLocaleString('fa-IR')}</span>
                         </div>
