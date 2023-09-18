@@ -106,7 +106,7 @@ const Cart = () => {
             <div className="w-full p-4">
               {loading ? <span className="text-2xl text-rose-500 dark:text-slate-200">{total.toLocaleString('fa-IR')} تومان</span> : <div className="w-60 h-10 bg-slate-300 rounded-lg animate-pulse"></div>}
             </div>
-            <button className="w-full py-3 bg-rose-500 rounded-lg text-white dark:bg-gray-500 dark:border dark:border-slate-400">ثبت سفارش</button>
+            <button className="w-full py-3 bg-rose-500 rounded-lg text-white dark:bg-yellow-600 dark:border dark:border-slate-400">ثبت سفارش</button>
           </div>
         </div>
       </main>

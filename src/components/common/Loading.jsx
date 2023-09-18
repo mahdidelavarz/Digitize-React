@@ -61,13 +61,29 @@ export const InterestSkeleton = () => {
 export const CartLoading = () => {
   return (
     <div className="col-span-12 gap-4  p-5 grid grid-cols-12  relative md:gap-y-2 bg-slate-50 animate-pulse fadeShow dark:bg-main-gray">
-      <div className="col-span-4 p-2 bg-slate-300 flex items-center rounded-tr-lg rounded-br-lg justify-center rounded-md dark:bg-gray-700"></div>
-      <div className="col-span-8 px-6 bg-slate-200 py-6 rounded-md flex flex-col md:pl-10 gap-4 dark:bg-gray-700">
-        <div className="w-full h-10 bg-slate-300 dark:bg-gray-600 rounded-lg"></div>
-        <div className="md:w-40 w-28 h-6 bg-slate-300 dark:bg-gray-600 rounded-lg"></div>
-        <div className="md:w-48 w-32 h-6 bg-slate-300 dark:bg-gray-600 rounded-lg"></div>
-        <div className="md:w-56 w-40 h-6 bg-slate-300 dark:bg-gray-600 rounded-lg"></div>
-        <div className="md:w-64 w-44 h-6 bg-slate-300 dark:bg-gray-600 rounded-lg"></div>
+      <div className="col-span-4 h-32 md:h-52 p-2 bg-slate-300 flex items-center rounded-tr-lg rounded-br-lg justify-center rounded-md dark:bg-gray-700"></div>
+      <div className="col-span-8 px-6 bg-slate-200 py-6 rounded-md flex flex-col md:pl-10 md:gap-4 dark:bg-gray-800 dark:shadow-lg">
+        <div className="w-full h-5 bg-slate-300 dark:bg-gray-600 rounded-lg"></div>
+        <div className="w-1/2 h-5 bg-slate-300 dark:bg-gray-600 rounded-lg mt-1"></div>
+        <div className="md:w-40 w-32 h-6 rounded-lg mt-4 flex justify-between">
+          <div className="w-5 h-5 rounded-full bg-slate-300 dark:bg-gray-500"></div>
+          <div className="w-24 h-full bg-slate-300 dark:bg-gray-600 rounded-lg"></div>
+        </div>
+
+        <div className="md:w-40 w-40 h-6 rounded-lg mt-2 flex justify-between">
+          <div className="w-5 h-5 rounded-sm bg-slate-300 dark:bg-gray-500"></div>
+          <div className="w-32 h-full bg-slate-300 dark:bg-gray-600 rounded-lg"></div>
+        </div>
+        <div className="w-40  h-6 rounded-lg mt-2 flex justify-between mr-6">
+          <div className="w-5 h-5 rounded-sm bg-slate-300 dark:bg-gray-500"></div>
+          <div className="w-32 h-full bg-slate-300 dark:bg-gray-600 rounded-lg"></div>
+        </div>
+        <div className="md:w-40 w-32 h-6 rounded-lg mt-2 flex justify-between mr-6">
+          <div className="w-5 h-5 rounded-sm bg-slate-300 dark:bg-gray-500"></div>
+          <div className="w-24 h-full bg-slate-300 dark:bg-gray-600 rounded-lg"></div>
+        </div>
+        <div className="w-20 h-10  absolute -bottom-10 right-10 rounded-lg border border-slate-300 dark:border-gray-500 md:hidden"></div>
+        <div className="w-40 h-10 rounded-lg absolute -bottom-10 left-8  bg-slate-300 dark:bg-gray-600 md:hidden"></div>
       </div>
       <div className="col-span-4 h-10 md:flex justify-between items-center gap-4 hidden">
         <div className="w-36 h-10 bg-slate-300 dark:bg-gray-600 rounded-lg"></div>
