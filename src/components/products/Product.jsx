@@ -4,6 +4,7 @@ import {
 } from "../../context/interests/InterestsProvider";
 import { PiStarFill } from "react-icons/pi";
 import { BsBookmarkHeart, BsBookmarkHeartFill } from "react-icons/bs";
+import { FaTruckFast } from "react-icons/fa6";
 import { NavLink } from "react-router-dom";
 const Product = ({ product }) => {
   const { interestList } = UseInterests();
@@ -45,11 +46,7 @@ const Product = ({ product }) => {
         </div>
         {/* free transport */}
         <div className="w-[5.5rem] md:w-32 flex  mt-4 px-2 bg-slate-300 dark:bg-slate-700 rounded-lg mr-2 md:py-1 py-[2px] items-center">
-          <img
-            src={product.logo}
-            className="w-3 h-3 md:w-4 md:h-4  object-cover "
-            alt="phone"
-          />
+          <FaTruckFast className="text-rose-500 dark:text-gray-400 text-sm md:text-base"/>
           <span className="text-slate-400  text-[9px] md:text-xs mr-2">
             ارسال رایگان
           </span>
@@ -60,7 +57,9 @@ const Product = ({ product }) => {
         </div>
         {/* add btn */}
         <div className="w-full h-10 flex justify-between items-center text-[9px] md:text-xs px-4 text-slate-600 dark:text-text-gray">
-          <span className="text-red-600 dark:text-yellow-100">{product.existed}</span>
+          <span className="text-red-600 dark:text-yellow-100">
+            {product.existed}
+          </span>
           <span className="flex items-center">
             {product.score}
             <PiStarFill className="text-yellow-500 text-base mr-2 mb-1" />

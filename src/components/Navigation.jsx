@@ -1,5 +1,4 @@
 import { NavLink } from "react-router-dom";
-import { BiSearchAlt } from "react-icons/bi";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { HiShoppingCart } from "react-icons/hi";
 import { PiSignInBold } from "react-icons/pi";
@@ -8,6 +7,7 @@ import { UseCart } from "../context/Cart/CartProvider";
 import NavBar from "./menu/NavBar";
 import Search from "./Search/Search";
 import ThemeButton from "./theme/Theme";
+import SearchMobile from "./Search/SearchMobile";
 const Navigation = () => {
   const { cart } = UseCart();
   return (
@@ -46,7 +46,7 @@ const Navigation = () => {
                     </span>
                   </NavLink>
                 </div>
-                <BiSearchAlt className="bg-white dark:bg-slate-700 w-9 h-9 lg:h-11 lg:w-11 text-stone-500 dark:text-text-gray rounded-md p-1 cursor-pointer outline-none" />
+                <SearchMobile />
               </div>
             </div>
             <BurgerMenu />
@@ -66,7 +66,7 @@ const Navigation = () => {
               <Search />
             </div>
             {/* ------------------- Nav items ----------------------------- */}
-                <ThemeButton />
+            <ThemeButton />
             <div className="w-60 flex justify-between px-12">
               <div className="w-auto h-auto relative">
                 <NavLink to={"/cart"}>
