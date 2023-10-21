@@ -36,7 +36,7 @@ const SearchMobile = () => {
             />
             <BiSearchAlt className="absolute right-12 text-2xl text-slate-400 dark:text-slate-200" />
           </div>
-          <div className="w-[100vw] h-screen bg-gray-700  absolute top-[5.5rem] right-0 z-[80] fadeShow flex py-6 ">
+          <div className="w-[100vw] h-screen bg-slate-200 dark:bg-gray-700  absolute top-[5.5rem] right-0 z-[80] fadeShow flex py-6 ">
             {filteredProducts || filteredProducts ? (
               <div className="bg-white dark:bg-main-gray w-full h-full rounded-lg absolute top-0 z-[70] fadeShow p-6 dark:text-text-gray">
                 <div>جست و جو برای {value ? value : '...'}</div>
